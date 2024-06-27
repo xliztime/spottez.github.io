@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lizbeth Life - Home</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="youtube.html">YouTube Channel</a>
+            <a href="social.html">Social Media</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Header Section -->
+        <header class="header">
+            <img src="https://images.squarespace-cdn.com/content/v1/5c4ece0e3917ee277d32eaf3/1596526258147-VHBD2BW2T29MELBO6JPG/village-new.gif?format=1000w" alt="Header Image" class="header-img">
+            <h1>Lizbeth Life</h1>
+        </header>
+    </div>
+
+    <!-- Optional: Add JavaScript for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+        // Example scroll animation with GSAP
+        gsap.from(".header", {
+            duration: 1,
+            opacity: 0,
+            y: -50,
+            ease: "power2.out"
+        });
+    </script>
+</body>
+</html>
