@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #fff; /* Colore di sfondo bianco */
     margin: 0;
     padding: 0;
 }
@@ -22,6 +22,7 @@ body {
 
 h1 {
     text-align: center;
+    color: #ff69b4; /* Rosa brillante */
 }
 
 .login-form {
@@ -38,7 +39,7 @@ nav {
 
 nav a {
     margin: 0 10px;
-    color: #007bff;
+    color: #ff69b4; /* Rosa brillante */
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
@@ -56,7 +57,7 @@ nav a:hover {
 
 .social-links a {
     margin: 0 10px;
-    color: #007bff;
+    color: #ff69b4; /* Rosa brillante */
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -68,8 +69,8 @@ nav a:hover {
 .twitter-like {
     margin-top: 20px;
     padding: 10px;
-    background-color: #f8f9fa;
-    border: 1px solid #ccc;
+    background-color: #fff3f7; /* Rosa chiaro */
+    border: 1px solid #ffb6c1; /* Rosa chiaro */
     border-radius: 4px;
     animation: slideInUp 0.5s ease-out;
 }
@@ -78,7 +79,7 @@ nav a:hover {
     width: 100%;
     padding: 10px;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffb6c1; /* Rosa chiaro */
     resize: vertical;
     min-height: 100px;
     transition: all 0.3s ease;
@@ -86,7 +87,7 @@ nav a:hover {
 
 .twitter-like button {
     padding: 8px 20px;
-    background-color: #007bff;
+    background-color: #ff69b4; /* Rosa brillante */
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -97,5 +98,5 @@ nav a:hover {
 }
 
 .twitter-like button:hover {
-    background-color: #0056b3;
+    background-color: #d94685; /* Rosa più scuro al passaggio */
 }
