@@ -91,13 +91,39 @@ body {
     line-height: 1.6;
 }
 
-/* Hidden section */
-.hidden-section {
-    display: none; /* Initially hide the hidden section */
+.section .emoji {
+    font-size: 40px;
+    line-height: 1;
+    margin-top: 10px;
 }
 
-.hidden-section.visible {
-    display: block; /* Display the hidden section when visible */
+.hidden-section {
+    display: none; /* Ensure this is only for illustrative purposes; may not be necessary if showing hidden content by default */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #f0dbd8;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #4a6752;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #4a6752;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #8eae9d;
 }
 
 /* Responsive adjustments */
@@ -107,5 +133,8 @@ body {
     }
     .header h1 {
         font-size: 2.5rem;
+    }
+    .section .emoji {
+        font-size: 30px;
     }
 }
