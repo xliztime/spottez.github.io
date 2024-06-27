@@ -1,0 +1,134 @@
+/* Base styling */
+body {
+    font-family: 'Montserrat', sans-serif; /* Default font */
+    color: #000; /* Black text color */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://i.pinimg.com/originals/70/8f/ae/708fae07d8fdb9f12b71cf57c6b7d35b.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Header Image */
+.header-img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.header {
+    background-color: #d1e9d6;
+    padding: 20px;
+    text-align: center;
+    animation: fadeInDown 1s ease-out; /* Animation on page load */
+}
+
+.header h1 {
+    margin: 0;
+    color: #4a6752;
+    font-family: 'Montserrat', sans-serif; /* Montserrat font for titles */
+    font-weight: 700; /* Bold */
+    font-size: 3rem; /* Adjust size as needed */
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Navigation styling */
+.nav {
+    background-color: #f0dbd8;
+    padding: 10px;
+    text-align: center;
+    animation: fadeInUp 1s ease-out; /* Animation on page load */
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4a6752;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; /* Montserrat font for links */
+    font-size: 1.2rem; /* Adjust size as needed */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav a:hover {
+    color: #8eae9d; /* Hover color */
+}
+
+/* Section styling */
+.section {
+    padding: 40px;
+    text-align: center;
+    animation: fadeInUp 1s ease-out; /* Animation on page load */
+}
+
+.section h2 {
+    color: #4a6752;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif; /* Playfair Display for section titles */
+    font-weight: 700; /* Bold */
+    font-size: 2.5rem; /* Adjust size as needed */
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.section p {
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif; /* Montserrat font for normal text */
+    font-weight: 400; /* Regular */
+    font-size: 1.1rem; /* Adjust size as needed */
+}
+
+.section:hover {
+    transform: translateY(-5px); /* Hover animation */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+.footer {
+    background-color: #d1e9d6;
+    padding: 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease-out; /* Animation on page load */
+}
+
+.footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #4a6752;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer a:hover {
+    color: #8eae9d; /* Hover color */
+}
+
+/* Rounded Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make it round */
+    margin: 20px 0;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block; /* Ensure it behaves as a block element */
+    margin-left:
