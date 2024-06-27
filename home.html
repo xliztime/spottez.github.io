@@ -4,107 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benvenuto nel sito di [Il tuo nome]</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-        }
-        .login-form {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .login-form input {
-            padding: 8px;
-            margin: 5px;
-            width: 200px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-        }
-        .login-form button {
-            padding: 8px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .login-form button:hover {
-            background-color: #0056b3;
-        }
-        nav {
-            text-align: center;
-            margin-top: 20px;
-        }
-        nav a {
-            margin: 0 10px;
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .social-links {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .social-links a {
-            margin: 0 10px;
-            color: #007bff;
-            text-decoration: none;
-        }
-        .social-links a:hover {
-            text-decoration: underline;
-        }
-        .twitter-like {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #f8f9fa;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .twitter-like textarea {
-            width: 100%;
-            padding: 10px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-            resize: vertical;
-            min-height: 100px;
-        }
-        .twitter-like button {
-            padding: 8px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-top: 10px;
-            float: right;
-        }
-        .twitter-like button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Collegamento al file CSS esterno -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
 
 <div class="container">
-    <h1>Benvenuto nel sito di [Il tuo nome]</h1>
+    <h1 class="animate__animated animate__fadeInDown">Benvenuto nel sito di [Il tuo nome]</h1>
 
-    <div class="login-form">
+    <div class="login-form animate__animated animate__slideInDown">
         <form action="login.php" method="post">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
@@ -112,17 +21,17 @@
             <label for="pw">Password:</label>
             <input type="password" id="pw" name="pw" required>
             <br><br>
-            <button type="submit">Accedi</button>
+            <button type="submit" class="animate__animated animate__fadeInUp">Accedi</button>
         </form>
     </div>
 
-    <nav>
+    <nav class="animate__animated animate__slideInUp">
         <a href="#home">Home</a>
         <a href="#youtube">YouTube</a>
         <a href="#contact">Contatti</a>
     </nav>
 
-    <section id="home">
+    <section id="home" class="animate__animated animate__slideInUp">
         <h2>Benvenuto nel mio sito!</h2>
         <p>Qui troverai informazioni su di me e i miei progetti.</p>
         <div class="social-links">
@@ -132,13 +41,13 @@
         </div>
     </section>
 
-    <section id="youtube">
+    <section id="youtube" class="animate__animated animate__slideInUp">
         <h2>Il mio canale YouTube</h2>
         <p>Benvenuto nel mio canale YouTube! Qui troverai i miei video più recenti.</p>
         <!-- Inserisci qui il codice per incorporare i tuoi video YouTube -->
     </section>
 
-    <section id="contact">
+    <section id="contact" class="animate__animated animate__slideInUp">
         <h2>Contatti</h2>
         <p>Hai domande o vuoi contattarmi? Compila il modulo qui sotto o inviami un'email.</p>
         <form action="contact.php" method="post">
@@ -151,14 +60,14 @@
             <label for="message">Messaggio:</label>
             <textarea id="message" name="message" required></textarea>
             <br><br>
-            <button type="submit">Invia Messaggio</button>
+            <button type="submit" class="animate__animated animate__fadeInUp">Invia Messaggio</button>
         </form>
     </section>
 
-    <div class="twitter-like">
+    <div class="twitter-like animate__animated animate__slideInUp">
         <h2>Aggiornamenti</h2>
         <textarea placeholder="Scrivi qui i tuoi aggiornamenti..." rows="4"></textarea>
-        <button type="button">Posta</button>
+        <button type="button" class="animate__animated animate__fadeInUp">Posta</button>
     </div>
 
 </div>
