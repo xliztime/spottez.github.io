@@ -9,7 +9,7 @@ form.addEventListener('submit', function(event) {
     const password = passwordInput.value.trim();
 
     // Check if password is correct
-    if (password === 'yourpassword') { // Replace 'yourpassword' with your actual password
+    if (password === 'alessio') { // Replace 'yourpassword' with your actual password
         hiddenSection.classList.add('visible');
         form.style.display = 'none'; // Hide the form after correct password
     } else {
