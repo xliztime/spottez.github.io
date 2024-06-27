@@ -1,0 +1,143 @@
+// Import delle fonti, se necessario
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+// Variabili per i colori
+$color-background: rgba(255, 255, 255, 0.95);
+$color-accent: #f0dbd8;
+$color-text: #4a6752;
+$color-text-dark: #333;
+$color-hover: #8eae9d;
+
+// Base styles
+body {
+    font-family: 'Indie Flower', cursive; /* Font carino e manoscritto */
+    color: $color-text-dark;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient($color-background, $color-background), url('https://i.pinimg.com/originals/70/8f/ae/708fae07d8fdb9f12b71cf57c6b7d35b.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+// Contenitore principale
+.container {
+    background-color: $color-background;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+    margin: 20px;
+}
+
+// Stili per la navigazione
+.nav {
+    background-color: $color-accent;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: $color-text;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $color-hover;
+    }
+}
+
+// Stili per l'intestazione
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        margin: 0;
+        color: $color-text;
+        font-size: 3rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+}
+
+// Stili per le sezioni
+.section {
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: $color-background;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        color: $color-text;
+        font-size: 2.5rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .emoji {
+        font-size: 2.5rem; /* Dimensione regolata per un'estetica migliore */
+        line-height: 1;
+        margin-top: 10px;
+    }
+}
+
+// Stili per i pulsanti
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background-color: $color-accent;
+    color: $color-text;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: $color-hover;
+        color: #fff;
+    }
+}
+
+// Regolazioni responsive
+@media (max-width: 768px) {
+    .section {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .section .emoji {
+        font-size: 2rem;
+    }
+}
