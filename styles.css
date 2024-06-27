@@ -1,7 +1,7 @@
-/* Base styling */
+/* Global styles */
 body {
-    font-family: 'Montserrat', sans-serif; /* Default font */
-    color: #000; /* Black text color */
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
     margin: 0;
     padding: 0;
     background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://i.pinimg.com/originals/70/8f/ae/708fae07d8fdb9f12b71cf57c6b7d35b.jpg') no-repeat center center fixed;
@@ -12,7 +12,6 @@ body {
     min-height: 100vh;
 }
 
-/* Container styling */
 .container {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
@@ -24,7 +23,33 @@ body {
     margin: 20px;
 }
 
-/* Header Image */
+/* Navigation styles */
+.nav {
+    background-color: #f0dbd8;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4a6752;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #8eae9d;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .header-img {
     width: 100%;
     height: auto;
@@ -33,102 +58,79 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Header styling */
-.header {
-    background-color: #d1e9d6;
-    padding: 20px;
-    text-align: center;
-    animation: fadeInDown 1s ease-out; /* Animation on page load */
-}
-
 .header h1 {
     margin: 0;
     color: #4a6752;
-    font-family: 'Montserrat', sans-serif; /* Montserrat font for titles */
-    font-weight: 700; /* Bold */
-    font-size: 3rem; /* Adjust size as needed */
+    font-size: 3rem;
+    font-weight: bold;
     letter-spacing: 2px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-/* Navigation styling */
-.nav {
-    background-color: #f0dbd8;
-    padding: 10px;
-    text-align: center;
-    animation: fadeInUp 1s ease-out; /* Animation on page load */
-}
-
-.nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #4a6752;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif; /* Montserrat font for links */
-    font-size: 1.2rem; /* Adjust size as needed */
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-.nav a:hover {
-    color: #8eae9d; /* Hover color */
-}
-
-/* Section styling */
+/* Section styles */
 .section {
     padding: 40px;
     text-align: center;
-    animation: fadeInUp 1s ease-out; /* Animation on page load */
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .section h2 {
     color: #4a6752;
-    margin-bottom: 20px;
-    font-family: 'Playfair Display', serif; /* Playfair Display for section titles */
-    font-weight: 700; /* Bold */
-    font-size: 2.5rem; /* Adjust size as needed */
+    font-size: 2.5rem;
+    font-weight: bold;
     letter-spacing: 1px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-    transition: color 0.3s ease; /* Smooth color transition */
+    margin-bottom: 20px;
 }
 
 .section p {
+    font-size: 1.1rem;
     line-height: 1.6;
-    font-family: 'Montserrat', sans-serif; /* Montserrat font for normal text */
-    font-weight: 400; /* Regular */
-    font-size: 1.1rem; /* Adjust size as needed */
 }
 
-.section:hover {
-    transform: translateY(-5px); /* Hover animation */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.section .emoji {
+    font-size: 40px;
+    line-height: 1;
+    margin-top: 10px;
 }
 
-/* Footer styling */
+/* Footer styles */
 .footer {
-    background-color: #d1e9d6;
+    background-color: #f0dbd8;
     padding: 20px;
     text-align: center;
-    animation: fadeInUp 1s ease-out; /* Animation on page load */
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #4a6752;
 }
 
 .footer a {
-    margin: 0 10px;
     text-decoration: none;
     color: #4a6752;
-    transition: color 0.3s ease; /* Smooth color transition */
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .footer a:hover {
-    color: #8eae9d; /* Hover color */
+    color: #8eae9d;
 }
 
-/* Rounded Profile Image */
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Make it round */
-    margin: 20px 0;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: block; /* Ensure it behaves as a block element */
-    margin-left:
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section {
+        padding: 20px;
+    }
+    .header h1 {
+        font-size: 2.5rem;
+    }
+    .section .emoji {
+        font-size: 30px;
+    }
+}
