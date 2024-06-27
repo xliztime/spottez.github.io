@@ -1,16 +1,6 @@
-/* Variables for colors and fonts */
-:root {
-    --primary-color: #f78fb3;         /* Pink */
-    --secondary-color: #ffcccf;       /* Light pink */
-    --background-color: #fef0f3;      /* Pale pink */
-    --box-shadow-color: rgba(0, 0, 0, 0.1);  /* Light shadow */
-    --font-primary: 'Indie Flower', cursive;
-    --font-secondary: 'Montserrat', sans-serif;
-}
-
 /* Global styles */
 body {
-    font-family: var(--font-primary);
+    font-family: 'Indie Flower', cursive;
     color: #333;
     margin: 0;
     padding: 0;
@@ -23,207 +13,72 @@ body {
 }
 
 .container {
-    background-color: var(--background-color);
-    border-radius: 30px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     max-width: 900px;
     width: 100%;
     overflow: hidden;
-    padding: 40px;
-    margin: 40px;
-    position: relative; /* For absolute positioning of decorative elements */
+    padding: 30px;
+    margin: 30px;
 }
 
 /* Navigation styles */
 .nav {
-    background-color: transparent;
-    padding: 15px 0;
+    background-color: #f0dbd8;
+    padding: 15px 0; /* Adjusted padding for top and bottom */
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    z-index: 10;
+    display: flex; /* Ensures horizontal layout */
+    justify-content: center; /* Centers items horizontally */
 }
 
 .nav a {
     margin: 0 20px;
     text-decoration: none;
-    color: var(--primary-color);
+    color: #4a6752;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     transition: color 0.3s ease;
-}
+    padding: 10px; /* Adds padding inside each link */
 
-.nav a:hover {
-    color: var(--secondary-color);
+    &:hover {
+        color: #8eae9d;
+    }
 }
 
 /* Header styles */
 .header {
     text-align: center;
-    margin-bottom: 60px;
-    padding: 40px;
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 30px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    position: relative;
+    margin-bottom: 40px;
 }
 
 .header img {
     width: 100%;
-    max-width: 600px;
     height: auto;
-    border-radius: 30px;
-    box-shadow: 0 8px 12px var(--box-shadow-color);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 }
 
 .header h1 {
-    margin: 30px 0 20px;
-    color: var(--primary-color);
-    font-size: 5rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-/* Section styles */
-.section {
-    padding: 60px;
-    text-align: center;
-    margin-bottom: 40px;
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 30px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.section h2 {
-    color: var(--primary-color);
+    margin: 20px 0 10px;
+    color: #4a6752;
     font-size: 4rem;
     font-weight: bold;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-}
-
-.section p {
-    font-size: 1.4rem;
-    line-height: 2;
-    margin-bottom: 30px;
-}
-
-.section .emoji {
-    font-size: 4.5rem;
-    margin-top: 30px;
-}
-
-/* Button styles */
-.button {
-    display: inline-block;
-    padding: 20px 40px;
-    border: none;
-    background-color: var(--primary-color);
-    color: #fff;
-    font-size: 1.4rem;
-    border-radius: 30px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: var(--secondary-color);
-}
-
-/* Decorative elements and animations */
-.decorative-circle {
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    width: 200px;
-    height: 200px;
-    background-color: var(--secondary-color);
-    border-radius: 50%;
-    z-index: 1;
-    animation: moveCircle 15s ease-in-out infinite alternate;
-}
-
-.decorative-square {
-    position: absolute;
-    bottom: -100px;
-    right: -100px;
-    width: 200px;
-    height: 200px;
-    background-color: var(--secondary-color);
-    transform: rotate(45deg);
-    z-index: 1;
-    animation: moveSquare 12s ease-in-out infinite alternate;
-}
-
-@keyframes moveCircle {
-    0% {
-        transform: translate(-50px, -50px);
-    }
-    100% {
-        transform: translate(50px, 50px);
-    }
-}
-
-@keyframes moveSquare {
-    0% {
-        transform: rotate(45deg) translate(-100px, -100px);
-    }
-    100% {
-        transform: rotate(45deg) translate(100px, 100px);
-    }
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .container {
-        padding: 30px;
-        margin: 30px;
-    }
-
-    .nav {
-        padding: 10px 0;
-        margin-bottom: 20px;
+        padding: 20px;
+        margin: 20px;
     }
 
     .header h1 {
-        font-size: 4rem;
-    }
-
-    .section {
-        padding: 40px;
-    }
-
-    .section h2 {
         font-size: 3rem;
-        margin-bottom: 30px;
-    }
-
-    .section p {
-        font-size: 1.2rem;
-        line-height: 1.8;
-        margin-bottom: 20px;
-    }
-
-    .section .emoji {
-        font-size: 3.5rem;
-    }
-
-    .button {
-        padding: 15px 30px;
-        font-size: 1.2rem;
-    }
-
-    .decorative-circle,
-    .decorative-square {
-        display: none;
     }
 }
