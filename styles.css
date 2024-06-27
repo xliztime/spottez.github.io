@@ -1,10 +1,10 @@
 /* Global styles */
 body {
-    font-family: 'Lora', serif; /* Elegant font for main text */
+    font-family: 'Indie Flower', cursive; /* Cute handwritten font */
     color: #333;
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://i.pinimg.com/originals/70/8f/ae/708fae07d8fdb9f12b71cf57c6b7d35b.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://i.pinimg.com/originals/70/8f/ae/708fae07d8fdb9f12b71cf57c6b7d35b.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -12,51 +12,42 @@ body {
     min-height: 100vh;
 }
 
-/* Container styles */
 .container {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     max-width: 900px;
     width: 100%;
     overflow: hidden;
     padding: 20px;
     margin: 20px;
-    border: 2px solid #ffd1dc; /* Soft pink border */
 }
 
 /* Navigation styles */
 .nav {
-    background-color: #ffe3f3; /* Light pink background */
-    padding: 15px;
+    background-color: #f0dbd8;
+    padding: 10px;
     text-align: center;
     margin-bottom: 20px;
-    border-radius: 15px;
 }
 
 .nav a {
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
-    color: #7f8c8d; /* Softer color */
+    color: #4a6752;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     transition: color 0.3s ease;
-    padding: 5px 10px;
-    border-radius: 10px;
 }
 
 .nav a:hover {
-    color: #d64550; /* Darker pink on hover */
-    background-color: rgba(255, 255, 255, 0.5); /* Soft hover background */
+    color: #8eae9d;
 }
 
 /* Header styles */
 .header {
     text-align: center;
     margin-bottom: 20px;
-    background: rgba(255, 243, 247, 0.7); /* Light background to enhance readability */
-    padding: 10px;
-    border-radius: 15px;
 }
 
 .header-img {
@@ -69,80 +60,60 @@ body {
 
 .header h1 {
     margin: 0;
-    color: #d64550; /* Darker pink for title */
-    font-size: 2.8rem;
-    font-family: 'Pacifico', cursive; /* Fancy cursive font */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
+    color: #4a6752;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 /* Section styles */
 .section {
-    padding: 30px;
+    padding: 40px;
     text-align: center;
     margin-bottom: 20px;
-    background-color: #fff;
-    border-radius: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ffd1dc; /* Soft pink border */
 }
 
 .section h2 {
-    color: #d64550; /* Darker pink */
-    font-size: 2.2rem;
-    font-family: 'Pacifico', cursive; /* Fancy cursive font */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    color: #4a6752;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
     margin-bottom: 20px;
 }
 
 .section p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #7f8c8d; /* Softer text color */
 }
 
-/* Profile picture styles */
-.profile-pic img {
-    border-radius: 50%; /* Make the profile picture round */
-    width: 150px; /* Adjust size as needed */
-    height: 150px;
-    object-fit: cover; /* Ensure the image covers the whole space */
-    border: 3px solid #ffe3f3; /* Light pink border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-/* Emoji styles */
 .section .emoji {
-    font-size: 30px; /* Smaller size */
+    font-size: 2.5rem; /* Adjusted size for better aesthetic */
     line-height: 1;
     margin-top: 10px;
 }
 
-/* Footer styles */
-.footer {
-    background-color: #ffe3f3; /* Light pink background */
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-    border-radius: 15px;
-}
-
-.footer p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #7f8c8d; /* Softer text color */
-}
-
-.footer a {
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0dbd8; /* Light pink */
+    color: #4a6752; /* Darker green */
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
     text-decoration: none;
-    color: #d64550; /* Darker pink */
-    font-weight: bold;
-    transition: color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.footer a:hover {
-    color: #ff5f79; /* Brighter pink on hover */
+.button:hover {
+    background-color: #8eae9d; /* Darker green on hover */
+    color: #fff; /* White text on hover */
 }
 
 /* Responsive adjustments */
@@ -151,9 +122,9 @@ body {
         padding: 20px;
     }
     .header h1 {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
     }
     .section .emoji {
-        font-size: 25px;
+        font-size: 2rem;
     }
 }
