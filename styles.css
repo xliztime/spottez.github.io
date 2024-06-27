@@ -1,6 +1,6 @@
 /* Global styles */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Indie Flower', cursive; /* Cute handwritten font */
     color: #333;
     margin: 0;
     padding: 0;
@@ -92,38 +92,28 @@ body {
 }
 
 .section .emoji {
-    font-size: 40px;
+    font-size: 2.5rem; /* Adjusted size for better aesthetic */
     line-height: 1;
     margin-top: 10px;
 }
 
-.hidden-section {
-    display: none; /* Ensure this is only for illustrative purposes; may not be necessary if showing hidden content by default */
-}
-
-/* Footer styles */
-.footer {
-    background-color: #f0dbd8;
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.footer p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #4a6752;
-}
-
-.footer a {
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0dbd8; /* Light pink */
+    color: #4a6752; /* Darker green */
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
     text-decoration: none;
-    color: #4a6752;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.footer a:hover {
-    color: #8eae9d;
+.button:hover {
+    background-color: #8eae9d; /* Darker green on hover */
+    color: #fff; /* White text on hover */
 }
 
 /* Responsive adjustments */
@@ -135,47 +125,6 @@ body {
         font-size: 2.5rem;
     }
     .section .emoji {
-        font-size: 30px;
+        font-size: 2rem;
     }
-}
-.hidden-section {
-    display: block;
-}
-
-.hidden-message {
-    display: none;
-    margin-top: 20px;
-    background: #f0dbd8;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.hidden-section form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.hidden-section form input[type="password"] {
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 80%;
-    max-width: 300px;
-}
-
-.hidden-section form button {
-    padding: 10px 20px;
-    background-color: #4a6752;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.hidden-section form button:hover {
-    background-color: #8eae9d;
 }
