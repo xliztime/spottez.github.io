@@ -138,3 +138,44 @@ body {
         font-size: 30px;
     }
 }
+.hidden-section {
+    display: block;
+}
+
+.hidden-message {
+    display: none;
+    margin-top: 20px;
+    background: #f0dbd8;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hidden-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden-section form input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 300px;
+}
+
+.hidden-section form button {
+    padding: 10px 20px;
+    background-color: #4a6752;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hidden-section form button:hover {
+    background-color: #8eae9d;
+}
