@@ -1,102 +1,136 @@
+/* Global styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #fff; /* Colore di sfondo bianco */
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
     margin: 0;
     padding: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://i.pinimg.com/originals/70/8f/ae/708fae07d8fdb9f12b71cf57c6b7d35b.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.5s ease-out;
+    margin: 20px;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-h1 {
-    text-align: center;
-    color: #ff69b4; /* Rosa brillante */
-}
-
-.login-form {
+/* Navigation styles */
+.nav {
+    background-color: #f0dbd8;
+    padding: 10px;
     text-align: center;
     margin-bottom: 20px;
-    animation: slideInDown 0.5s ease-out;
 }
 
-nav {
-    text-align: center;
-    margin-top: 20px;
-    animation: slideInUp 0.5s ease-out;
-}
-
-nav a {
-    margin: 0 10px;
-    color: #ff69b4; /* Rosa brillante */
+.nav a {
+    margin: 0 15px;
     text-decoration: none;
+    color: #4a6752;
     font-weight: bold;
-    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.nav a:hover {
+    color: #8eae9d;
 }
 
-.social-links {
+/* Header styles */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    color: #4a6752;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Section styles */
+.section {
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #4a6752;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.section .emoji {
+    font-size: 40px;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #f0dbd8;
+    padding: 20px;
     text-align: center;
     margin-top: 20px;
-    animation: slideInUp 0.5s ease-out;
 }
 
-.social-links a {
-    margin: 0 10px;
-    color: #ff69b4; /* Rosa brillante */
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #4a6752;
+}
+
+.footer a {
     text-decoration: none;
-    transition: all 0.3s ease;
+    color: #4a6752;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-.social-links a:hover {
-    text-decoration: underline;
+.footer a:hover {
+    color: #8eae9d;
 }
 
-.twitter-like {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #fff3f7; /* Rosa chiaro */
-    border: 1px solid #ffb6c1; /* Rosa chiaro */
-    border-radius: 4px;
-    animation: slideInUp 0.5s ease-out;
-}
-
-.twitter-like textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ffb6c1; /* Rosa chiaro */
-    resize: vertical;
-    min-height: 100px;
-    transition: all 0.3s ease;
-}
-
-.twitter-like button {
-    padding: 8px 20px;
-    background-color: #ff69b4; /* Rosa brillante */
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
-    float: right;
-    transition: all 0.3s ease;
-}
-
-.twitter-like button:hover {
-    background-color: #d94685; /* Rosa più scuro al passaggio */
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section {
+        padding: 20px;
+    }
+    .header h1 {
+        font-size: 2.5rem;
+    }
+    .section .emoji {
+        font-size: 30px;
+    }
 }
