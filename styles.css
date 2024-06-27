@@ -50,37 +50,7 @@ body {
 }
 
 .footer {
-    background-color: #f0dbd8;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 20px;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.footer p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #4a6752;
-}
-
-.social-icons {
-    margin-top: 10px;
-}
-
-.social-icons a {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.social-icons img {
-    width: 30px; /* Adjust size as needed */
-    height: 30px; /* Adjust size as needed */
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-}
-
-.social-icons img:hover {
-    transform: scale(1.2);
+    display: none; /* Hide the footer */
 }
 
 /* About Me Section */
