@@ -1,20 +1,16 @@
-// Import delle fonti, se necessario
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+// Variables
+$primary-color: #4a6752;         // Dark green
+$secondary-color: #8eae9d;       // Light green
+$background-color: #f0dbd8;      // Light pink
+$box-shadow-color: rgba(0, 0, 0, 0.1);  // Light shadow
 
-// Variabili per i colori
-$color-background: rgba(255, 255, 255, 0.95);
-$color-accent: #f0dbd8;
-$color-text: #4a6752;
-$color-text-dark: #333;
-$color-hover: #8eae9d;
-
-// Base styles
+// Global styles
 body {
-    font-family: 'Indie Flower', cursive; /* Font carino e manoscritto */
-    color: $color-text-dark;
+    font-family: 'Indie Flower', cursive; /* Cute handwritten font */
+    color: #333;
     margin: 0;
     padding: 0;
-    background: linear-gradient($color-background, $color-background), url('https://i.pinimg.com/originals/70/8f/ae/708fae07d8fdb9f12b71cf57c6b7d35b.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://i.pinimg.com/originals/70/8f/ae/708fae07d8fdb9f12b71cf57c6b7d35b.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -22,9 +18,8 @@ body {
     min-height: 100vh;
 }
 
-// Contenitore principale
 .container {
-    background-color: $color-background;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     max-width: 900px;
@@ -34,28 +29,29 @@ body {
     margin: 20px;
 }
 
-// Stili per la navigazione
+// Navigation styles
 .nav {
-    background-color: $color-accent;
+    background-color: $background-color;
     padding: 10px;
     text-align: center;
     margin-bottom: 20px;
+    border-radius: 15px;
 }
 
 .nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: $color-text;
+    color: $primary-color;
     font-weight: bold;
     font-size: 1.2rem;
     transition: color 0.3s ease;
-
-    &:hover {
-        color: $color-hover;
-    }
 }
 
-// Stili per l'intestazione
+.nav a:hover {
+    color: $secondary-color;
+}
+
+// Header styles
 .header {
     text-align: center;
     margin-bottom: 20px;
@@ -65,34 +61,34 @@ body {
         height: auto;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px $box-shadow-color;
     }
 
     h1 {
         margin: 0;
-        color: $color-text;
+        color: $primary-color;
         font-size: 3rem;
         font-weight: bold;
         letter-spacing: 2px;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
     }
 }
 
-// Stili per le sezioni
+// Section styles
 .section {
     padding: 40px;
     text-align: center;
     margin-bottom: 20px;
-    background-color: $color-background;
+    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px $box-shadow-color;
 
     h2 {
-        color: $color-text;
+        color: $primary-color;
         font-size: 2.5rem;
         font-weight: bold;
         letter-spacing: 1px;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         margin-bottom: 20px;
     }
 
@@ -102,19 +98,19 @@ body {
     }
 
     .emoji {
-        font-size: 2.5rem; /* Dimensione regolata per un'estetica migliore */
+        font-size: 2.5rem; /* Adjusted size for better aesthetic */
         line-height: 1;
         margin-top: 10px;
     }
 }
 
-// Stili per i pulsanti
+// Button styles
 .button {
     display: inline-block;
     padding: 10px 20px;
     border: none;
-    background-color: $color-accent;
-    color: $color-text;
+    background-color: $background-color; /* Light pink */
+    color: $primary-color; /* Darker green */
     font-size: 1.1rem;
     border-radius: 10px;
     cursor: pointer;
@@ -122,12 +118,12 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 
     &:hover {
-        background-color: $color-hover;
-        color: #fff;
+        background-color: $secondary-color; /* Light green on hover */
+        color: #fff; /* White text on hover */
     }
 }
 
-// Regolazioni responsive
+// Responsive adjustments
 @media (max-width: 768px) {
     .section {
         padding: 20px;
