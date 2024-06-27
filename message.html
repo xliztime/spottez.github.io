@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Message - Lizbeth Life</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="youtube.html">YouTube Channel</a>
+            <a href="social.html">Social Media</a>
+            <a href="contact.html">Contact</a>
+            <a href="love.html">Love Message</a>
+        </nav>
+
+        <!-- Header Section -->
+        <header class="header">
+            <img src="https://images.squarespace-cdn.com/content/v1/5c4ece0e3917ee277d32eaf3/1596526258147-VHBD2BW2T29MELBO6JPG/village-new.gif?format=1000w" alt="Header Image" class="header-img">
+            <h1>Lizbeth Life</h1>
+        </header>
+
+        <!-- Password Input Section -->
+        <section class="section">
+            <h2>Enter the Secret Word</h2>
+            <input type="password" id="password" placeholder="Enter the secret word">
+            <button onclick="checkPassword()">Submit</button>
+            <p id="message"></p>
+        </section>
+    </div>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById('password').value;
+            if (password === 'segreto') {
+                window.location.href = 'hidden.html';
+            } else {
+                document.getElementById('message').innerText = 'Incorrect word. Please try again.';
+            }
+        }
+    </script>
+</body>
+</html>
