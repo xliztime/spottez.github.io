@@ -48,6 +48,7 @@
             background-color: #d1e9d6;
             padding: 10px;
             text-align: center;
+            animation: fadeInDown 1s ease-out; /* Animation on page load */
         }
 
         .header h1 {
@@ -63,6 +64,7 @@
             background-color: #f0dbd8;
             padding: 10px;
             text-align: center;
+            animation: fadeInUp 1s ease-out; /* Animation on page load */
         }
 
         .nav a {
@@ -72,12 +74,18 @@
             font-weight: bold;
             font-family: 'Montserrat', sans-serif; /* Montserrat font for links */
             font-size: 1.2rem; /* Adjust size as needed */
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+
+        .nav a:hover {
+            color: #8eae9d; /* Hover color */
         }
 
         /* Section styling */
         .section {
             padding: 20px;
             text-align: center;
+            animation: fadeInUp 1s ease-out; /* Animation on page load */
         }
 
         .section h2 {
@@ -86,6 +94,7 @@
             font-family: 'Montserrat', sans-serif; /* Montserrat font for section titles */
             font-weight: 700; /* Bold */
             font-size: 2rem; /* Adjust size as needed */
+            transition: color 0.3s ease; /* Smooth color transition */
         }
 
         .section p {
@@ -95,17 +104,27 @@
             font-size: 1.1rem; /* Adjust size as needed */
         }
 
+        .section:hover {
+            transform: translateY(-5px); /* Hover animation */
+        }
+
         /* Footer styling */
         .footer {
             background-color: #d1e9d6;
             padding: 10px;
             text-align: center;
+            animation: fadeInUp 1s ease-out; /* Animation on page load */
         }
 
         .footer a {
             margin: 0 10px;
             text-decoration: none;
             color: #4a6752;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+
+        .footer a:hover {
+            color: #8eae9d; /* Hover color */
         }
 
         /* Rounded Profile Image */
@@ -119,11 +138,51 @@
             display: block; /* Ensure it behaves as a block element */
             margin-left: auto;
             margin-right: auto;
+            animation: fadeIn 1s ease-out; /* Animation on page load */
         }
 
         .section .emoji {
-            font-size: 80px; /* Size of the emoji */
+            font-size: 60px; /* Size of the emoji */
             line-height: 1; /* Adjust the line height for proper alignment */
+            animation: rotate 2s linear infinite; /* Animation for emoji */
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotate {
+            to {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
@@ -155,7 +214,7 @@
         <!-- YouTube Section -->
         <div class="section" id="youtube">
             <h2>YouTube Channel</h2>
-            <p>Check out my YouTube channel for lifestyle and vlogs.</p>
+            <p>Check out my YouTube channel for lifestyle and vlogs. <a href="https://www.youtube.com/@xliztime" target="_blank">www.youtube.com/@xliztime</a></p>
             <span class="emoji">🍃</span>
         </div>
 
