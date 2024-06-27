@@ -34,7 +34,7 @@
                     <input type="password" id="password" name="password" placeholder="Enter password" required>
                     <button type="submit">Submit</button>
                 </form>
-                <p id="message" style="display: none;">
+                <p id="message" class="hidden-message">
                     <img src="https://i.pinimg.com/736x/b4/af/58/b4af586a837cebb72e24f02c1007d9fc.jpg" alt="Profile Picture" style="width: 40px; height: 40px; border-radius: 50%; vertical-align: middle;">
                     ❤️ Pranzo insieme l'1? ❤️
                 </p>
@@ -47,15 +47,15 @@
         const form = document.getElementById('passwordForm');
         const passwordInput = document.getElementById('password');
         const message = document.getElementById('message');
+        const correctPassword = 'segreto'; // Set your password here
 
         form.addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent form submission
 
             const password = passwordInput.value.trim();
 
-            // Check if password is correct
-            if (password === 'segreto') { // Replace 'segreto' with your actual password
-                message.style.display = 'block';
+            if (password === correctPassword) {
+                message.classList.remove('hidden-message');
                 form.style.display = 'none'; // Hide the form after correct password
             } else {
                 alert('Incorrect password. Please try again.');
