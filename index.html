@@ -15,7 +15,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
 
         /* Container styling */
@@ -28,10 +28,18 @@
             overflow: hidden;
         }
 
+        /* Header Image */
+        .header-img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
         /* Header styling */
         .header {
             background-color: #f0c9d7;
-            padding: 20px;
+            padding: 10px;
             text-align: center;
         }
 
@@ -93,6 +101,9 @@
 </head>
 <body>
     <div class="container">
+        <!-- Header Image -->
+        <img src="https://images.squarespace-cdn.com/content/v1/5c4ece0e3917ee277d32eaf3/1596527396252-W4G4AZ97VEXIFRMDND1G/breakfast-compressed.gif?format=1000w" alt="Header Image" class="header-img">
+
         <!-- Header Section -->
         <div class="header">
             <h1>Lizbeth Life</h1>
