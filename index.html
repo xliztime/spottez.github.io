@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lizbeth Life</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Renitah&family=Anguila&display=swap" rel="stylesheet">
     <style>
         /* Base styling */
         body {
-            font-family: 'Arial', sans-serif;
-            color: #333;
+            font-family: 'Anguila', sans-serif; /* Default font */
+            color: #000; /* Black text color */
             margin: 0;
             padding: 0;
             background: url('https://i.pinimg.com/originals/70/8f/ae/708fae07d8fdb9f12b71cf57c6b7d35b.jpg') no-repeat center center fixed;
@@ -50,7 +53,7 @@
         .header h1 {
             margin: 0;
             color: #4a6752;
-            font-family: 'Pacifico', cursive;
+            font-family: 'Renitah', cursive; /* Renitah font for titles */
         }
 
         /* Navigation styling */
@@ -65,7 +68,7 @@
             text-decoration: none;
             color: #4a6752;
             font-weight: bold;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Anguila', sans-serif; /* Anguila font for links */
         }
 
         /* Section styling */
@@ -77,13 +80,12 @@
         .section h2 {
             color: #4a6752;
             margin-bottom: 10px;
-            font-family: 'Pacifico', cursive;
+            font-family: 'Renitah', cursive; /* Renitah font for section titles */
         }
 
         .section p {
-            color: #666;
             line-height: 1.6;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Anguila', sans-serif; /* Anguila font for normal text */
         }
 
         /* Footer styling */
@@ -99,14 +101,17 @@
             color: #4a6752;
         }
 
-        /* Image styling */
+        /* Rounded Profile Image */
         .profile-img {
             width: 150px;
             height: 150px;
-            border-radius: 50%;
+            border-radius: 50%; /* Make it round */
             margin: 20px 0;
             object-fit: cover;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: block; /* Ensure it behaves as a block element */
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .section img {
@@ -168,7 +173,7 @@
         <div class="section" id="contact">
             <h2>Contact</h2>
             <p>Feel free to reach out for collaborations or just to say hi!</p>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>Email: <a href="mailto:elisa05.ragone@gmail.com">elisa05.ragone@gmail.com</a></p>
             <img src="https://i.pinimg.com/564x/cd/fc/3d/cdfc3d2b9b2c2b7e79364e7fff1118ce.jpg" alt="Cute Aesthetic Image">
         </div>
 
