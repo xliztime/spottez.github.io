@@ -1,6 +1,6 @@
 /* Global styles */
 body {
-    font-family: 'Indie Flower', cursive; /* Cute handwritten font */
+    font-family: 'Montserrat', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
@@ -91,29 +91,13 @@ body {
     line-height: 1.6;
 }
 
-.section .emoji {
-    font-size: 2.5rem; /* Adjusted size for better aesthetic */
-    line-height: 1;
-    margin-top: 10px;
+/* Hidden section */
+.hidden-section {
+    display: none; /* Initially hide the hidden section */
 }
 
-/* Button styles */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    border: none;
-    background-color: #f0dbd8; /* Light pink */
-    color: #4a6752; /* Darker green */
-    font-size: 1.1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #8eae9d; /* Darker green on hover */
-    color: #fff; /* White text on hover */
+.hidden-section.visible {
+    display: block; /* Display the hidden section when visible */
 }
 
 /* Responsive adjustments */
@@ -123,8 +107,5 @@ body {
     }
     .header h1 {
         font-size: 2.5rem;
-    }
-    .section .emoji {
-        font-size: 2rem;
     }
 }
