@@ -4,187 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lizbeth Life</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        /* Base styling */
-        body {
-            font-family: 'Montserrat', sans-serif; /* Default font */
-            color: #000; /* Black text color */
-            margin: 0;
-            padding: 0;
-            background: url('https://i.pinimg.com/originals/70/8f/ae/708fae07d8fdb9f12b71cf57c6b7d35b.jpg') no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        /* Container styling */
-        .container {
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            max-width: 900px;
-            width: 100%;
-            overflow: hidden;
-            padding: 20px;
-            margin: 20px;
-        }
-
-        /* Header Image */
-        .header-img {
-            width: 100%;
-            height: auto;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Header styling */
-        .header {
-            background-color: #d1e9d6;
-            padding: 10px;
-            text-align: center;
-            animation: fadeInDown 1s ease-out; /* Animation on page load */
-        }
-
-        .header h1 {
-            margin: 0;
-            color: #4a6752;
-            font-family: 'Montserrat', sans-serif; /* Montserrat font for titles */
-            font-weight: 700; /* Bold */
-            font-size: 2.5rem; /* Adjust size as needed */
-        }
-
-        /* Navigation styling */
-        .nav {
-            background-color: #f0dbd8;
-            padding: 10px;
-            text-align: center;
-            animation: fadeInUp 1s ease-out; /* Animation on page load */
-        }
-
-        .nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #4a6752;
-            font-weight: bold;
-            font-family: 'Montserrat', sans-serif; /* Montserrat font for links */
-            font-size: 1.2rem; /* Adjust size as needed */
-            transition: color 0.3s ease; /* Smooth color transition */
-        }
-
-        .nav a:hover {
-            color: #8eae9d; /* Hover color */
-        }
-
-        /* Section styling */
-        .section {
-            padding: 20px;
-            text-align: center;
-            animation: fadeInUp 1s ease-out; /* Animation on page load */
-        }
-
-        .section h2 {
-            color: #4a6752;
-            margin-bottom: 10px;
-            font-family: 'Montserrat', sans-serif; /* Montserrat font for section titles */
-            font-weight: 700; /* Bold */
-            font-size: 2rem; /* Adjust size as needed */
-            transition: color 0.3s ease; /* Smooth color transition */
-        }
-
-        .section p {
-            line-height: 1.6;
-            font-family: 'Montserrat', sans-serif; /* Montserrat font for normal text */
-            font-weight: 400; /* Regular */
-            font-size: 1.1rem; /* Adjust size as needed */
-        }
-
-        .section:hover {
-            transform: translateY(-5px); /* Hover animation */
-        }
-
-        /* Footer styling */
-        .footer {
-            background-color: #d1e9d6;
-            padding: 10px;
-            text-align: center;
-            animation: fadeInUp 1s ease-out; /* Animation on page load */
-        }
-
-        .footer a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #4a6752;
-            transition: color 0.3s ease; /* Smooth color transition */
-        }
-
-        .footer a:hover {
-            color: #8eae9d; /* Hover color */
-        }
-
-        /* Rounded Profile Image */
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%; /* Make it round */
-            margin: 20px 0;
-            object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            display: block; /* Ensure it behaves as a block element */
-            margin-left: auto;
-            margin-right: auto;
-            animation: fadeIn 1s ease-out; /* Animation on page load */
-        }
-
-        .section .emoji {
-            font-size: 60px; /* Size of the emoji */
-            line-height: 1; /* Adjust the line height for proper alignment */
-            animation: rotate 2s linear infinite; /* Animation for emoji */
-        }
-
-        /* Keyframe animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes rotate {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
 </head>
 <body>
     <div class="container">
@@ -237,5 +57,22 @@
             <p>Designed with ❤️ by Lizbeth Life</p>
         </div>
     </div>
+
+    <!-- Optional: Add JavaScript for scroll animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+        // Example scroll animation with GSAP
+        gsap.from(".section", {
+            duration: 1,
+            opacity: 0,
+            y: 50,
+            stagger: 0.3,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".section",
+                start: "top 80%",
+            }
+        });
+    </script>
 </body>
 </html>
