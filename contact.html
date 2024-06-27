@@ -23,12 +23,45 @@
         </div>
     </header>
 
-    <!-- Content Section -->
+    <!-- Updates Section -->
     <div class="container">
         <section class="section">
+            <h2>Latest Updates</h2>
+            
+            <!-- Update 1 -->
+            <div class="update">
+                <div class="update-header">
+                    <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+                    <div class="update-info">
+                        <h3>Lizbeth Life</h3>
+                        <p class="timestamp">Posted on June 27, 2024</p>
+                    </div>
+                </div>
+                <p class="update-text">Excited to share a new vlog from my recent trip to Venice! 🎥 Check it out on my YouTube channel.</p>
+            </div>
+
+            <!-- Add more updates as needed -->
+
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="section">
             <h2>Contact Lizbeth Life</h2>
-            <p>Feel free to reach out to me!</p>
-            <span class="emoji">🍃</span>
+            <form action="submit_message.php" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </div>
 
