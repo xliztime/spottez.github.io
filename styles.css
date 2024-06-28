@@ -8,7 +8,7 @@
 /* Body styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9; /* Light gray background */
+    background-color: #f7f7f7; /* Light pastel gray background */
     color: #333; /* Main text color */
     line-height: 1.6;
     margin: 0;
@@ -25,7 +25,7 @@ header {
 }
 
 .logo h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #333; /* Dark color for logo */
 }
@@ -41,14 +41,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #555; /* Slightly darker than main text */
+    color: #666; /* Slightly darker than main text */
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
-    color: #6ab04c; /* Green color on hover or when active */
+    color: #6ab04c; /* Pastel green color on hover or when active */
 }
 
 /* Main section styles */
@@ -56,41 +56,51 @@ main {
     padding: 2rem;
 }
 
-.portfolio-section {
+.welcome-section {
     text-align: center;
     margin-bottom: 3rem;
 }
 
-.portfolio-content {
-    background-color: #ffffff; /* White background for content */
+.welcome-panel {
+    background-color: #ffffff; /* White background for panel */
     padding: 3rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle shadow */
     max-width: 800px;
-    margin: 0 auto; /* Center content */
+    margin: 0 auto; /* Center panel */
 }
 
-.portfolio-content h2 {
+.welcome-panel h2 {
     font-size: 2.8rem;
     margin-bottom: 1.5rem;
     color: #333; /* Dark color for heading */
 }
 
-.portfolio-images {
+.description {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    color: #666; /* Slightly lighter than main text */
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
     margin-bottom: 2rem;
 }
 
-.portfolio-images img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+.icons button {
+    margin: 0 1rem;
+    padding: 12px 24px;
+    border-radius: 30px; /* Increased border-radius for a softer look */
+    border: none;
+    background-color: #f0f0f0; /* Light pastel gray background */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.portfolio-content p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
-    color: #666; /* Slightly lighter than main text */
+.icons button:hover {
+    transform: translateY(-3px); /* Move button slightly up on hover */
+    background-color: #e0e0e0; /* Lighter gray background on hover */
 }
 
 /* Footer styles */
