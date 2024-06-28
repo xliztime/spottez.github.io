@@ -8,31 +8,37 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Inline styles with harmonious pastel colors */
+        /* Inline styles */
         :root {
-            --pastel-green: #c1e1c5;
-            --pastel-pink: #f8c1cc;
-            --pastel-green-dark: #a4cfaa;
-            --pastel-pink-dark: #f2a4b2;
-            --pastel-green-border: #b9d8b8;
-            --pastel-pink-border: #f4b4bd;
+            --primary-color: #3498db; /* Blue */
+            --secondary-color: #e74c3c; /* Red */
             --text-color: #333;
-            --text-hover-color: #555;
-            --background-color: #f9f9f9;
+            --text-light-color: #666;
+            --background-color: #f9f9f9; /* Light grey */
+            --accent-color: #2ecc71; /* Green */
         }
         body {
             font-family: Arial, sans-serif;
             background-color: var(--background-color);
             color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+        .logo h1 {
+            color: #000; /* Black */
         }
         .contact-section {
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 2em;
-            background-color: var(--background-color);
+            background-color: #fff; /* White background */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 2em;
+            margin-bottom: 2em;
+            max-width: 800px;
+            width: 90%;
         }
         .contact-info, .contact-form {
             width: 100%;
@@ -48,16 +54,14 @@
             align-items: center;
             margin: 0.5em 0;
         }
-        .contact-info i {
-            color: var(--pastel-green-dark);
-        }
         .contact-info a {
             margin-left: 0.5em;
-            color: var(--pastel-pink-dark);
+            color: var(--primary-color);
             text-decoration: none;
+            transition: color 0.3s;
         }
         .contact-info a:hover {
-            color: var(--text-hover-color);
+            color: var(--accent-color);
             text-decoration: underline;
         }
         .contact-form form {
@@ -71,27 +75,21 @@
         .contact-form input, .contact-form textarea {
             padding: 0.75em;
             margin-bottom: 1em;
-            border: 1px solid var(--pastel-green-border);
+            border: 1px solid #ccc;
             border-radius: 5px;
             width: 100%;
-            background-color: #fff;
-            color: var(--text-color);
-        }
-        .contact-form input:focus, .contact-form textarea:focus {
-            border-color: var(--pastel-pink-border);
-            outline: none;
         }
         .contact-form button {
             padding: 0.75em;
             border: none;
-            background-color: var(--pastel-pink-dark);
-            color: white;
+            background-color: var(--primary-color);
+            color: #fff; /* White text */
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
         }
         .contact-form button:hover {
-            background-color: var(--pastel-pink);
+            background-color: var(--accent-color);
         }
         .map {
             width: 100%;
@@ -99,15 +97,6 @@
             height: 300px;
             border: none;
             border-radius: 10px;
-        }
-        .logo h1 {
-            color: var(--pastel-green-dark);
-        }
-        nav ul li a {
-            color: var(--pastel-green-dark);
-        }
-        nav ul li a:hover {
-            color: var(--text-hover-color);
         }
     </style>
 </head>
