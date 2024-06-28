@@ -58,10 +58,16 @@ nav ul li button:hover {
 }
 
 nav ul li button {
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 12px 20px;
+    border-radius: 20px;
     border: 1px solid #ccc;
     background-color: #fff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li button:hover {
+    transform: translateY(-3px); /* Move button slightly up on hover */
+    background-color: #f0f0f0; /* Light gray background on hover */
 }
 
 /* Main section styles */
@@ -98,21 +104,22 @@ main {
 .icons {
     display: flex;
     justify-content: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .icons button {
-    margin: 0 1.5rem;
-    padding: 10px 20px;
+    margin: 0 1rem;
+    padding: 12px 24px;
+    border-radius: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
     background-color: #fff;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .icons button:hover {
-    transform: scale(1.1); /* Scale up on hover */
+    transform: translateY(-3px); /* Move button slightly up on hover */
+    background-color: #f0f0f0; /* Light gray background on hover */
 }
 
 .cute-icon {
@@ -136,4 +143,15 @@ main {
     display: block;
     color: #000; /* Black text color */
     font-size: 1.2rem;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #ffffff; /* White background for footer */
+    margin-top: 3rem;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+    color: #555; /* Slightly darker than main text */
+    font-size: 0.9rem;
 }
