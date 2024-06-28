@@ -1,7 +1,7 @@
 /* Body styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #faf7f2; /* Creamy background */
+    background-color: #f2f2f2; /* Light gray background */
     color: #444; /* Dark text color */
     line-height: 1.6;
     margin: 0;
@@ -9,7 +9,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #f9ece5; /* Soft pink background */
+    background: linear-gradient(to right, #f2f2f2, #e0e0e0); /* Gradient background */
     padding: 1.5rem;
     display: flex;
     justify-content: space-between;
@@ -20,22 +20,22 @@ header {
 .logo h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #6d5a7e; /* Purple-ish */
+    color: #333; /* Dark color */
 }
 
 nav ul li a {
-    color: #8c7a9d; /* Soft lavender */
+    color: #666; /* Medium gray */
     transition: color 0.3s ease;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
-    color: #b89ac4; /* Light pink on hover */
+    color: #6ab04c; /* Pastel green on hover */
 }
 
 /* Main section styles */
 .welcome-panel {
-    background-color: #fff8f3; /* Light cream background */
+    background-color: #ffffff; /* White background */
     padding: 3rem;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle shadow */
@@ -46,14 +46,14 @@ nav ul li a:hover {
 .welcome-panel h2 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
-    color: #6d5a7e; /* Purple-ish */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Elegant sans-serif */
+    color: #333; /* Dark color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean sans-serif */
 }
 
 .description {
     font-size: 1.3rem;
     margin-bottom: 2.5rem;
-    color: #8c7a9d; /* Soft lavender */
+    color: #555; /* Medium dark gray */
 }
 
 .icons button {
@@ -61,23 +61,23 @@ nav ul li a:hover {
     padding: 12px 24px;
     border-radius: 30px; /* Rounded corners */
     border: none;
-    background-color: #f9ece5; /* Soft pink */
+    background-color: #f0f0f0; /* Light gray */
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .icons button:hover {
     transform: translateY(-3px); /* Move button slightly up on hover */
-    background-color: #fcd9cc; /* Light peach on hover */
+    background-color: #e0e0e0; /* Lighter gray on hover */
 }
 
 /* Footer styles */
 footer {
     text-align: center;
     padding: 1.5rem;
-    background-color: #f9ece5; /* Soft pink background */
+    background-color: #ffffff; /* White background */
     margin-top: 3rem;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
-    color: #8c7a9d; /* Soft lavender */
+    color: #888; /* Medium gray */
     font-size: 0.9rem;
 }
