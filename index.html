@@ -7,9 +7,48 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Additional styles specific to this page */
-        .login-section {
-            margin-right: 20px; /* Spacing from the right */
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #ffffff; /* White background for header */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
         }
+
+        .logo h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333; /* Dark color for logo */
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin-right: 20px; /* Space between nav and login */
+        }
+
+        nav ul li {
+            margin-right: 1.5rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #666; /* Slightly darker than main text */
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a.active,
+        nav ul li a:hover {
+            color: #6ab04c; /* Pastel green color on hover or when active */
+        }
+
+        /* Login section in the upper right */
+        .login-section {
+            margin-left: 20px; /* Space between login and nav */
+        }
+
         .login-section button {
             background-color: #6ab04c; /* Green background */
             color: white;
@@ -19,6 +58,7 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
+
         .login-section button:hover {
             background-color: #5aa243; /* Darker green on hover */
         }
@@ -36,17 +76,19 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Lizbeth Life</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-            </ul>
-        </nav>
-        <!-- Login section in the upper right -->
-        <div class="login-section">
-            <button onclick="checkPassword()">Log</button>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Lizbeth Life</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                </ul>
+            </nav>
+            <!-- Login section in the upper right -->
+            <div class="login-section">
+                <button onclick="checkPassword()">Log</button>
+            </div>
         </div>
     </header>
 
