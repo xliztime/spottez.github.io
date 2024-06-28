@@ -84,6 +84,7 @@ main {
 .icons {
     display: flex;
     justify-content: center;
+    margin-bottom: 1.5rem;
 }
 
 .icons a {
@@ -103,13 +104,12 @@ main {
     transform: scale(1.1); /* Scale up on hover */
 }
 
-/* Footer styles */
-footer {
+.cute-icon {
+    margin-top: 2rem;
     text-align: center;
-    padding: 1.5rem;
-    background-color: #ffffff; /* White background for footer */
-    margin-top: 3rem;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
-    color: #555; /* Slightly darker than main text */
-    font-size: 0.9rem;
+}
+
+.cute-icon img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
 }
