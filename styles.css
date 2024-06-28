@@ -39,16 +39,29 @@ nav ul li {
     margin-right: 1.5rem;
 }
 
-nav ul li a {
+nav ul li a,
+nav ul li button {
     text-decoration: none;
     color: #555; /* Slightly darker than main text */
     font-weight: bold;
     transition: color 0.3s ease;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
 nav ul li a.active,
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li button.active,
+nav ul li button:hover {
     color: #6ab04c; /* Green color on hover or when active */
+}
+
+nav ul li button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
 }
 
 /* Main section styles */
@@ -80,29 +93,6 @@ main {
     font-size: 1.3rem;
     margin-bottom: 2.5rem;
     color: #666; /* Slightly lighter than main text */
-}
-
-.icons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-}
-
-.icons a {
-    margin: 0 1.5rem;
-    transition: transform 0.3s ease;
-}
-
-.icons img {
-    width: 60px; /* Adjust icon size as needed */
-    height: 60px;
-    border-radius: 50%; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
-    transition: transform 0.3s ease;
-}
-
-.icons img:hover {
-    transform: scale(1.1); /* Scale up on hover */
 }
 
 .cute-icon {
