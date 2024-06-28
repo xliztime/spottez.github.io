@@ -56,7 +56,6 @@ main {
     padding: 2rem;
 }
 
-/* Welcome section styles */
 .welcome-section {
     text-align: center;
     margin-bottom: 3rem;
@@ -104,55 +103,23 @@ main {
     background-color: #e0e0e0; /* Lighter gray background on hover */
 }
 
-/* About section styles */
-.about-section {
+.cute-icon {
+    margin-top: 2rem;
     text-align: center;
-    padding: 2rem;
 }
 
-.about-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.profile-picture img {
-    width: 150px; /* Adjust size as needed */
-    height: 150px;
+.cute-icon img {
+    width: 120px; /* Adjust size as needed */
+    height: 120px;
     border-radius: 50%; /* Rounded shape */
     object-fit: cover;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 }
 
-.about-me {
-    margin-top: 2rem;
-    text-align: left;
-    max-width: 600px;
-}
-
-.about-me h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #333;
-    display: flex;
-    align-items: center;
-}
-
-.about-me h2 span {
-    margin-right: 10px;
-}
-
-.about-me img {
-    width: 30px; /* Adjust size as needed */
-    height: auto;
-    margin-left: 10px;
-}
-
-.about-me p {
+.cute-icon span {
+    display: block;
+    color: #333; /* Dark color for text */
     font-size: 1.2rem;
-    line-height: 1.8;
-    color: #555; /* Slightly darker than main text */
 }
 
 /* Footer styles */
