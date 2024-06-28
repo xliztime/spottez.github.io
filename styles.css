@@ -103,6 +103,25 @@ main {
     background-color: #e0e0e0; /* Lighter gray background on hover */
 }
 
+.cute-icon {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.cute-icon img {
+    width: 120px; /* Adjust size as needed */
+    height: 120px;
+    border-radius: 50%; /* Rounded shape */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.cute-icon span {
+    display: block;
+    color: #333; /* Dark color for text */
+    font-size: 1.2rem;
+}
+
 /* Footer styles */
 footer {
     text-align: center;
