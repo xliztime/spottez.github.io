@@ -5,6 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Lizbeth Life's Website</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Aggiungi stili CSS aggiuntivi qui, se necessario */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #F8F9FA; /* Colore di sfondo grigio chiaro */
+            color: #333333; /* Colore del testo principale */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .portfolio-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .portfolio-section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .portfolio-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .portfolio-item h3 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .portfolio-item p {
+            font-size: 16px;
+            color: #666666;
+        }
+
+        .contact-section {
+            background-color: #2E86AB; /* Colore blu principale */
+            color: #FFFFFF;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .contact-section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-links a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #FFA07A; /* Colore pesca per i link */
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            background-color: #FF6347; /* Cambio colore al passaggio del mouse */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -29,6 +116,31 @@
                     <p>
                         Insert your cute portfolio text here. Write about your interests, passions, achievements, and anything else you'd like to share with your visitors.
                     </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <div class="portfolio-gallery">
+                    <div class="portfolio-item">
+                        <img src="link_all_immagine_miniatura.jpg" alt="Nome progetto">
+                        <h3>Nome progetto</h3>
+                        <p>Breve descrizione del progetto.</p>
+                    </div>
+                    <!-- Ripeti per ogni progetto nel portfolio -->
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <h2>Contatti</h2>
+                <div class="contact-links">
+                    <a href="#">Email</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Instagram</a>
                 </div>
             </div>
         </section>
