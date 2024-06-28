@@ -1,16 +1,23 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Body styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f2f2f2; /* Light gray background */
-    color: #444; /* Dark text color */
+    background-color: #f7f7f7; /* Light pastel gray background */
+    color: #333; /* Main text color */
     line-height: 1.6;
     margin: 0;
 }
 
 /* Header styles */
 header {
-    background: linear-gradient(to right, #f2f2f2, #e0e0e0); /* Gradient background */
-    padding: 1.5rem;
+    background-color: #ffffff; /* White background for header */
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,66 +25,91 @@ header {
 }
 
 .logo h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: #333; /* Dark color */
+    color: #333; /* Dark color for logo */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1.5rem;
 }
 
 nav ul li a {
-    color: #666; /* Medium gray */
+    text-decoration: none;
+    color: #666; /* Slightly darker than main text */
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
-    color: #6ab04c; /* Pastel green on hover */
+    color: #6ab04c; /* Pastel green color on hover or when active */
 }
 
 /* Main section styles */
+main {
+    padding: 2rem;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
 .welcome-panel {
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff; /* White background for panel */
     padding: 3rem;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle shadow */
     max-width: 800px;
     margin: 0 auto; /* Center panel */
 }
 
 .welcome-panel h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 1.5rem;
-    color: #333; /* Dark color */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean sans-serif */
+    color: #333; /* Dark color for heading */
 }
 
 .description {
     font-size: 1.3rem;
     margin-bottom: 2.5rem;
-    color: #555; /* Medium dark gray */
+    color: #666; /* Slightly lighter than main text */
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .icons button {
     margin: 0 1rem;
     padding: 12px 24px;
-    border-radius: 30px; /* Rounded corners */
+    border-radius: 30px; /* Increased border-radius for a softer look */
     border: none;
-    background-color: #f0f0f0; /* Light gray */
+    background-color: #f0f0f0; /* Light pastel gray background */
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .icons button:hover {
     transform: translateY(-3px); /* Move button slightly up on hover */
-    background-color: #e0e0e0; /* Lighter gray on hover */
+    background-color: #e0e0e0; /* Lighter gray background on hover */
 }
 
 /* Footer styles */
 footer {
     text-align: center;
     padding: 1.5rem;
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff; /* White background for footer */
     margin-top: 3rem;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
-    color: #888; /* Medium gray */
+    color: #555; /* Slightly darker than main text */
     font-size: 0.9rem;
 }
