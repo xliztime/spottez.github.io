@@ -39,35 +39,16 @@ nav ul li {
     margin-right: 1.5rem;
 }
 
-nav ul li a,
-nav ul li button {
+nav ul li a {
     text-decoration: none;
     color: #555; /* Slightly darker than main text */
     font-weight: bold;
     transition: color 0.3s ease;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
 }
 
 nav ul li a.active,
-nav ul li a:hover,
-nav ul li button.active,
-nav ul li button:hover {
+nav ul li a:hover {
     color: #6ab04c; /* Green color on hover or when active */
-}
-
-nav ul li button {
-    padding: 12px 20px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-nav ul li button:hover {
-    transform: translateY(-3px); /* Move button slightly up on hover */
-    background-color: #f0f0f0; /* Light gray background on hover */
 }
 
 /* Main section styles */
@@ -107,7 +88,7 @@ main {
     margin-bottom: 2rem;
 }
 
-.icons button {
+.icons a {
     margin: 0 1rem;
     padding: 12px 24px;
     border-radius: 20px;
@@ -115,9 +96,11 @@ main {
     background-color: #fff;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+    color: #333; /* Dark color for text */
 }
 
-.icons button:hover {
+.icons a:hover {
     transform: translateY(-3px); /* Move button slightly up on hover */
     background-color: #f0f0f0; /* Light gray background on hover */
 }
