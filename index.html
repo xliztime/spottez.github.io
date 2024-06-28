@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lizbeth Life's Website</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles specific to this page */
+        .login-section {
+            margin-right: 20px; /* Spacing from the right */
+        }
+        .login-section button {
+            background-color: #6ab04c; /* Green background */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .login-section button:hover {
+            background-color: #5aa243; /* Darker green on hover */
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            var password = prompt("Please enter the password:");
+            if (password === "alessio") {
+                alert("Welcome! You have access to the special message.");
+            } else {
+                alert("Incorrect password. Access denied.");
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -16,6 +44,10 @@
                 <li><a href="index.html" class="active">Home</a></li>
             </ul>
         </nav>
+        <!-- Login section in the upper right -->
+        <div class="login-section">
+            <button onclick="checkPassword()">Log</button>
+        </div>
     </header>
 
     <main>
