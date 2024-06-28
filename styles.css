@@ -46,8 +46,9 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
+nav ul li a.active,
 nav ul li a:hover {
-    color: #6ab04c; /* Green color on hover */
+    color: #6ab04c; /* Green color on hover or when active */
 }
 
 /* Main section styles */
@@ -112,4 +113,15 @@ main {
 .cute-icon img {
     width: 50px; /* Adjust size as needed */
     height: 50px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #ffffff; /* White background for footer */
+    margin-top: 3rem;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+    color: #555; /* Slightly darker than main text */
+    font-size: 0.9rem;
 }
