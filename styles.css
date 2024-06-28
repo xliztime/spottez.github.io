@@ -95,23 +95,45 @@ main {
     color: #666; /* Slightly lighter than main text */
 }
 
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.icons button {
+    margin: 0 1.5rem;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icons button:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
 .cute-icon {
     margin-top: 2rem;
     text-align: center;
+    background-color: #ffffff; /* White background for cute icon */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle shadow */
 }
 
 .cute-icon img {
-    width: 50px; /* Adjust size as needed */
-    height: 50px;
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    border-radius: 50%; /* Rounded shape */
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
-/* Footer styles */
-footer {
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #ffffff; /* White background for footer */
-    margin-top: 3rem;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
-    color: #555; /* Slightly darker than main text */
-    font-size: 0.9rem;
+.cute-icon span {
+    display: block;
+    color: #000; /* Black text color */
+    font-size: 1.2rem;
 }
