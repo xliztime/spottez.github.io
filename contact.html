@@ -8,13 +8,28 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Inline styles for new elements */
+        /* Inline styles with pastel colors */
+        :root {
+            --pastel-green: #c1e1c5;
+            --pastel-pink: #f8c1cc;
+            --pastel-green-dark: #a4cfaa;
+            --pastel-pink-dark: #f2a4b2;
+            --pastel-green-border: #b9d8b8;
+            --pastel-pink-border: #f4b4bd;
+            --text-color: #333;
+            --text-hover-color: #555;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdfdfd;
+            color: var(--text-color);
+        }
         .contact-section {
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 2em;
-            background-color: #f9f9f9;
+            background-color: var(--pastel-pink);
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -34,10 +49,11 @@
         }
         .contact-info a {
             margin-left: 0.5em;
-            color: #3498db;
+            color: var(--text-color);
             text-decoration: none;
         }
         .contact-info a:hover {
+            color: var(--text-hover-color);
             text-decoration: underline;
         }
         .contact-form form {
@@ -51,20 +67,27 @@
         .contact-form input, .contact-form textarea {
             padding: 0.75em;
             margin-bottom: 1em;
-            border: 1px solid #ccc;
+            border: 1px solid var(--pastel-pink-border);
             border-radius: 5px;
             width: 100%;
+            background-color: var(--pastel-green);
+            color: var(--text-color);
+        }
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: var(--pastel-pink);
+            outline: none;
         }
         .contact-form button {
             padding: 0.75em;
             border: none;
-            background-color: #3498db;
-            color: white;
+            background-color: var(--pastel-green-dark);
+            color: var(--text-color);
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
         .contact-form button:hover {
-            background-color: #2980b9;
+            background-color: var(--pastel-green);
         }
         .map {
             width: 100%;
@@ -72,6 +95,15 @@
             height: 300px;
             border: none;
             border-radius: 10px;
+        }
+        .logo h1 {
+            color: var(--text-color);
+        }
+        nav ul li a {
+            color: var(--text-color);
+        }
+        nav ul li a:hover {
+            color: var(--text-hover-color);
         }
     </style>
 </head>
