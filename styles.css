@@ -7,10 +7,11 @@
 
 /* Body styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f3f5; /* Light background color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5; /* Light background color */
     color: #333; /* Main text color */
     line-height: 1.6;
+    margin: 0;
 }
 
 /* Header styles */
@@ -25,6 +26,8 @@ header {
 
 .logo h1 {
     font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Dark color for logo */
 }
 
 nav ul {
@@ -38,7 +41,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #555; /* Slightly darker than main text */
     font-weight: bold;
 }
 
@@ -61,21 +64,30 @@ main {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Adds a shadow */
+    max-width: 600px;
+    margin: 0 auto; /* Center panel */
 }
 
 .welcome-panel h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: #333; /* Dark color for heading */
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666; /* Slightly lighter than main text */
 }
 
 .icons {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
 }
 
 .icons a {
     margin: 0 1rem;
+    transition: transform 0.3s ease;
 }
 
 .icons img {
@@ -96,4 +108,6 @@ footer {
     background-color: #ffffff; /* White background for footer */
     margin-top: 2rem;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Optional: Adds a shadow */
+    color: #555; /* Slightly darker than main text */
+    font-size: 0.9rem;
 }
