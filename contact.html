@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Lizbeth Life</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <div class="container">
         <!-- Navigation Bar -->
         <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="youtube.html">YouTube Channel</a>
-            <a href="social.html">Social Media</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html" class="nav-link"><i class="fas fa-user"></i> About Me</a>
+            <a href="https://www.youtube.com/@xliztime" target="_blank" rel="noopener noreferrer" class="nav-link"><i class="fab fa-youtube"></i> YouTube Channel</a>
+            <a href="social.html" class="nav-link"><i class="fas fa-share-alt"></i> Social Media</a>
+            <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="message.html" class="nav-link"><i class="fas fa-comment"></i> Secret Message</a>
+            <a href="love.html" class="nav-link"><i class="fas fa-heart"></i> I Love You</a>
         </nav>
 
         <!-- Contact Section -->
-        <section class="section">
+        <section class="section contact-section">
             <h2>Contact</h2>
-            <p>Email me at elisa05.ragone@gmail.com for inquiries.</p>
+            <p>If you have any questions or inquiries, feel free to email me at:</p>
+            <p><a href="mailto:elisa05.ragone@gmail.com" class="email-link"><i class="fas fa-envelope"></i> elisa05.ragone@gmail.com</a></p>
             <span class="emoji">🍃</span>
         </section>
     </div>
+
+    <!-- Optional: Add JavaScript for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+        // Example scroll animation with GSAP
+        gsap.from(".contact-section", {
+            duration: 1.5,
+            opacity: 0,
+            y: 50,
+            ease: "power2.out"
+        });
+    </script>
 </body>
+
 </html>
