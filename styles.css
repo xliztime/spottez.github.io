@@ -21,7 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Adds a shadow */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Shadow effect */
 }
 
 .logo h1 {
@@ -63,7 +63,7 @@ main {
     background-color: #ffffff; /* White background for panel */
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Adds a shadow */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
     max-width: 600px;
     margin: 0 auto; /* Center panel */
 }
@@ -94,6 +94,7 @@ main {
     width: 50px; /* Adjust icon size as needed */
     height: 50px;
     border-radius: 50%; /* Optional: Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
     transition: transform 0.3s ease; /* Optional: Add hover effect */
 }
 
@@ -107,7 +108,7 @@ footer {
     padding: 1rem;
     background-color: #ffffff; /* White background for footer */
     margin-top: 2rem;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Optional: Adds a shadow */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
     color: #555; /* Slightly darker than main text */
     font-size: 0.9rem;
 }
