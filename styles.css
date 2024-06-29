@@ -90,56 +90,29 @@ main {
 
 .icons button {
     background-color: transparent; /* Remove background */
-    border: none; /* Remove border */
+    border: 2px solid #77dd77; /* Soft darker green border */
+    border-radius: 50%; /* Circular buttons */
+    width: 50px;
+    height: 50px;
     cursor: pointer;
-    font-size: 24px; /* Icon size */
     margin: 0 1rem; /* Space between buttons */
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
 .icons button i {
-    color: #666; /* Default color for icons */
+    color: #77dd77; /* Pastel green */
+    font-size: 24px; /* Icon size */
     transition: color 0.3s ease;
 }
 
-/* Pastel colors for each button */
-.icons button:nth-child(1) i {
-    color: #77dd77; /* Pastel green */
-}
-
-.icons button:nth-child(2) i {
-    color: #ffb3ba; /* Pastel pink */
-}
-
-.icons button:nth-child(3) i {
-    color: #ff6961; /* Pastel red */
-}
-
-.icons button:nth-child(4) i {
-    color: #fdfd96; /* Pastel yellow */
-}
-
 /* Hover effects for buttons */
+.icons button:hover {
+    border-color: #66cc66; /* Slightly darker border on hover */
+    transform: translateY(-3px); /* Move button slightly up on hover */
+}
+
 .icons button:hover i {
-    transform: translateY(-3px); /* Move icon slightly up on hover */
-    color: #333; /* Darker color on hover */
-}
-
-/* Additional hover color adjustments */
-.icons button:nth-child(1):hover i {
-    color: #66cc66; /* Slightly darker pastel green */
-}
-
-.icons button:nth-child(2):hover i {
-    color: #ff9ba1; /* Slightly darker pastel pink */
-}
-
-.icons button:nth-child(3):hover i {
-    color: #ff4d4d; /* Slightly darker pastel red */
-}
-
-.icons button:nth-child(4):hover i {
-    color: #ffec96; /* Slightly darker pastel yellow */
+    color: #66cc66; /* Darker pastel green on hover */
 }
 
 /* Footer styles */
