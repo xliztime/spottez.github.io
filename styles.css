@@ -89,19 +89,57 @@ main {
 }
 
 .icons button {
-    margin: 0 1rem;
-    padding: 12px 24px;
-    border-radius: 30px; /* Increased border-radius for a softer look */
-    border: none;
-    background-color: #f0f0f0; /* Light pastel gray background */
+    background-color: transparent; /* Remove background */
+    border: none; /* Remove border */
     cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 24px; /* Icon size */
+    margin: 0 1rem; /* Space between buttons */
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.icons button:hover {
-    transform: translateY(-3px); /* Move button slightly up on hover */
-    background-color: #e0e0e0; /* Lighter gray background on hover */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow on hover */
+.icons button i {
+    color: #666; /* Default color for icons */
+    transition: color 0.3s ease;
+}
+
+/* Pastel colors for each button */
+.icons button:nth-child(1) i {
+    color: #77dd77; /* Pastel green */
+}
+
+.icons button:nth-child(2) i {
+    color: #ffb3ba; /* Pastel pink */
+}
+
+.icons button:nth-child(3) i {
+    color: #ff6961; /* Pastel red */
+}
+
+.icons button:nth-child(4) i {
+    color: #fdfd96; /* Pastel yellow */
+}
+
+/* Hover effects for buttons */
+.icons button:hover i {
+    transform: translateY(-3px); /* Move icon slightly up on hover */
+    color: #333; /* Darker color on hover */
+}
+
+/* Additional hover color adjustments */
+.icons button:nth-child(1):hover i {
+    color: #66cc66; /* Slightly darker pastel green */
+}
+
+.icons button:nth-child(2):hover i {
+    color: #ff9ba1; /* Slightly darker pastel pink */
+}
+
+.icons button:nth-child(3):hover i {
+    color: #ff4d4d; /* Slightly darker pastel red */
+}
+
+.icons button:nth-child(4):hover i {
+    color: #ffec96; /* Slightly darker pastel yellow */
 }
 
 /* Footer styles */
