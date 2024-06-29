@@ -130,8 +130,7 @@ footer {
 @media (max-width: 768px) {
     /* Header */
     header {
-        flex-direction: column;
-        align-items: flex-start;
+        padding: 0.5rem;
     }
 
     .logo h1 {
@@ -140,21 +139,17 @@ footer {
 
     nav ul {
         flex-direction: column;
-        width: 100%;
+        align-items: center;
     }
 
     nav ul li {
         margin-right: 0;
-        margin-bottom: 1rem;
-    }
-
-    nav ul li a {
-        padding: 0.5rem 0;
+        margin-bottom: 0.5rem;
     }
 
     /* Welcome Panel */
     .welcome-panel {
-        padding: 2rem;
+        padding: 1.5rem;
     }
 
     .welcome-panel h2 {
@@ -167,13 +162,13 @@ footer {
 
     /* Icons */
     .icons {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .icons button {
         width: 40px;
         height: 40px;
-        margin: 0.5rem 0;
+        margin: 0.5rem;
     }
 
     .icons button i {
