@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lizbeth Life's Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Additional styles specific to this page */
         body {
@@ -72,6 +73,60 @@
         .login-section button:hover {
             background-color: #5aa243; /* Darker green on hover */
         }
+
+        /* Icons section */
+        .icons button {
+            background-color: transparent; /* No background */
+            border: none;
+            cursor: pointer;
+            font-size: 24px; /* Icon size */
+            margin: 0 10px; /* Space between buttons */
+            transition: color 0.3s ease;
+        }
+
+        .icons button i {
+            /* Default color for icons */
+            color: #666;
+            transition: color 0.3s ease;
+        }
+
+        .icons button:hover i {
+            color: #333; /* Darker color on hover */
+        }
+
+        /* Pastel colors for each button */
+        .icons button:nth-child(1) i {
+            color: #77dd77; /* Pastel green */
+        }
+
+        .icons button:nth-child(2) i {
+            color: #ffb3ba; /* Pastel pink */
+        }
+
+        .icons button:nth-child(3) i {
+            color: #ff6961; /* Pastel red */
+        }
+
+        .icons button:nth-child(4) i {
+            color: #fdfd96; /* Pastel yellow */
+        }
+
+        /* Additional hover effects */
+        .icons button:nth-child(1):hover i {
+            color: #66cc66; /* Slightly darker pastel green */
+        }
+
+        .icons button:nth-child(2):hover i {
+            color: #ff9ba1; /* Slightly darker pastel pink */
+        }
+
+        .icons button:nth-child(3):hover i {
+            color: #ff4d4d; /* Slightly darker pastel red */
+        }
+
+        .icons button:nth-child(4):hover i {
+            color: #ffec96; /* Slightly darker pastel yellow */
+        }
     </style>
     <script>
         function checkPassword() {
@@ -107,16 +162,16 @@
                 <p class="description">Hi! I’m Liz and this is my little piece of the world, I hope you like it as I do ✨🍃</p>
                 <div class="icons">
                     <button onclick="window.open('https://www.youtube.com/@xliztime', '_blank')">
-                        <span>Youtube</span>
+                        <i class="fab fa-youtube"></i>
                     </button>
                     <button onclick="window.location.href='about.html'">
-                        <span>Main Information</span>
+                        <i class="fas fa-info-circle"></i>
                     </button>
                     <button onclick="window.location.href='contact.html'">
-                        <span>Contact</span>
+                        <i class="fas fa-envelope"></i>
                     </button>
                     <button onclick="window.open('https://www.instagram.com/xliztime', '_blank')">
-                        <span>Instagram</span>
+                        <i class="fab fa-instagram"></i>
                     </button>
                 </div>
             </div>
