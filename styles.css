@@ -86,6 +86,7 @@ main {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 .icons button {
@@ -95,7 +96,7 @@ main {
     width: 50px;
     height: 50px;
     cursor: pointer;
-    margin: 0 1rem; /* Space between buttons */
+    margin: 0.5rem; /* Space between buttons */
     transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -131,15 +132,19 @@ footer {
     /* Header */
     header {
         padding: 0.5rem;
+        flex-direction: column;
     }
 
     .logo h1 {
         font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
     }
 
     nav ul {
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
 
     nav ul li {
@@ -147,7 +152,20 @@ footer {
         margin-bottom: 0.5rem;
     }
 
-    /* Welcome Panel */
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .login-section {
+        align-self: flex-end;
+        padding: 0;
+    }
+
+    /* Main */
+    main {
+        padding: 1rem;
+    }
+
     .welcome-panel {
         padding: 1.5rem;
     }
