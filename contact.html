@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* Stili ereditati */
         :root {
             --primary-color: #ff6f91;
             --secondary-color: #ff9a9e;
@@ -30,7 +29,7 @@
             padding: 1em 0;
         }
         footer {
-            margin-top: auto; /* Footer sempre in basso */
+            margin-top: auto;
         }
         .contact-section {
             padding: 2em;
@@ -40,6 +39,7 @@
             margin: 2em auto;
             max-width: 800px;
             width: 90%;
+            position: relative;
         }
         .contact-info ul {
             list-style: none;
@@ -71,6 +71,28 @@
         }
         .contact-form button:hover {
             background-color: var(--secondary-color);
+        }
+        .popup-buttons {
+            position: absolute;
+            right: -70px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Spazio tra i pulsanti */
+        }
+        .popup-button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            transform: rotate(45deg);
+            transition: transform 0.3s;
+        }
+        .popup-button:hover {
+            transform: rotate(45deg) scale(1.1);
         }
     </style>
 </head>
@@ -106,6 +128,12 @@
                     <textarea id="message" name="message" rows="4" required></textarea>
                     <button type="submit">Send</button>
                 </form>
+            </div>
+
+            <div class="popup-buttons">
+                <button class="popup-button" onclick="window.open('https://www.youtube.com/@xliztime', '_blank');">YouTube</button>
+                <button class="popup-button" onclick="window.open('https://www.instagram.com/xliztime', '_blank');">Instagram</button>
+                <button class="popup-button" onclick="window.open('https://open.spotify.com/user/f441pahzkp27jqqhg251tffnw', '_blank');">Spotify</button>
             </div>
         </section>
     </main>
