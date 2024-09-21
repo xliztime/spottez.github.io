@@ -4,56 +4,69 @@ body {
     color: var(--text-color);
     margin: 0;
     padding: 0;
+    line-height: 1.6; /* Aumenta la leggibilità */
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombra per profondità */
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em; /* Dimensione titolo maggiore */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Leggera ombra */
+}
+
+nav ul li a {
+    padding: 0.5em 1em; /* Aggiunta di padding per maggiore cliccabilità */
+    border-radius: 5px; /* Angoli arrotondati */
+    transition: background-color 0.3s, color 0.3s; /* Transizione dolce */
+}
+
+nav ul li a:hover {
+    background-color: var(--accent-color);
+    color: white; /* Cambia il colore del testo al passaggio */
 }
 
 .contact-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em;
-    background-color: #fff; /* White background */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 2em;
-    margin-bottom: 2em;
-    max-width: 800px;
-    width: 90%;
+    background-color: #fff; 
+    border-radius: 15px; /* Maggiore arrotondamento */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Ombra più marcata */
+    transform: translateY(10px); /* Sposta il contesto verso il basso */
+    transition: transform 0.3s; /* Transizione per movimento */
 }
 
-.contact-info, .contact-form {
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 2em;
+.contact-section:hover {
+    transform: translateY(0); /* Ripristina posizione al passaggio */
 }
 
-.contact-info ul {
-    list-style: none;
-    padding: 0;
+.contact-form input, .contact-form textarea {
+    padding: 1em; /* Maggiore padding */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Maggiore arrotondamento */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transizioni dolci */
 }
 
-.contact-info li {
-    display: flex;
-    align-items: center;
-    margin: 0.5em 0;
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px var(--secondary-color); /* Ombra al focus */
 }
 
-.contact-info a {
-    margin-left: 0.5em;
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s;
+button {
+    padding: 0.75em 1.5em; /* Maggiore padding per i pulsanti */
+    border-radius: 10px; /* Maggiore arrotondamento */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra per i pulsanti */
+    transition: background-color 0.3s, transform 0.3s; /* Transizioni dolci */
 }
 
-.contact-info a:hover {
-    color: var(--accent-color);
-    text-decoration: underline;
+button:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px); /* Effetto di sollevamento */
 }
 
-.contact-form form {
-    display: flex;
-    flex-direction: column;
+footer {
+    text-align: center;
+    padding: 1.5em;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Ombra superiore */
 }
-
-.contact-form label {
-    margin-bottom: 0.5em;
-    font-weight
