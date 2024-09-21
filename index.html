@@ -9,69 +9,51 @@
     <style>
         .login-section {
             margin-left: auto; /* Pushes it to the right */
-            padding-right: 1rem; /* Adds space between buttons */
+            margin-top: 15px; /* Optional: space above the button */
         }
 
         .login-section button {
-            background-color: #ff6f91; /* Pink background */
-            color: white;
+            padding: 10px 15px;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            background-color: #d81b60; /* Dark pink button */
+            color: white; /* White text */
+            border-radius: 5px; /* Rounded corners */
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
 
         .login-section button:hover {
-            background-color: #ff4f81; /* Darker pink on hover */
+            background-color: #ff4081; /* Lighter pink on hover */
         }
     </style>
-    <script>
-        function checkPassword() {
-            var password = prompt("Please enter the password:");
-            if (password === "prova") {
-                alert(".");
-            } else if (password === "Fabio") {
-                alert("Ciao papà, ti piace il sito? L'ho fatto io. Dimmi che ne pensi");
-            } else {
-                alert("Incorrect password. Access denied.");
-            }
-        }
-    </script>
 </head>
 <body>
     <header>
         <div class="logo">
             <h1>Lizbeth Life</h1>
         </div>
-        <div class="login-section">
-            <button onclick="checkPassword()">Log</button>
-        </div>
         <nav>
             <ul>
+                <li><a href="about.html">About Me</a></li>
                 <li><a href="index.html" class="active">Home</a></li>
             </ul>
         </nav>
+        <div class="login-section">
+            <button>Login</button>
+        </div>
     </header>
 
     <main>
         <section class="welcome-section">
             <div class="welcome-panel">
-                <h2>Welcome to Lizbeth Life's Website</h2>
-                <p class="description">Hi! I’m Liz and this is my little piece of the world, I hope you like it as I do ✨🍃</p>
+                <h2>Welcome to Lizbeth Life!</h2>
+                <p class="description">
+                    Join me on my adventures through life, learning, and everything in between. 
+                </p>
                 <div class="icons">
-                    <button onclick="window.open('https://www.youtube.com/@xliztime', '_blank')">
-                        <i class="fab fa-youtube"></i>
-                    </button>
-                    <button onclick="window.location.href='about.html'">
-                        <i class="fas fa-info-circle"></i>
-                    </button>
-                    <button onclick="window.location.href='contact.html'">
-                        <i class="fas fa-envelope"></i>
-                    </button>
-                    <button onclick="window.open('https://www.instagram.com/xliztime', '_blank')">
-                        <i class="fab fa-instagram"></i>
-                    </button>
+                    <button><i class="fab fa-youtube"></i></button>
+                    <button><i class="fab fa-instagram"></i></button>
+                    <button><i class="fab fa-twitter"></i></button>
                 </div>
             </div>
         </section>
