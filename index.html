@@ -3,61 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Lizbeth Life's Website</title>
+    <title>Home - Lizbeth Life</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #f8b3d0; /* Rosa pastello */
-            --secondary-color: #a0d6e4; /* Azzurro chiaro */
-            --text-color: #4b3c5e; /* Grigio scuro per il testo */
-            --background-color: #fff0f6; /* Bianco con un tocco di rosa */
-            --accent-color: #f5c6d0; /* Rosa chiaro per gli accenti */
-        }
-        body {
-            font-family: 'Georgia', serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: var(--primary-color);
-            padding: 1em;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 1em;
-        }
-        nav ul li a {
-            color: var(--text-color);
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            color: var(--accent-color);
-        }
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: var(--secondary-color);
-            color: var(--text-color);
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Lizbeth Life</h1>
+        <div class="logo">
+            <h1>Lizbeth Life</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -66,12 +20,26 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section>
-            <h2>Welcome to My World!</h2>
-            <p>Here you'll find my thoughts on life, beauty, and everything in between.</p>
+        <section class="hero">
+            <h2>Welcome to My Aesthetic World</h2>
+            <p>Join me in my journey of beauty, health, and creativity.</p>
+        </section>
+
+        <section class="content">
+            <h3>Latest Posts</h3>
+            <div class="post">
+                <h4>Exploring Aesthetic Living</h4>
+                <p>Discover tips on how to elevate your everyday life with beauty and style.</p>
+            </div>
+            <div class="post">
+                <h4>My Favorite Recipes</h4>
+                <p>Join me in the kitchen as I share my favorite recipes and cooking tips.</p>
+            </div>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 Lizbeth Life. All rights reserved.</p>
     </footer>
