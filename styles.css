@@ -1,205 +1,82 @@
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Body styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f7f7f7; /* Light pastel gray background */
-    color: #555; /* Main text color */
-    line-height: 1.6;
-    margin: 0;
+    background-color: #fff0f6; /* Light pastel pink background */
+    color: #333; /* Main text color */
 }
 
 /* Header styles */
 header {
-    background-color: #fff; /* White background for header */
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+    background-color: #ffffff; /* White background for header */
 }
 
 .logo h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333; /* Dark color for logo */
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-right: 1.5rem;
+    color: #ff6f91; /* Soft pink color for logo */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #777; /* Slightly darker than main text */
-    font-weight: bold;
-    transition: color 0.3s ease;
+    color: #ffb6c1; /* Light pink color for links */
 }
 
 nav ul li a.active,
 nav ul li a:hover {
-    color: #6ab04c; /* Soft green color on hover or when active */
+    color: #ff6f91; /* Soft pink color on hover or when active */
 }
 
 /* Main section styles */
-main {
-    padding: 2rem;
-}
-
-.welcome-section {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
 .welcome-panel {
-    background-color: #fff; /* White background for panel */
-    padding: 3rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle shadow */
-    max-width: 800px;
-    margin: 0 auto; /* Center panel */
+    background-color: #ffffff; /* White background for panel */
 }
 
 .welcome-panel h2 {
-    font-size: 2.8rem;
-    margin-bottom: 1.5rem;
-    color: #6ab04c; /* Soft green color for heading */
+    color: #ff6f91; /* Soft pink color for heading */
 }
 
 .description {
-    font-size: 1.2rem;
-    margin-bottom: 2.5rem;
     color: #888; /* Medium gray text */
 }
 
-.icons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-}
-
 .icons button {
-    background-color: transparent; /* Remove background */
-    border: 2px solid #77dd77; /* Soft darker green border */
-    border-radius: 50%; /* Circular buttons */
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    margin: 0.5rem; /* Space between buttons */
-    transition: border-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid #ff6f91; /* Soft pink border */
 }
 
 .icons button i {
-    color: #77dd77; /* Pastel green */
-    font-size: 24px; /* Icon size */
-    transition: color 0.3s ease;
+    color: #ff6f91; /* Pastel pink */
 }
 
-/* Hover effects for buttons */
 .icons button:hover {
-    border-color: #66cc66; /* Slightly darker border on hover */
-    transform: translateY(-3px); /* Move button slightly up on hover */
+    border-color: #ff4f81; /* Slightly darker pink on hover */
 }
 
 .icons button:hover i {
-    color: #66cc66; /* Darker pastel green on hover */
+    color: #ff4f81; /* Darker pastel pink on hover */
 }
 
 /* Footer styles */
 footer {
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #fff; /* White background for footer */
-    margin-top: 3rem;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+    background-color: #ffffff; /* White background for footer */
     color: #888; /* Medium gray text */
-    font-size: 0.9rem;
 }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-    /* Header */
-    header {
-        padding: 0.5rem;
-        flex-direction: column;
-    }
+/* Contact Section */
+:root {
+    --primary-color: #ff6f91; /* Pink from the main theme */
+    --secondary-color: #ffb6c1; /* Lighter pink */
+    --accent-color: #ff4f81; /* Darker pink for accents */
+}
 
-    .logo {
-        text-align: center;
-        margin-bottom: 0.5rem;
-    }
+.contact-info a {
+    color: var(--primary-color);
+}
 
-    nav ul {
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        padding: 0;
-    }
+.contact-info a:hover {
+    color: var(--accent-color);
+}
 
-    nav ul li {
-        margin-right: 0.5rem;
-    }
+/* Update buttons in the contact form */
+.contact-form button {
+    background-color: var(--primary-color);
+}
 
-    nav ul li a {
-        font-size: 1rem;
-    }
-
-    .login-section {
-        align-self: center;
-        padding: 0;
-        margin-top: 0.5rem;
-    }
-
-    .login-section button {
-        margin-left: 1rem;
-    }
-
-    /* Main */
-    main {
-        padding: 1rem;
-    }
-
-    .welcome-panel {
-        padding: 1.5rem;
-    }
-
-    .welcome-panel h2 {
-        font-size: 2rem;
-    }
-
-    .description {
-        font-size: 1rem;
-    }
-
-    /* Icons */
-    .icons {
-        flex-wrap: wrap;
-    }
-
-    .icons button {
-        width: 40px;
-        height: 40px;
-        margin: 0.5rem;
-    }
-
-    .icons button i {
-        font-size: 20px;
-    }
-
-    /* Footer */
-    footer {
-        padding: 1rem;
-        font-size: 0.8rem;
-    }
+.contact-form button:hover {
+    background-color: var(--accent-color);
 }
