@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Lizbeth Life's Website</title>
+    <title>Contact - Lizbeth Life</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Stessi stili della homepage */
-        /* ... */
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Lizbeth Life</h1>
+        <div class="logo">
+            <h1>Lizbeth Life</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -25,36 +23,22 @@
 
     <main>
         <section class="contact-section">
-            <div class="contact-info">
-                <h2>Contact Me</h2>
-                <p>Feel free to reach out to me via email or social media!</p>
-                <ul>
-                    <li><i class="fas fa-envelope"></i><a href="mailto:elisa05.ragone@gmail.com"> elisa05.ragone@gmail.com</a></li>
-                    <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/xliztime" target="_blank"> @xliztime</a></li>
-                </ul>
-            </div>
-
-            <div class="contact-form">
-                <h3>Send a Message</h3>
-                <form action="mailto:elisa05.ragone@gmail.com" method="post" enctype="text/plain">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167572.301019556!2d12.39591159694418!3d41.9027835008498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f619e7c91a67d%3A0x85edb17045df8a87!2sRome%2C%20Metropolitan%20City%20of%20Rome%20Capital%2C%20Italy!5e0!3m2!1sen!2sus!4v1639782583754!5m2!1sen!2sus"
-                    width="100%" height="100%" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me via email or social media!</p>
+            <ul>
+                <li><i class="fas fa-envelope"></i><a href="mailto:elisa05.ragone@gmail.com"> elisa05.ragone@gmail.com</a></li>
+                <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/xliztime" target="_blank"> @xliztime</a></li>
+            </ul>
+            <h3>Send a Message</h3>
+            <form action="mailto:elisa05.ragone@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
 
