@@ -1,205 +1,113 @@
-/* Reset default styles */
-* {
+:root {
+    --primary-color: #ff4081; /* Pink */
+    --secondary-color: #ff79b0; /* Lighter Pink */
+    --text-color: #333; /* Dark Text */
+    --text-light-color: #555; /* Light Text */
+    --background-color: #fce4ec; /* Very Light Pink */
+    --accent-color: #e91e63; /* Darker Pink */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Body styles */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fce4ec; /* Light pastel pink background */
-    color: #555; /* Main text color */
-    line-height: 1.6;
-    margin: 0;
-}
-
-/* Header styles */
-header {
-    background-color: #fff; /* White background for header */
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
-}
-
-.logo h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #d81b60; /* Dark pink color for logo */
+.header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1em;
+    text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
-    display: flex;
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
-    margin-right: 1.5rem;
+    display: inline;
+    margin: 0 1em;
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #e91e63; /* Pink color */
-    font-weight: bold;
-    transition: color 0.3s ease;
 }
 
-nav ul li a.active,
 nav ul li a:hover {
-    color: #ff4081; /* Bright pink color on hover or when active */
+    text-decoration: underline;
 }
 
-/* Main section styles */
-main {
-    padding: 2rem;
-}
-
-.welcome-section {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.welcome-panel {
-    background-color: #fff; /* White background for panel */
-    padding: 3rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle shadow */
+.contact-section {
+    padding: 2em;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 800px;
-    margin: 0 auto; /* Center panel */
+    margin: 2em auto;
 }
 
-.welcome-panel h2 {
-    font-size: 2.8rem;
-    margin-bottom: 1.5rem;
-    color: #d81b60; /* Dark pink color for heading */
+.contact-info, .contact-form {
+    margin-bottom: 2em;
 }
 
-.description {
-    font-size: 1.2rem;
-    margin-bottom: 2.5rem;
-    color: #888; /* Medium gray text */
+.contact-info ul {
+    list-style: none;
+    padding: 0;
 }
 
-.icons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
+.contact-info li {
+    margin: 0.5em 0;
 }
 
-.icons button {
-    background-color: transparent; /* Remove background */
-    border: 2px solid #ff77a8; /* Soft pink border */
-    border-radius: 50%; /* Circular buttons */
-    width: 50px;
-    height: 50px;
+.contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.contact-form button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75em;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    margin: 0.5rem; /* Space between buttons */
-    transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
-.icons button i {
-    color: #ff77a8; /* Pastel pink */
-    font-size: 24px; /* Icon size */
-    transition: color 0.3s ease;
+.contact-form button:hover {
+    background-color: var(--accent-color);
 }
 
-/* Hover effects for buttons */
-.icons button:hover {
-    border-color: #ff4081; /* Slightly darker border on hover */
-    transform: translateY(-3px); /* Move button slightly up on hover */
-}
-
-.icons button:hover i {
-    color: #ff4081; /* Darker pastel pink on hover */
-}
-
-/* Footer styles */
-footer {
+.footer {
     text-align: center;
-    padding: 1.5rem;
-    background-color: #fff; /* White background for footer */
-    margin-top: 3rem;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
-    color: #888; /* Medium gray text */
-    font-size: 0.9rem;
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-    /* Header */
-    header {
-        padding: 0.5rem;
-        flex-direction: column;
-    }
-
-    .logo {
-        text-align: center;
-        margin-bottom: 0.5rem;
-    }
-
-    nav ul {
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        padding: 0;
-    }
-
-    nav ul li {
-        margin-right: 0.5rem;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-    }
-
-    .login-section {
-        align-self: center;
-        padding: 0;
-        margin-top: 0.5rem;
-    }
-
-    .login-section button {
-        margin-left: 1rem;
-    }
-
-    /* Main */
-    main {
-        padding: 1rem;
-    }
-
-    .welcome-panel {
-        padding: 1.5rem;
-    }
-
-    .welcome-panel h2 {
-        font-size: 2rem;
-    }
-
-    .description {
-        font-size: 1rem;
-    }
-
-    /* Icons */
-    .icons {
-        flex-wrap: wrap;
-    }
-
-    .icons button {
-        width: 40px;
-        height: 40px;
-        margin: 0.5rem;
-    }
-
-    .icons button i {
-        font-size: 20px;
-    }
-
-    /* Footer */
-    footer {
-        padding: 1rem;
-        font-size: 0.8rem;
-    }
+    padding: 1em;
+    background-color: var(--background-color);
+    color: var(--text-light-color);
+    border-top: 1px solid #ddd;
 }
