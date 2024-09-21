@@ -1,12 +1,12 @@
 /* Body styles */
 body {
-    background-color: #fff0f6; /* Light pastel pink background */
-    color: #333; /* Main text color */
+    background-color: #f7f7f7; /* Light pastel gray background */
+    color: #555; /* Main text color */
 }
 
 /* Header styles */
 header {
-    background-color: #ffffff; /* White background for header */
+    background-color: #fff; /* White background for header */
 }
 
 .logo h1 {
@@ -24,7 +24,7 @@ nav ul li a:hover {
 
 /* Main section styles */
 .welcome-panel {
-    background-color: #ffffff; /* White background for panel */
+    background-color: #fff; /* White background for panel */
 }
 
 .welcome-panel h2 {
@@ -36,15 +36,18 @@ nav ul li a:hover {
 }
 
 .icons button {
-    border: 2px solid #ff6f91; /* Soft pink border */
+    background-color: transparent; /* Remove background */
+    border: 2px solid #ffb6c1; /* Soft pink border */
 }
 
 .icons button i {
-    color: #ff6f91; /* Pastel pink */
+    color: #ffb6c1; /* Pastel pink */
 }
 
+/* Hover effects for buttons */
 .icons button:hover {
     border-color: #ff4f81; /* Slightly darker pink on hover */
+    transform: translateY(-3px); /* Move button slightly up on hover */
 }
 
 .icons button:hover i {
@@ -53,30 +56,12 @@ nav ul li a:hover {
 
 /* Footer styles */
 footer {
-    background-color: #ffffff; /* White background for footer */
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #fff; /* White background for footer */
+    margin-top: 3rem;
     color: #888; /* Medium gray text */
 }
 
-/* Contact Section */
-:root {
-    --primary-color: #ff6f91; /* Pink from the main theme */
-    --secondary-color: #ffb6c1; /* Lighter pink */
-    --accent-color: #ff4f81; /* Darker pink for accents */
-}
-
-.contact-info a {
-    color: var(--primary-color);
-}
-
-.contact-info a:hover {
-    color: var(--accent-color);
-}
-
-/* Update buttons in the contact form */
-.contact-form button {
-    background-color: var(--primary-color);
-}
-
-.contact-form button:hover {
-    background-color: var(--accent-color);
-}
+/* Mobile Styles */
+/* Resta invariato */
