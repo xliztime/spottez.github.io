@@ -3,42 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Lizbeth Life</title>
+    <title>Contact - Lizbeth Life's Website</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Stili ereditati */
+        :root {
+            --primary-color: #ff6f91;
+            --secondary-color: #ff9a9e;
+            --background-color: #f9f9f9;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        footer {
+            margin-top: auto; /* Footer sempre in basso */
+        }
+        .contact-section {
+            padding: 2em;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 2em auto;
+            max-width: 800px;
+            width: 90%;
+        }
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact-info a:hover {
+            color: var(--secondary-color);
+        }
+        .contact-form input, .contact-form textarea {
+            border-radius: 5px;
+            padding: 0.75em;
+            width: 100%;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s;
+        }
+        .contact-form button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.75em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Lizbeth Life</h1>
-        </div>
+        <h1>Lizbeth Life</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="contact-section">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me via email or social media!</p>
-            <ul>
-                <li><i class="fas fa-envelope"></i><a href="mailto:elisa05.ragone@gmail.com"> elisa05.ragone@gmail.com</a></li>
-                <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/xliztime" target="_blank"> @xliztime</a></li>
-            </ul>
-            <h3>Send a Message</h3>
-            <form action="mailto:elisa05.ragone@gmail.com" method="post" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+            <div class="contact-info">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out to me via email or social media!</p>
+                <ul>
+                    <li><i class="fas fa-envelope"></i><a href="mailto:elisa05.ragone@gmail.com"> elisa05.ragone@gmail.com</a></li>
+                    <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/xliztime" target="_blank"> @xliztime</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <form action="mailto:elisa05.ragone@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </section>
     </main>
 
