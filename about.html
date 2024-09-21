@@ -3,20 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Lizbeth Life</title>
+    <title>About - Lizbeth Life's Website</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Stili ereditati */
+        :root {
+            --primary-color: #ff6f91;
+            --secondary-color: #ff9a9e;
+            --background-color: #f9f9f9;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        footer {
+            margin-top: auto; /* Footer sempre in basso */
+        }
+        .about-section {
+            padding: 2em;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 2em auto;
+            max-width: 800px;
+            width: 90%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Lizbeth Life</h1>
-        </div>
+        <h1>Lizbeth Life</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -24,7 +56,7 @@
     <main>
         <section class="about-section">
             <h2>About Me</h2>
-            <p>Hello! I'm Elisa, and I love sharing my passion for beauty, health, and creativity with you!</p>
+            <p>Welcome to my aesthetic world! I'm Elisa, a pharmacy student with a passion for music, aesthetics, and sharing my journey.</p>
         </section>
     </main>
 
