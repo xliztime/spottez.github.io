@@ -1,95 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Lizbeth Life's Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #ff6f91;
-            --secondary-color: #ff9a9e;
-            --background-color: #f9f9f9;
-            --text-color: #333;
-        }
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        header, footer {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        footer {
-            margin-top: auto;
-        }
-        .about-section {
-            padding: 2em;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 2em auto;
-            max-width: 800px;
-            width: 90%;
-            position: relative;
-        }
-        .popup-buttons {
-            position: absolute;
-            right: -70px;
-            top: 50%;
-            transform: translateY(-50%);
-            display: flex;
-            flex-direction: column;
-            gap: 10px; /* Spazio tra i pulsanti */
-        }
-        .popup-button {
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 10px;
-            cursor: pointer;
-            transform: rotate(45deg);
-            transition: transform 0.3s;
-        }
-        .popup-button:hover {
-            transform: rotate(45deg) scale(1.1);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi Sono - Lizbeth Life</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Lizbeth Life</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="about-section">
-            <h2>About Me</h2>
-            <p>Welcome to my aesthetic world! I'm Elisa, a pharmacy student with a passion for music, aesthetics, and sharing my journey.</p>
-
-            <div class="popup-buttons">
-                <button class="popup-button" onclick="window.open('https://www.youtube.com/@xliztime', '_blank');">YouTube</button>
-                <button class="popup-button" onclick="window.open('https://www.instagram.com/xliztime', '_blank');">Instagram</button>
-                <button class="popup-button" onclick="window.open('https://open.spotify.com/user/f441pahzkp27jqqhg251tffnw', '_blank');">Spotify</button>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Lizbeth Life. All rights reserved.</p>
-    </footer>
+  <header>
+    <h1 class="main-title">Chi Sono</h1>
+  </header>
+  <main class="container">
+    <p>Ciao! Mi chiamo Liz e amo condividere la mia passione per una vita estetica e creativa. Dai video sul mio canale YouTube ai momenti di relax suonando il piano, trovo sempre nuovi modi per ispirarmi e ispirare gli altri.</p>
+  </main>
+  <footer>
+    <p>&copy; 2024 Lizbeth Life | Seguimi su <a href="https://youtube.com/@xliztime" target="_blank">YouTube</a></p>
+  </footer>
 </body>
 </html>
