@@ -2,28 +2,39 @@
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
-  background-color: #f9f8f6;
+  background-color: #fff5f8;
+  color: #333; /* Nero scuro per miglior contrasto */
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
   color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Navbar */
 nav {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 10px 20px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
+  padding: 10px 20px;
+  background-color: #fdcedf;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #000;
+  color: #333;
 }
 
 nav .nav-links {
@@ -32,73 +43,164 @@ nav .nav-links {
   gap: 15px;
 }
 
-nav .nav-links li {
-  display: inline-block;
-}
-
 nav .nav-links a {
-  text-decoration: none;
   color: #333;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 nav .nav-links a:hover {
   color: #fdcedf;
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(to bottom, #fff5f8, #ffeaf1);
+  padding: 20px;
+}
+
+#home .title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+}
+
+#home .subtitle {
+  font-size: 1.2rem;
+  color: #555; /* Colore più tenue per il sottotitolo */
+}
+
+#home .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+#home .btn:hover {
+  background-color: #fdcedf;
+  color: #333;
+}
+
+/* Section Styling */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* YouTube Section */
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.video-grid iframe {
+  width: 300px;
+  height: 200px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form */
+form input, form textarea {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #fdcedf;
+  color: #333;
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-links a {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #fdcedf;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer */
 footer {
   background-color: #fdcedf;
-  color: #000;
-  padding: 20px;
+  padding: 20px 10px;
   text-align: center;
+  color: #333;
+  font-size: 0.9rem;
 }
 
-footer .social-icons {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 10px 0 0;
+footer .social-links {
+  margin-top: 10px;
 }
 
-footer .social-icons li img {
-  width: 20px;
-  height: 20px;
-  transition: transform 0.3s;
+footer .social-links a {
+  color: #333;
 }
 
-footer .social-icons li img:hover {
-  transform: scale(1.1);
-}
-
-/* Sections */
-section {
-  padding: 50px 20px;
-  text-align: center;
-  margin-top: 70px; /* Spazio extra per navbar */
-}
-
-h2 {
-  font-size: 2rem;
-  color: #000;
-  margin-bottom: 20px;
-}
-
-/* Buttons */
-.btn {
-  background-color: #fdcedf;
-  color: #000;
-  border-radius: 25px;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #f7b7e4;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+footer .social-links a:hover {
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
