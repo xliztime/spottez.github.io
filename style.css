@@ -47,8 +47,8 @@ body {
 /* Banner di Canva */
 .banner {
   margin: 20px 0;
-  width: 80%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .banner a {
@@ -64,7 +64,7 @@ body {
   text-decoration: underline;
 }
 
-/* Other Sections */
+/* Altre sezioni */
 section {
   padding: 50px 20px;
   text-align: center;
