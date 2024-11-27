@@ -1,93 +1,104 @@
 /* Global Styles */
 body {
   margin: 0;
-  font-family: 'Playfair Display', serif; /* Elegante font serif */
-  background-color: #f9f8f6; /* Colore di sfondo chiaro per contrastare */
-  color: #333; /* Colore del testo principale scuro per migliorare il contrasto */
+  font-family: 'Playfair Display', serif;
+  background-color: #f9f8f6;
+  color: #333;
 }
 
-/* Home Section */
-#home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-  background: linear-gradient(to bottom, #f9f8f6, #fdcedf); /* Colore del banner come sfondo */
-}
-
-#home .title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin: 0;
-  color: #000; /* Testo titolo in nero per un contrasto forte */
-}
-
-#home .subtitle {
-  font-size: 1.2rem;
-  color: #333; /* Colore più scuro per il sottotitolo */
-}
-
-#home .btn {
-  display: inline-block;
-  margin-top: 1rem;
+/* Navbar */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 10px 20px;
-  background-color: #fdcedf; /* Bottone rosa chiaro */
-  color: #000; /* Colore del testo del bottone in nero */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav .nav-links li {
+  display: inline-block;
+}
+
+nav .nav-links a {
   text-decoration: none;
-  border-radius: 25px;
+  color: #333;
   font-weight: 500;
-  font-size: 1rem; /* Aumenta leggermente la dimensione del font per l'eleganza */
-  transition: all 0.3s ease;
+  transition: color 0.3s;
 }
 
-#home .btn:hover {
-  background-color: #f7b7e4; /* Rosa più scuro al passaggio del mouse */
-  color: #000; /* Colore del testo rimane nero al passaggio del mouse */
+nav .nav-links a:hover {
+  color: #fdcedf;
 }
 
-/* Other Sections */
+/* Footer */
+footer {
+  background-color: #fdcedf;
+  color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0 0;
+}
+
+footer .social-icons li img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s;
+}
+
+footer .social-icons li img:hover {
+  transform: scale(1.1);
+}
+
+/* Sections */
 section {
   padding: 50px 20px;
   text-align: center;
+  margin-top: 70px; /* Spazio extra per navbar */
 }
 
 h2 {
   font-size: 2rem;
-  color: #000; /* Titoli delle sezioni in nero */
-  font-weight: 700; /* Aumenta il peso del font per l'eleganza */
+  color: #000;
+  margin-bottom: 20px;
 }
 
-.video-grid iframe {
-  width: 300px;
-  height: 200px;
-  margin: 10px;
-  border-radius: 10px; /* Angoli arrotondati per un look più morbido */
-}
-
-form input, form textarea {
-  width: 80%;
-  max-width: 400px;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #fdcedf; /* Colore rosa per i bordi degli input */
-  border-radius: 5px;
-  background-color: #fff3f8; /* Colore di sfondo rosa chiaro per gli input */
-}
-
-form button {
-  padding: 10px 20px;
-  background-color: #fdcedf; /* Bottone rosa chiaro */
-  color: #000; /* Testo dei bottoni in nero */
-  border: none;
+/* Buttons */
+.btn {
+  background-color: #fdcedf;
+  color: #000;
   border-radius: 25px;
-  cursor: pointer;
-  font-weight: 500; /* Aumenta il peso per l'eleganza */
-  font-size: 1rem; /* Aumenta leggermente la dimensione del font */
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
 }
 
-form button:hover {
-  background-color: #f7b7e4; /* Rosa più scuro al passaggio del mouse */
-  color: #000; /* Colore del testo rimane nero al passaggio del mouse */
+.btn:hover {
+  background-color: #f7b7e4;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
