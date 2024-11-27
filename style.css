@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif; /* Elegante font serif */
   background-color: #f9f8f6; /* Colore di sfondo chiaro per contrastare */
   color: #333; /* Colore del testo principale scuro per migliorare il contrasto */
 }
@@ -21,12 +21,12 @@ body {
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
-  color: #2d2d2d; /* Colore scuro per il titolo per contrastare con il rosa */
+  color: #000; /* Testo titolo in nero per un contrasto forte */
 }
 
 #home .subtitle {
   font-size: 1.2rem;
-  color: #666; /* Colore più chiaro per il sottotitolo */
+  color: #333; /* Colore più scuro per il sottotitolo */
 }
 
 #home .btn {
@@ -34,15 +34,17 @@ body {
   margin-top: 1rem;
   padding: 10px 20px;
   background-color: #fdcedf; /* Bottone rosa chiaro */
-  color: white;
+  color: #000; /* Colore del testo del bottone in nero */
   text-decoration: none;
   border-radius: 25px;
   font-weight: 500;
+  font-size: 1rem; /* Aumenta leggermente la dimensione del font per l'eleganza */
   transition: all 0.3s ease;
 }
 
 #home .btn:hover {
   background-color: #f7b7e4; /* Rosa più scuro al passaggio del mouse */
+  color: #000; /* Colore del testo rimane nero al passaggio del mouse */
 }
 
 /* Other Sections */
@@ -53,7 +55,8 @@ section {
 
 h2 {
   font-size: 2rem;
-  color: #2d2d2d; /* Colore scuro per i titoli delle sezioni */
+  color: #000; /* Titoli delle sezioni in nero */
+  font-weight: 700; /* Aumenta il peso del font per l'eleganza */
 }
 
 .video-grid iframe {
@@ -76,12 +79,15 @@ form input, form textarea {
 form button {
   padding: 10px 20px;
   background-color: #fdcedf; /* Bottone rosa chiaro */
-  color: white;
+  color: #000; /* Testo dei bottoni in nero */
   border: none;
   border-radius: 25px;
   cursor: pointer;
+  font-weight: 500; /* Aumenta il peso per l'eleganza */
+  font-size: 1rem; /* Aumenta leggermente la dimensione del font */
 }
 
 form button:hover {
   background-color: #f7b7e4; /* Rosa più scuro al passaggio del mouse */
+  color: #000; /* Colore del testo rimane nero al passaggio del mouse */
 }
