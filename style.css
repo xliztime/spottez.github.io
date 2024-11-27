@@ -1,6 +1,9 @@
 /* Global Styles */
-body {
+html, body {
+  height: 100%; /* Ensure full height for sticky footer */
   margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: 'Playfair Display', serif;
   background-color: #fff0f6;
   color: #333;
@@ -14,6 +17,11 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin: 0 0 1em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Navbar */
@@ -45,8 +53,7 @@ nav .nav-links li {
 }
 
 nav .nav-links a {
-  text-decoration: none;
-  color: white; /* Testo leggibile */
+  color: white;
   font-weight: 500;
   padding: 5px 15px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -54,7 +61,7 @@ nav .nav-links a {
 
 nav .nav-links a:hover {
   background-color: white;
-  color: #fdcedf; /* Rosa chiaro */
+  color: #fdcedf;
   border-radius: 5px;
 }
 
@@ -64,18 +71,36 @@ footer {
   padding: 20px;
   background-color: #fdcedf;
   color: white;
-  margin-top: 20px;
+  margin-top: auto;
 }
 
 footer .social-links a {
   color: white;
-  text-decoration: none;
   margin: 0 10px;
   font-weight: 500;
 }
 
 footer .social-links a:hover {
   text-decoration: underline;
+}
+
+/* Sections */
+main {
+  flex: 1; /* Occupy remaining space for sticky footer */
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #fdcedf;
+}
+
+p {
+  color: #555;
 }
 
 /* Home Section */
@@ -107,7 +132,6 @@ footer .social-links a:hover {
   padding: 10px 20px;
   background-color: #fdcedf;
   color: white;
-  text-decoration: none;
   border-radius: 25px;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -116,28 +140,6 @@ footer .social-links a:hover {
 #home .btn:hover {
   background-color: white;
   color: #fdcedf;
-}
-
-/* Sections (General) */
-section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 2rem;
-  color: #fdcedf;
-}
-
-p {
-  color: #555;
-}
-
-/* About Section */
-#about p {
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 1.1rem;
 }
 
 /* YouTube Section */
@@ -164,7 +166,6 @@ form input, form textarea {
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-family: 'Playfair Display', serif;
 }
 
 form button {
@@ -174,7 +175,6 @@ form button {
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  font-family: 'Playfair Display', serif;
 }
 
 form button:hover {
