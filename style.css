@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #f9f8f6;
+  background-color: #f9f8f6; /* Colore di sfondo chiaro per contrastare */
   color: #333;
 }
 
@@ -14,13 +14,14 @@ body {
   justify-content: center;
   height: 100vh;
   text-align: center;
-  background: linear-gradient(to bottom, #f9f8f6, #e9e4da);
+  background: linear-gradient(to bottom, #f9f8f6, #fdcedf); /* Colore del banner come sfondo */
 }
 
 #home .title {
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
+  color: #b5835a; /* Colore della scritta in contrasto con il rosa */
 }
 
 #home .subtitle {
@@ -32,7 +33,7 @@ body {
   display: inline-block;
   margin-top: 1rem;
   padding: 10px 20px;
-  background-color: #d4a373;
+  background-color: #fdcedf; /* Bottone rosa chiaro */
   color: white;
   text-decoration: none;
   border-radius: 25px;
@@ -41,7 +42,7 @@ body {
 }
 
 #home .btn:hover {
-  background-color: #b5835a;
+  background-color: #f7b7e4; /* Rosa più scuro al passaggio del mouse */
 }
 
 /* Other Sections */
@@ -52,13 +53,14 @@ section {
 
 h2 {
   font-size: 2rem;
-  color: #b5835a;
+  color: #b5835a; /* Colore dei titoli in armonia con il rosa */
 }
 
 .video-grid iframe {
   width: 300px;
   height: 200px;
   margin: 10px;
+  border-radius: 10px; /* Angoli arrotondati per un look più morbido */
 }
 
 form input, form textarea {
@@ -66,13 +68,14 @@ form input, form textarea {
   max-width: 400px;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #ccc;
+  border: 1px solid #fdcedf; /* Colore rosa per i bordi degli input */
   border-radius: 5px;
+  background-color: #fff3f8; /* Colore di sfondo rosa chiaro per gli input */
 }
 
 form button {
   padding: 10px 20px;
-  background-color: #b5835a;
+  background-color: #fdcedf; /* Bottone rosa chiaro */
   color: white;
   border: none;
   border-radius: 25px;
@@ -80,5 +83,5 @@ form button {
 }
 
 form button:hover {
-  background-color: #d4a373;
+  background-color: #f7b7e4; /* Rosa più scuro al passaggio del mouse */
 }
