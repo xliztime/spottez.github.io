@@ -71,7 +71,7 @@ footer {
   padding: 20px;
   background-color: #fdcedf;
   color: white;
-  margin-top: auto;
+  margin-top: auto; /* Push the footer to the bottom */
 }
 
 footer .social-links a {
@@ -86,7 +86,7 @@ footer .social-links a:hover {
 
 /* Sections */
 main {
-  flex: 1; /* Occupy remaining space for sticky footer */
+  flex: 1; /* Allow main content to grow and push the footer down */
 }
 
 section {
