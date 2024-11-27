@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #f9f8f6; /* Colore di sfondo chiaro per contrastare */
-  color: #333;
+  color: #333; /* Colore del testo principale scuro per migliorare il contrasto */
 }
 
 /* Home Section */
@@ -21,12 +21,12 @@ body {
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
-  color: #b5835a; /* Colore della scritta in contrasto con il rosa */
+  color: #2d2d2d; /* Colore scuro per il titolo per contrastare con il rosa */
 }
 
 #home .subtitle {
   font-size: 1.2rem;
-  color: #666;
+  color: #666; /* Colore più chiaro per il sottotitolo */
 }
 
 #home .btn {
@@ -53,7 +53,7 @@ section {
 
 h2 {
   font-size: 2rem;
-  color: #b5835a; /* Colore dei titoli in armonia con il rosa */
+  color: #2d2d2d; /* Colore scuro per i titoli delle sezioni */
 }
 
 .video-grid iframe {
