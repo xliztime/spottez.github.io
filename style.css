@@ -2,20 +2,18 @@
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
-  background-color: #fff5f8;
-  color: #333; /* Nero scuro per miglior contrasto */
+  background-color: #fff0f6;
+  color: #333;
   line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-family: 'Playfair Display', serif;
-  color: #333;
+  font-weight: 500;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+p {
+  margin: 0 0 1em;
 }
 
 /* Navbar */
@@ -23,37 +21,61 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 15px 30px;
   background-color: #fdcedf;
-  position: sticky;
-  top: 0;
-  z-index: 10;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #333;
+  color: white;
+  text-transform: uppercase;
 }
 
 nav .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav .nav-links li {
+  margin: 0 10px;
 }
 
 nav .nav-links a {
-  color: #333;
+  text-decoration: none;
+  color: white; /* Testo leggibile */
   font-weight: 500;
-  transition: color 0.3s ease;
+  padding: 5px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav .nav-links a:hover {
-  color: #fdcedf;
-  background-color: #333;
-  padding: 5px 10px;
+  background-color: white;
+  color: #fdcedf; /* Rosa chiaro */
   border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fdcedf;
+  color: white;
+  margin-top: 20px;
+}
+
+footer .social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+footer .social-links a:hover {
+  text-decoration: underline;
 }
 
 /* Home Section */
@@ -64,41 +86,39 @@ nav .nav-links a:hover {
   justify-content: center;
   height: 100vh;
   text-align: center;
-  background: linear-gradient(to bottom, #fff5f8, #ffeaf1);
-  padding: 20px;
+  background: linear-gradient(to bottom, #fff0f6, #fde3ef);
 }
 
 #home .title {
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
-  color: #333;
+  color: #fdcedf;
 }
 
 #home .subtitle {
   font-size: 1.2rem;
-  color: #555; /* Colore più tenue per il sottotitolo */
+  color: #666;
 }
 
 #home .btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #333;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #fdcedf;
   color: white;
   text-decoration: none;
   border-radius: 25px;
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
 #home .btn:hover {
-  background-color: #fdcedf;
-  color: #333;
+  background-color: white;
+  color: #fdcedf;
 }
 
-/* Section Styling */
+/* Sections (General) */
 section {
   padding: 50px 20px;
   text-align: center;
@@ -106,21 +126,25 @@ section {
 
 h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
+  color: #fdcedf;
 }
 
 p {
-  font-size: 1rem;
   color: #555;
-  margin-bottom: 20px;
+}
+
+/* About Section */
+#about p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
 }
 
 /* YouTube Section */
 .video-grid {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -129,9 +153,10 @@ p {
   height: 200px;
   border: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
-/* Contact Form */
+/* Contact Section */
 form input, form textarea {
   width: 80%;
   max-width: 400px;
@@ -139,68 +164,21 @@ form input, form textarea {
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1rem;
-}
-
-form textarea {
-  resize: vertical;
-  height: 120px;
+  font-family: 'Playfair Display', serif;
 }
 
 form button {
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #fdcedf;
   color: white;
   border: none;
   border-radius: 25px;
-  font-size: 1rem;
   cursor: pointer;
-  font-weight: 600;
-  transition: all 0.3s ease;
+  font-family: 'Playfair Display', serif;
 }
 
 form button:hover {
-  background-color: #fdcedf;
-  color: #333;
-}
-
-/* Social Links */
-.social-links {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.social-links a {
-  font-size: 1rem;
-  color: #333;
-  font-weight: 500;
-  margin: 0 10px;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-.social-links a:hover {
+  background-color: white;
   color: #fdcedf;
-  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-/* Footer */
-footer {
-  background-color: #fdcedf;
-  padding: 20px 10px;
-  text-align: center;
-  color: #333;
-  font-size: 0.9rem;
-}
-
-footer .social-links {
-  margin-top: 10px;
-}
-
-footer .social-links a {
-  color: #333;
-}
-
-footer .social-links a:hover {
-  color: white;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border: 1px solid #fdcedf;
 }
