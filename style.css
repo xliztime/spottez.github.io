@@ -44,6 +44,26 @@ body {
   background-color: #b5835a;
 }
 
+/* Banner di Canva */
+.banner {
+  margin: 20px 0;
+  width: 80%;
+  max-width: 800px;
+}
+
+.banner a {
+  font-size: 16px;
+  color: #b5835a;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
+
+.banner a:hover {
+  color: #d4a373;
+  text-decoration: underline;
+}
+
 /* Other Sections */
 section {
   padding: 50px 20px;
@@ -81,4 +101,27 @@ form button {
 
 form button:hover {
   background-color: #d4a373;
+}
+
+/* Instagram Links */
+#instagram {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #e9e4da;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-icon {
+  font-size: 1.2rem;
+  color: #b5835a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.social-icon:hover {
+  color: #d4a373;
+  text-decoration: underline;
 }
