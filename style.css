@@ -174,46 +174,6 @@ p {
   margin: 10px 0;
 }
 
-/* Newsletter Section */
-#newsletter {
-  margin-top: 50px;
-}
-
-#newsletter h2 {
-  font-size: 2rem;
-  color: #fdcedf;
-}
-
-#newsletter form {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-#newsletter input[type="email"] {
-  padding: 10px;
-  margin-right: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 250px;
-}
-
-#newsletter button {
-  padding: 10px 20px;
-  background-color: #fdcedf;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-#newsletter button:hover {
-  background-color: white;
-  color: #fdcedf;
-  border: 1px solid #fdcedf;
-}
-
 /* Social Links in Footer */
 footer .social-links {
   margin-top: 10px;
