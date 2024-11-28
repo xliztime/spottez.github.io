@@ -1,71 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lizbeth Life - Home</title>
+  <title>Il Tuo Sito Estetico</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
   <!-- Navbar -->
   <nav>
-    <div class="logo">Lizbeth Life</div>
+    <div class="logo">MySite</div>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="youtube.html">YouTube</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#quotes-section">Citazioni</a></li>
+      <li><a href="#about">Chi siamo</a></li>
+      <li><a href="#contact">Contatti</a></li>
     </ul>
   </nav>
 
-  <main>
-    <!-- Home Section -->
-    <section id="home">
-      <div class="container">
-        <h1 class="title">Lizbeth Life</h1>
-        <p class="subtitle">Dream. Create. Inspire.</p>
-        <a href="https://www.youtube.com/@xliztime" class="btn" target="_blank">Discover My YouTube</a>
-      </div>
-    </section>
+  <!-- Home Section -->
+  <section id="home">
+    <div class="title">Benvenuti nel mio mondo!</div>
+    <div class="subtitle">Un posto dove bellezza e creatività si incontrano</div>
+    <a href="https://www.youtube.com" class="btn">Visita il mio canale YouTube</a>
+  </section>
 
-    <!-- New Section for Quotes Dropdown -->
-    <section id="quotes-section">
-      <h2 class="section-title">Inspiration</h2>
-      <div id="quotes-dropdown" class="dropdown-content">
-        <p>"Believe you can and you're halfway there." - Theodore Roosevelt</p>
-        <p>"The only limit to our realization of tomorrow is our doubts of today." - Franklin D. Roosevelt</p>
-        <p>"Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill</p>
-      </div>
-    </section>
+  <!-- Quotes Section -->
+  <section id="quotes-section">
+    <h2 class="section-title">Le mie citazioni preferite</h2>
+    <div id="quotes-dropdown">
+      <p>"La vita è ciò che accade mentre siamo impegnati a fare altri piani." - John Lennon</p>
+      <p>"La felicità non è qualcosa di pronto, viene dalle tue azioni." - Dalai Lama</p>
+      <p>"Non smettere mai di sognare, anche quando le cose sembrano impossibili." - Walt Disney</p>
+    </div>
+  </section>
 
-    <!-- Newsletter Section (if desired) -->
-    <section id="newsletter">
-      <h2>Stay Updated!</h2>
-      <form action="https://formspree.io/f/mvgowyqr" method="POST">
-        <input type="email" name="email" placeholder="Enter your email" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </section>
-  </main>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contattami</h2>
+    <form action="https://formspree.io/f/xqkknkqp" method="POST">
+      <input type="email" name="email" placeholder="Inserisci la tua email" required>
+      <textarea name="message" placeholder="Scrivi il tuo messaggio..." required></textarea>
+      <button type="submit">Invia</button>
+    </form>
+  </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Lizbeth Life. All Rights Reserved.</p>
+    <p>© 2024 MySite. Tutti i diritti riservati.</p>
     <div class="social-links">
-      <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
-      <a href="https://www.youtube.com/@xliztime" target="_blank">YouTube</a>
+      <a href="https://www.instagram.com" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      <a href="https://www.twitter.com" target="_blank">Twitter</a>
     </div>
   </footer>
 
-  <!-- JavaScript (added at the bottom of body for proper loading) -->
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggleButton = document.querySelector(".section-title");
+    // Script per il menu a tendina delle citazioni
+    document.querySelector('.section-title').addEventListener('click', function() {
       const dropdown = document.getElementById('quotes-dropdown');
-
-      toggleButton.addEventListener("click", function() {
-        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-      });
+      dropdown.style.display = (dropdown.style.display === 'block' ? 'none' : 'block');
     });
   </script>
 </body>
