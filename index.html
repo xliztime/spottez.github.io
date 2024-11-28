@@ -1,67 +1,38 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Il Tuo Sito Estetico</title>
+  <title>Lizbeth Life - Home</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-  <!-- Navbar -->
   <nav>
-    <div class="logo">MySite</div>
+    <div class="logo">Lizbeth Life</div>
     <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#quotes-section">Citazioni</a></li>
-      <li><a href="#about">Chi siamo</a></li>
-      <li><a href="#contact">Contatti</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="youtube.html">YouTube</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Home Section -->
-  <section id="home">
-    <div class="title">Benvenuti nel mio mondo!</div>
-    <div class="subtitle">Un posto dove bellezza e creatività si incontrano</div>
-    <a href="https://www.youtube.com" class="btn">Visita il mio canale YouTube</a>
-  </section>
+  <main>
+    <section id="home">
+      <div class="container">
+        <h1 class="title">Lizbeth Life</h1>
+        <p class="subtitle">Dream. Create. Inspire.</p>
+        <a href="https://www.youtube.com/@xliztime" class="btn" target="_blank">Discover My YouTube</a>
+      </div>
+    </section>
+  </main>
 
-  <!-- Quotes Section -->
-  <section id="quotes-section">
-    <h2 class="section-title">Le mie citazioni preferite</h2>
-    <div id="quotes-dropdown">
-      <p>"La vita è ciò che accade mentre siamo impegnati a fare altri piani." - John Lennon</p>
-      <p>"La felicità non è qualcosa di pronto, viene dalle tue azioni." - Dalai Lama</p>
-      <p>"Non smettere mai di sognare, anche quando le cose sembrano impossibili." - Walt Disney</p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contattami</h2>
-    <form action="https://formspree.io/f/xqkknkqp" method="POST">
-      <input type="email" name="email" placeholder="Inserisci la tua email" required>
-      <textarea name="message" placeholder="Scrivi il tuo messaggio..." required></textarea>
-      <button type="submit">Invia</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <p>© 2024 MySite. Tutti i diritti riservati.</p>
+    <p>&copy; 2024 Lizbeth Life. All Rights Reserved.</p>
     <div class="social-links">
-      <a href="https://www.instagram.com" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com" target="_blank">Facebook</a>
-      <a href="https://www.twitter.com" target="_blank">Twitter</a>
+      <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
+      <a href="https://www.youtube.com/@xliztime" target="_blank">YouTube</a>
     </div>
   </footer>
-
-  <script>
-    // Script per il menu a tendina delle citazioni
-    document.querySelector('.section-title').addEventListener('click', function() {
-      const dropdown = document.getElementById('quotes-dropdown');
-      dropdown.style.display = (dropdown.style.display === 'block' ? 'none' : 'block');
-    });
-  </script>
 </body>
 </html>
