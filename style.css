@@ -1,6 +1,22 @@
-/* Generale */
+/* Generale (identico a prima) */
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Header (identico a prima) */
+header {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
+}
+
+.main-graphic {
+  text-align: center;
+  /* Inserisci qui le tue impostazioni di grafica, es. immagini o testo */
 }
 
 /* Citazioni a Tendina */
@@ -47,7 +63,7 @@ body {
   background-color: rgba(255, 240, 246, 0.3);
 }
 
-/* Emojis Interattive */
+/* Emoji Interattive */
 .emojis {
   text-align: center;
   margin-top: 50px;
@@ -80,4 +96,16 @@ section {
   to {
     opacity: 1;
   }
+}
+
+/* Footer (identico a prima) */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  /* Inserisci qui il contenuto del footer che avevi prima */
 }
