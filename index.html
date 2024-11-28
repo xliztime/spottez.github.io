@@ -7,6 +7,13 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Header o Grafica Centrale (già presente, non modificato) -->
+  <header>
+    <div class="main-graphic">
+      <!-- Inserisci qui la grafica che avevi prima -->
+    </div>
+  </header>
+
   <!-- Citazioni a Tendina -->
   <section id="quotes" class="quotes">
     <h2 class="section-title" onclick="toggleQuotes()">Inspiration for You</h2>
@@ -34,7 +41,15 @@
     </div>
   </section>
 
+  <!-- Footer (già presente, non modificato) -->
+  <footer>
+    <div class="footer-content">
+      <!-- Inserisci qui il contenuto del footer che avevi prima -->
+    </div>
+  </footer>
+
   <script>
+    // Script per il menù a tendina delle citazioni
     function toggleQuotes() {
       const dropdown = document.getElementById('quotes-dropdown');
       dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
