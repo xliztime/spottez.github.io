@@ -1,91 +1,184 @@
 /* Global Styles */
-* {
+html, body {
+  height: 100%; /* Ensure full height for sticky footer */
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.6;
-  background-color: #fff5f7;
-  color: #333;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-/* Header */
-header {
-  background: #fdcedf;
-  color: #fff;
-  padding: 1rem 0;
-}
-
-header nav {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-header nav a {
-  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  background-color: #fff0f6;
   color: #333;
-  font-weight: 600;
-  transition: color 0.3s;
+  line-height: 1.6;
 }
 
-header nav a:hover {
-  color: #ff6699;
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 500;
 }
 
-/* Main Content */
-main {
-  flex: 1;
+p {
+  margin: 0 0 1em;
 }
 
-main section {
-  padding: 2rem;
-  text-align: center;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-main form {
-  max-width: 500px;
-  margin: 0 auto;
-  background: #fff;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fdcedf;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-main form input,
-main form textarea,
-main form button {
-  width: 100%;
-  margin: 0.5rem 0;
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-main form button {
-  background: #ff6699;
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
   color: white;
-  font-weight: 600;
-  cursor: pointer;
-  border: none;
+  text-transform: uppercase;
 }
 
-main form button:hover {
-  background: #e05588;
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav .nav-links li {
+  margin: 0 10px;
+}
+
+nav .nav-links a {
+  color: white;
+  font-weight: 500;
+  padding: 5px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+  background-color: white;
+  color: #fdcedf;
+  border-radius: 5px;
 }
 
 /* Footer */
 footer {
-  background: #fdcedf;
-  color: #fff;
   text-align: center;
-  padding: 1rem;
-  margin-top: auto;
+  padding: 20px;
+  background-color: #fdcedf;
+  color: white;
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+footer .social-links a {
+  color: white;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+footer .social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+main {
+  flex: 1; /* Allow main content to grow and push the footer down */
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #fdcedf;
+}
+
+p {
+  color: #555;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(to bottom, #fff0f6, #fde3ef);
+}
+
+#home .title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  color: #fdcedf;
+}
+
+#home .subtitle {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+#home .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #fdcedf;
+  color: white;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+#home .btn:hover {
+  background-color: white;
+  color: #fdcedf;
+}
+
+/* YouTube Section */
+.video-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.video-grid iframe {
+  width: 300px;
+  height: 200px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Contact Section */
+form input, form textarea {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #fdcedf;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: white;
+  color: #fdcedf;
+  border: 1px solid #fdcedf;
 }
