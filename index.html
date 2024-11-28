@@ -3,54 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Lizbeth Life - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header o Grafica Centrale (già presente, non modificato) -->
-  <header>
-    <div class="main-graphic">
-      <!-- Inserisci qui la grafica che avevi prima -->
-    </div>
-  </header>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Lizbeth Life</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="youtube.html">YouTube</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Citazioni a Tendina -->
-  <section id="quotes" class="quotes">
-    <h2 class="section-title" onclick="toggleQuotes()">Inspiration for You</h2>
-    <div class="quotes-dropdown" id="quotes-dropdown">
-      <blockquote class="quote">
-        "Dream big, create your own path, and inspire others to follow." – Liz
-      </blockquote>
-      <blockquote class="quote">
-        "Embrace your creativity, and let your heart lead the way." – Liz
-      </blockquote>
-      <blockquote class="quote">
-        "The future belongs to those who believe in the beauty of their dreams." – Liz
-      </blockquote>
-    </div>
-  </section>
+  <main>
+    <!-- Home Section -->
+    <section id="home">
+      <div class="container">
+        <h1 class="title">Lizbeth Life</h1>
+        <p class="subtitle">Dream. Create. Inspire.</p>
+        <a href="https://www.youtube.com/@xliztime" class="btn" target="_blank">Discover My YouTube</a>
+      </div>
+    </section>
 
-  <!-- Emoji Interattive -->
-  <section id="emojis" class="emojis">
-    <h2 class="section-title">A Little Fun!</h2>
-    <div class="emoji-container">
-      <span class="emoji">💖</span>
-      <span class="emoji">🌸</span>
-      <span class="emoji">✨</span>
-      <span class="emoji">🌷</span>
-    </div>
-  </section>
+    <!-- New Section for Quotes Dropdown -->
+    <section id="quotes-section">
+      <h2 class="section-title">Inspiration</h2>
+      <div id="quotes-dropdown" class="dropdown-content">
+        <p>"Believe you can and you're halfway there." - Theodore Roosevelt</p>
+        <p>"The only limit to our realization of tomorrow is our doubts of today." - Franklin D. Roosevelt</p>
+        <p>"Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill</p>
+      </div>
+    </section>
 
-  <!-- Footer (già presente, non modificato) -->
+    <!-- Newsletter Section (if desired) -->
+    <section id="newsletter">
+      <h2>Stay Updated!</h2>
+      <form action="https://formspree.io/f/mvgowyqr" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer>
-    <div class="footer-content">
-      <!-- Inserisci qui il contenuto del footer che avevi prima -->
+    <p>&copy; 2024 Lizbeth Life. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
+      <a href="https://www.youtube.com/@xliztime" target="_blank">YouTube</a>
     </div>
   </footer>
 
-  <!-- Script (aggiunto alla fine per sicurezza) -->
+  <!-- JavaScript (added at the bottom of body for proper loading) -->
   <script>
-    // Script per gestire il menù a tendina delle citazioni
     document.addEventListener("DOMContentLoaded", function () {
       const toggleButton = document.querySelector(".section-title");
       const dropdown = document.getElementById('quotes-dropdown');
@@ -62,4 +70,3 @@
   </script>
 </body>
 </html>
-
