@@ -97,10 +97,16 @@ section {
 h2 {
   font-size: 2rem;
   color: #fdcedf;
+  margin-bottom: 20px; /* Added margin to create spacing from text */
 }
 
 p {
   color: #555;
+  font-size: 1.1rem; /* Slightly larger text for better readability */
+  line-height: 1.6; /* Ensures line height is consistent and readable */
+  max-width: 800px; /* Sets a maximum width for the paragraphs to prevent them from stretching too wide */
+  margin: 0 auto 20px; /* Center the text and add space between paragraphs */
+  text-align: justify; /* Justify text for a cleaner look */
 }
 
 /* Home Section */
