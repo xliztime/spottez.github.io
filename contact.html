@@ -3,38 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lizbeth Life - Contact</title>
+  <title>Contact Me</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <div class="logo">Lizbeth Life</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="youtube.html">YouTube</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="youtube.html">YouTube</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  
   <main>
     <section id="contact">
-      <h2>Contact Me</h2>
-      <form action="#" method="post">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
+      <h1>Contact Me</h1>
+      <form action="https://formspree.io/f/mvgowyqr" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2024 Lizbeth Life. All Rights Reserved.</p>
-    <div class="social-links">
-      <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
-      <a href="https://www.youtube.com/@xliztime" target="_blank">YouTube</a>
-    </div>
+    <p>&copy; 2024 Lizbeth Life. All rights reserved.</p>
   </footer>
 </body>
 </html>
