@@ -48,12 +48,18 @@
     </div>
   </footer>
 
+  <!-- Script (aggiunto alla fine per sicurezza) -->
   <script>
-    // Script per il menù a tendina delle citazioni
-    function toggleQuotes() {
+    // Script per gestire il menù a tendina delle citazioni
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.querySelector(".section-title");
       const dropdown = document.getElementById('quotes-dropdown');
-      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-    }
+
+      toggleButton.addEventListener("click", function() {
+        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+      });
+    });
   </script>
 </body>
 </html>
+
