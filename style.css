@@ -24,6 +24,19 @@ a {
   color: inherit;
 }
 
+/* Global title styles for all main titles */
+.title-main {
+  font-size: 3rem; /* Dimensione adeguata per i titoli principali */
+  font-weight: 700;
+  color: #fdcedf; /* Colore del testo */
+  text-shadow: 
+    1px 1px 0 #d4b0c2,
+    -1px 1px 0 #d4b0c2,
+    1px -1px 0 #d4b0c2,
+    -1px -1px 0 #d4b0c2; /* Effetto di bordo scuro */
+  text-align: center; /* Centrare i titoli */
+  margin: 20px 0; /* Margine superiore e inferiore */
+}
 /* Navbar */
 nav {
   display: flex;
