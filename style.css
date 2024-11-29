@@ -118,31 +118,33 @@ p {
   text-align: center; /* Centra il testo */
   height: 100vh; /* Assicura che la sezione occupi tutta l'altezza dello schermo */
 }
+/* Titolo di Index */
 #home .title {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #fdcedf; /* Colore principale del testo */
-  text-shadow: 
-    1px 1px 0 #d4b0c2, /* Margine scuro attorno */
-    -1px 1px 0 #d4b0c2,
-    1px -1px 0 #d4b0c2,
-    -1px -1px 0 #d4b0c2; /* Ripeti per creare un bordo visibile */
-  margin: 0; /* Rimuove margini indesiderati */
-}
-#home .subtitle {
-  font-size: 1.2rem;
-  color: #666;
-  margin: 10px 0; /* Spazio sopra e sotto */
-  text-align: center; /* Centra il testo */
+  font-family: 'Playfair Display', serif; /* Font elegante per il titolo */
+  font-size: 3.5rem; /* Imposta la dimensione per renderlo grande */
+  font-weight: 700; /* Impostazione grassetto */
+  color: #fdcedf; /* Colore rosa chiaro per il titolo */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Leggera ombra per farlo risaltare */
+  margin: 0;
 }
 
-/* Button on Home Section */
+/* Sottotitolo su Index */
+#home .subtitle {
+  font-family: 'Montserrat', sans-serif; /* Font sans-serif per il sottotitolo */
+  font-size: 1.5rem;
+  color: #555; /* Un grigio scuro per il contrasto, che sta bene con il rosa */
+  margin-top: 10px;
+  text-align: center; /* Centra il sottotitolo */
+}
+
+/* Pulsante su Index */
 #home .btn {
+  font-family: 'Poppins', sans-serif; /* Font sans-serif per il pulsante */
   display: inline-block;
   margin-top: 1rem;
   padding: 10px 20px;
-  background-color: #FF0000;
-  color: #F0F0F0;
+  background-color: #FF0000; /* Rosso di YouTube per il pulsante */
+  color: white;
   border-radius: 25px;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -150,7 +152,8 @@ p {
 
 #home .btn:hover {
   background-color: white;
-  color: #fdcedf;
+  color: #FF0000; /* Colore rosso di YouTube al passaggio del mouse */
+  border: 1px solid #FF0000;
 }
 
 /* YouTube Section */
