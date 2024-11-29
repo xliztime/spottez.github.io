@@ -124,7 +124,12 @@ p {
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
-  color: #fdcedf;
+  color: #fdcedf; /* Colore del titolo */
+  text-align: center; /* Centra il titolo */
+  border: 2px solid #f4a3bf; /* Bordo leggermente più scuro del colore del titolo */
+  padding: 10px 20px; /* Padding per il bordo */
+  border-radius: 10px; /* Angoli arrotondati */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra leggera per farlo risaltare */
 }
 
 #home .subtitle {
@@ -189,28 +194,22 @@ form button:hover {
   border: 1px solid #fdcedf;
 }
 
-/* Modifiche per centrare i titoli e il testo nelle pagine YouTube e Contact */
-h1 {
-  margin-bottom: 10px;
-  color: #fdcedf; /* Colore titolo (puoi cambiarlo se vuoi) */
-  text-align: center; /* Centra il titolo */
+/* About Section */
+#about .title, #youtube .title, #contact .title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fdcedf; /* Colore del titolo */
+  margin: 0;
+  text-align: center;
+  border: 2px solid #f4a3bf; /* Bordo leggermente più scuro del colore del titolo */
+  padding: 10px 20px; /* Padding per il bordo */
+  border-radius: 10px; /* Angoli arrotondati */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra leggera per farlo risaltare */
 }
 
-h2 {
-  color: #333; /* Colore del sottotitolo */
-  text-align: center; /* Centra il sottotitolo */
-  font-size: 1.2rem;
-  margin-top: 10px; /* Distanza dal titolo */
-  font-weight: 500; /* Font leggermente più sottile rispetto al titolo */
-}
-
-/* Allinea il contenuto sotto i titoli delle sezioni */
-section p {
-  text-align: center; /* Centra il paragrafo sotto i titoli */
-  margin-top: 10px; /* Distanza dal titolo o sottotitolo */
-  color: #555;
+#about .subtitle, #youtube .subtitle, #contact .subtitle {
   font-size: 1.1rem;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto 20px; /* Centro e spazio tra i paragrafi */
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
 }
