@@ -113,13 +113,11 @@ p {
 #home {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-  background: linear-gradient(to bottom, #fff0f6, #fde3ef);
+  align-items: center; /* Centra orizzontalmente */
+  justify-content: center; /* Centra verticalmente */
+  text-align: center; /* Centra il testo */
+  height: 100vh; /* Assicura che la sezione occupi tutta l'altezza dello schermo */
 }
-
 #home .title {
   font-size: 3rem;
   font-weight: 700;
@@ -132,7 +130,8 @@ p {
 #home .subtitle {
   font-size: 1.2rem;
   color: #666;
-  margin-top: 10px; /* Ensure it’s properly spaced below the title */
+  margin: 10px 0; /* Spazio sopra e sotto */
+  text-align: center; /* Centra il testo */
 }
 
 /* Button on Home Section */
