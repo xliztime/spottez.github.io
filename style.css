@@ -120,16 +120,15 @@ p {
 }
 /* Titolo di Index */
 #home .title {
-  font-size: 4rem; /* Aumentato per renderlo più grande */
+  font-size: 4rem; /* Dimensione grande per il titolo */
   font-weight: 700;
   margin: 0;
-  color: #fdcedf; /* Colore principale del titolo */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombra più forte per il titolo */
-  border: 2px solid #ff6b81; /* Bordo leggermente più scuro del colore originale per contrasto */
-  padding: 10px; /* Aggiunto spazio tra bordo e testo */
-  border-radius: 5px; /* Angoli arrotondati per il bordo */
-  background-color: rgba(255, 255, 255, 0.7); /* Leggero sfondo bianco traslucido per far risaltare meglio il testo */
+  color: #e57373; /* Colore del testo più scuro rispetto al rosa originale (#fdcedf) */
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5); /* Ombra più forte, senza sfumatura */
+  padding: 10px; /* Distanza dal testo */
+  background-color: rgba(255, 255, 255, 0.7); /* Sfondo bianco traslucido per maggiore contrasto */
 }
+
 /* Sottotitolo su Index */
 #home .subtitle {
   font-family: 'Montserrat', sans-serif; /* Font sans-serif per il sottotitolo */
