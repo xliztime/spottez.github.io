@@ -126,7 +126,6 @@ p {
   color: #e57373; /* Colore del testo più scuro rispetto al rosa originale (#fdcedf) */
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5); /* Ombra più forte, senza sfumatura */
   padding: 10px; /* Distanza dal testo */
-  background-color: rgba(255, 255, 255, 0.7); /* Sfondo bianco traslucido per maggiore contrasto */
 }
 
 /* Sottotitolo su Index */
