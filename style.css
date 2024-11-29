@@ -37,7 +37,7 @@ nav {
 nav .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: white;
+  color: #333; /* Changed from white to dark gray */
   text-transform: uppercase;
 }
 
@@ -53,7 +53,7 @@ nav .nav-links li {
 }
 
 nav .nav-links a {
-  color: white;
+  color: #333; /* Changed from white to dark gray */
   font-weight: 500;
   padding: 5px 15px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -125,13 +125,16 @@ p {
   font-weight: 700;
   margin: 0;
   color: #fdcedf;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Added shadow for visibility */
 }
 
 #home .subtitle {
   font-size: 1.2rem;
   color: #666;
+  margin-top: 10px; /* Ensure it’s properly spaced below the title */
 }
 
+/* Button on Home Section */
 #home .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -154,6 +157,7 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  margin-top: 20px; /* Added spacing from the heading */
 }
 
 .video-grid iframe {
