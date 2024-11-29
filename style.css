@@ -124,8 +124,8 @@ p {
   font-weight: 700;
   margin: 0;
   color: #d48ca8; /* Colore del testo più scuro rispetto al rosa originale (#fdcedf) */
-  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5); /* Ombra più forte, senza sfumatura */
-  padding: 5px; /* Distanza dal testo */
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5); /* Ombra più forte, senza sfumatura */
+  padding: 2px; /* Distanza dal testo */
 }
 
 /* Sottotitolo su Index */
