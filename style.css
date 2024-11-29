@@ -37,7 +37,7 @@ nav {
 nav .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: white;
+  color: #333; /* Changed from white to dark gray */
   text-transform: uppercase;
 }
 
@@ -53,7 +53,7 @@ nav .nav-links li {
 }
 
 nav .nav-links a {
-  color: white;
+  color: #333; /* Changed from white to dark gray */
   font-weight: 500;
   padding: 5px 15px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -113,30 +113,30 @@ p {
 #home {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-  background: linear-gradient(to bottom, #fff0f6, #fde3ef);
+  align-items: center; /* Centra orizzontalmente */
+  justify-content: center; /* Centra verticalmente */
+  text-align: center; /* Centra il testo */
+  height: 100vh; /* Assicura che la sezione occupi tutta l'altezza dello schermo */
 }
-
 #home .title {
   font-size: 3rem;
   font-weight: 700;
-  margin: 0;
-  color: #fdcedf; /* Colore del titolo */
-  text-align: center; /* Centra il titolo */
-  border: 2px solid #f4a3bf; /* Bordo leggermente più scuro del colore del titolo */
-  padding: 10px 20px; /* Padding per il bordo */
-  border-radius: 10px; /* Angoli arrotondati */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra leggera per farlo risaltare */
+  color: #fdcedf; /* Colore principale del testo */
+  text-shadow: 
+    1px 1px 0 #d4b0c2, /* Margine scuro attorno */
+    -1px 1px 0 #d4b0c2,
+    1px -1px 0 #d4b0c2,
+    -1px -1px 0 #d4b0c2; /* Ripeti per creare un bordo visibile */
+  margin: 0; /* Rimuove margini indesiderati */
 }
-
 #home .subtitle {
   font-size: 1.2rem;
   color: #666;
+  margin: 10px 0; /* Spazio sopra e sotto */
+  text-align: center; /* Centra il testo */
 }
 
+/* Button on Home Section */
 #home .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -159,6 +159,7 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  margin-top: 20px; /* Added spacing from the heading */
 }
 
 .video-grid iframe {
@@ -192,24 +193,4 @@ form button:hover {
   background-color: white;
   color: #fdcedf;
   border: 1px solid #fdcedf;
-}
-
-/* About Section */
-#about .title, #youtube .title, #contact .title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #fdcedf; /* Colore del titolo */
-  margin: 0;
-  text-align: center;
-  border: 2px solid #f4a3bf; /* Bordo leggermente più scuro del colore del titolo */
-  padding: 10px 20px; /* Padding per il bordo */
-  border-radius: 10px; /* Angoli arrotondati */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra leggera per farlo risaltare */
-}
-
-#about .subtitle, #youtube .subtitle, #contact .subtitle {
-  font-size: 1.1rem;
-  color: #666;
-  text-align: center;
-  margin-top: 20px;
 }
