@@ -70,12 +70,12 @@ footer {
   text-align: center;
   padding: 20px;
   background-color: #fdcedf;
-  color: white;
+  color: #333;
   margin-top: auto; /* Push the footer to the bottom */
 }
 
 footer .social-links a {
-  color: white;
+  color: #333;
   margin: 0 10px;
   font-weight: 500;
 }
