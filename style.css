@@ -125,7 +125,8 @@ p {
   font-weight: 700;
   margin: 0;
   color: #fdcedf;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Added shadow for visibility */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Mantiene l'ombra esistente */
+  -webkit-text-stroke: 1px black; /* Bordino nero attorno al testo */
 }
 
 #home .subtitle {
