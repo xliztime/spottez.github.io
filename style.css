@@ -121,12 +121,14 @@ p {
 #home .title {
   font-size: 3rem;
   font-weight: 700;
-  margin: 0;
-  color: #fdcedf;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Mantiene l'ombra esistente */
-  -webkit-text-stroke: 1px black; /* Bordino nero attorno al testo */
+  color: #fdcedf; /* Colore principale del testo */
+  text-shadow: 
+    1px 1px 0 #d4b0c2, /* Margine scuro attorno */
+    -1px 1px 0 #d4b0c2,
+    1px -1px 0 #d4b0c2,
+    -1px -1px 0 #d4b0c2; /* Ripeti per creare un bordo visibile */
+  margin: 0; /* Rimuove margini indesiderati */
 }
-
 #home .subtitle {
   font-size: 1.2rem;
   color: #666;
