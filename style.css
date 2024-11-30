@@ -121,11 +121,11 @@ p {
 
 /* Titolo principale con animazione */
 #home .title {
-  font-family: 'Dancing Script', cursive; /* Font elegante */
+  font-family: 'Cinzel', serif; /* Elegante font Cinzel */
   font-size: 5rem;
   text-transform: uppercase;
-  color: #fdcedf; /* Colore simile a quello del banner */
-  animation: fadeInUp 2s ease-out forwards; /* Animazione: fade in + movimento */
+  color: #fdcedf;
+  animation: fadeInUp 2s ease-out forwards;
   margin: 0;
 }
 
@@ -148,7 +148,7 @@ p {
   color: #555;
   margin-top: 10px;
   text-align: center;
-  animation: fadeInUp 2s ease-out 1s forwards; /* Animazione con ritardo */
+  animation: fadeInUp 2s ease-out forwards; /* Animazione senza ritardo */
 }
 
 /* Pulsante su Index */
