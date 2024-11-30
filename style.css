@@ -119,26 +119,28 @@ p {
   height: 100vh;
   background: linear-gradient(to bottom, #fff0f6, #fde3ef); /* Sfondo sfumato rosa */
   color: #333;
+  padding: 0 20px; /* Margine per dispositivi piccoli */
 }
 
 /* Titolo di Index */
 #home .title {
-  font-family: 'Dancing Script', cursive; /* Font elegante e artistico */
-  font-size: 5rem; /* Titolo più grande per maggiore impatto */
-  font-weight: 700;
-  color: #ffbfd4; /* Colore rosa chiaro per armonizzarsi con lo sfondo */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Ombra più pronunciata */
+  font-family: 'Great Vibes', cursive; /* Font identico al banner */
+  font-size: 5.5rem; /* Titolo più grande per maggiore impatto */
+  font-weight: 400; /* Peso leggero per un effetto elegante */
+  color: #ffbfd4; /* Colore rosa chiaro armonioso */
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Ombra per contrasto */
   margin: 0;
 }
 
 /* Sottotitolo su Index */
 #home .subtitle {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif; /* Font moderno e leggibile */
+  font-size: 1.2rem; /* Ridotto leggermente rispetto alla versione precedente */
   color: #666; /* Grigio scuro per contrasto */
   margin-top: 10px;
-  text-transform: uppercase; /* Maiuscolo come nel banner */
+  text-transform: uppercase; /* Testo maiuscolo per un look professionale */
   letter-spacing: 2px;
+  text-align: center;
 }
 
 /* Pulsante su Index */
@@ -160,7 +162,6 @@ p {
   color: #ff4b4b;
   border: 1px solid #ff4b4b;
 }
-
 
 /* YouTube Section */
 .video-grid {
