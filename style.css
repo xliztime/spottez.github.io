@@ -120,7 +120,6 @@ p {
 }
 
 /* Titolo principale con animazione */
-/* Home Section */
 #home .title {
   font-size: 3.5rem;
   font-weight: 700;
@@ -128,31 +127,17 @@ p {
   position: relative;
   display: inline-block;
   white-space: nowrap; /* Per evitare che vada a capo */
-  overflow: hidden; /* Per nascondere il testo che non è ancora stato scritto */
+  overflow: hidden; /* Nascondere eventuali lettere fuori dalla riga */
 }
 
-#home .title .typing {
-  display: inline-block;
-  animation: typing 4s steps(16) 1s forwards, blink 0.75s step-end infinite;
+/* Sottotitolo */
+#home .subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 10px;
+  text-align: center;
 }
-
-/* Effetto macchina da scrivere */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* Blinking cursor effect */
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
 /* Sottotitolo su Index */
 #home .subtitle {
   font-family: 'Montserrat', sans-serif;
