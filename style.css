@@ -149,6 +149,10 @@ p {
   animation: typing 3s steps(5) 3s forwards, glow 1.5s ease-in-out infinite; /* Delay per Life */
   display: inline-block;
   white-space: nowrap; /* Impedisce che il testo vada a capo */
+  width: auto; /* Assicura che la larghezza sia adattabile */
+  overflow: hidden; /* Nasconde la parte che esce dal bordo */
+  visibility: visible;
+  position: relative;
 }
 
 @keyframes typing {
