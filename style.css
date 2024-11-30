@@ -130,7 +130,7 @@ p {
 
 /* Titolo principale (bianco) */
 #home .title-main {
-  position: relative; /* Necessario per il posizionamento relativo */
+  position: relative;
   font-family: 'Anton', sans-serif; /* Font tozzo per il testo bianco */
   font-size: 4rem; /* Dimensione grande */
   text-transform: uppercase; /* Tutte maiuscole */
@@ -138,14 +138,13 @@ p {
   margin: 0;
 }
 
-/* Titolo secondario (nero) */
+/* Titolo secondario (nero) con Dancing Script */
 #home .title-secondary {
-  content: "Lizbeth Life"; /* Ripeti il testo per il livello nero */
   position: absolute; /* Posizionamento esattamente sopra il bianco */
   top: 0;
   left: 0;
   color: #333; /* Colore nero */
-  font-family: 'Anton', sans-serif; /* Stesso font del bianco */
+  font-family: 'Dancing Script', cursive; /* Font elegante simile a Aston Script */
   font-size: 4rem; /* Stessa dimensione del bianco */
   letter-spacing: 2px; /* Aggiungi spaziatura tra le lettere */
   z-index: -1; /* Sovrapponi correttamente (nero sotto) */
