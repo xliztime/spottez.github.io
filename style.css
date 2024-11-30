@@ -122,28 +122,34 @@ p {
 /* Titolo principale con animazione */
 #home .title {
   font-family: 'Cinzel', serif;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   text-align: center;
   color: transparent;
   background: linear-gradient(to left, #fdcedf, #ff6f91); /* Gradiente rosa */
   -webkit-background-clip: text;
-  animation: typing 3s steps(10) 1s forwards, blinkCaret 0.75s step-end infinite, glow 1.5s ease-in-out infinite;
+  animation: typing 3s ease-in-out 1s forwards, glow 1.5s ease-in-out infinite;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glow effetto */
-  width: fit-content; /* Impedisce che il testo esca dal contenitore */
-  white-space: nowrap; /* Impedisce il ritorno a capo */
-  overflow: hidden;
-  display: inline-block; /* Perché vogliamo mantenere il testo sulla stessa riga */
+  display: flex; /* Per posizionare il testo sulla stessa riga */
+  justify-content: center; /* Centra orizzontalmente */
+  gap: 10px; /* Distanza tra Lizbeth e Life */
+  flex-wrap: nowrap; /* Assicura che non vadano a capo */
 }
 
 #home .title-main {
+  color: transparent;
+  background: linear-gradient(to left, #fdcedf, #ff6f91);
+  -webkit-background-clip: text;
+  animation: typing 3s ease-in-out 1s forwards, glow 1.5s ease-in-out infinite;
   display: inline-block;
-  animation: typing 3s steps(10) 1s forwards, glow 1.5s ease-in-out infinite;
 }
 
 #home .title-secondary {
+  color: transparent;
+  background: linear-gradient(to left, #fdcedf, #ff6f91);
+  -webkit-background-clip: text;
+  animation: typing 3s ease-in-out 4s forwards, glow 1.5s ease-in-out infinite;
   display: inline-block;
-  animation: typing 3s steps(10) 4s forwards, glow 1.5s ease-in-out infinite; /* Ritardo per la seconda parte */
 }
 
 @keyframes typing {
@@ -152,12 +158,6 @@ p {
   }
   100% {
     width: 100%;
-  }
-}
-
-@keyframes blinkCaret {
-  50% {
-    border-color: transparent;
   }
 }
 
@@ -172,7 +172,6 @@ p {
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
   }
 }
-
 /* Sottotitolo su Index */
 #home .subtitle {
   font-family: 'Montserrat', sans-serif;
