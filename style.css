@@ -122,27 +122,28 @@ p {
 /* Titolo principale con animazione */
 #home .title {
   font-family: 'Cinzel', serif;
-  font-size: 4.5rem; /* Puoi regolare la dimensione */
+  font-size: 4.5rem;
   font-weight: 700;
   text-align: center;
   color: transparent;
   background: linear-gradient(to left, #fdcedf, #ff6f91); /* Gradiente rosa */
   -webkit-background-clip: text;
-  animation: typing 3s steps(30) 1s forwards, blinkCaret 0.75s step-end infinite, glow 1.5s ease-in-out infinite;
+  animation: typing 3s steps(10) 1s forwards, blinkCaret 0.75s step-end infinite, glow 1.5s ease-in-out infinite;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glow effetto */
-  width: 100%;
+  width: fit-content; /* Impedisce che il testo esca dal contenitore */
   white-space: nowrap; /* Impedisce il ritorno a capo */
-  overflow: hidden; /* Nasconde il testo che eccede */
+  overflow: hidden;
+  display: inline-block; /* Perché vogliamo mantenere il testo sulla stessa riga */
 }
 
 #home .title-main {
-  display: inline-block; /* Assicura che entrambe le parole siano sulla stessa riga */
+  display: inline-block;
   animation: typing 3s steps(10) 1s forwards, glow 1.5s ease-in-out infinite;
 }
 
 #home .title-secondary {
-  display: inline-block; /* Assicura che entrambe le parole siano sulla stessa riga */
-  animation: typing 3s steps(10) 4s forwards, glow 1.5s ease-in-out infinite; /* Aggiungi ritardo */
+  display: inline-block;
+  animation: typing 3s steps(10) 4s forwards, glow 1.5s ease-in-out infinite; /* Ritardo per la seconda parte */
 }
 
 @keyframes typing {
