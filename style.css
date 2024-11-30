@@ -130,6 +130,7 @@ p {
   -webkit-background-clip: text;
   display: inline-block;
   overflow: hidden; /* Assicura che non ci siano problemi di overflow con l'animazione */
+  white-space: nowrap; /* Impedisce che il testo vada a capo */
 }
 
 #home .title-main {
@@ -138,6 +139,7 @@ p {
   -webkit-background-clip: text;
   animation: typing 3s steps(12) forwards, glow 1.5s ease-in-out infinite;
   display: inline-block;
+  white-space: nowrap; /* Impedisce che il testo vada a capo */
 }
 
 #home .title-secondary {
@@ -146,6 +148,7 @@ p {
   -webkit-background-clip: text;
   animation: typing 3s steps(5) 3s forwards, glow 1.5s ease-in-out infinite; /* Delay per Life */
   display: inline-block;
+  white-space: nowrap; /* Impedisce che il testo vada a capo */
 }
 
 @keyframes typing {
