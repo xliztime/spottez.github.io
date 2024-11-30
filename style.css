@@ -113,48 +113,54 @@ p {
 #home {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra orizzontalmente */
-  justify-content: center; /* Centra verticalmente */
-  text-align: center; /* Centra il testo */
-  height: 100vh; /* Assicura che la sezione occupi tutta l'altezza dello schermo */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #fff0f6, #fde3ef); /* Sfondo sfumato rosa */
+  color: #333;
 }
+
 /* Titolo di Index */
 #home .title {
-  font-size: 4rem; /* Dimensione grande per il titolo */
+  font-family: 'Dancing Script', cursive; /* Font elegante e artistico */
+  font-size: 5rem; /* Titolo più grande per maggiore impatto */
   font-weight: 700;
+  color: #ffbfd4; /* Colore rosa chiaro per armonizzarsi con lo sfondo */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Ombra più pronunciata */
   margin: 0;
-  color: #fdcedf;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5); /* Ombra più forte, senza sfumatura */
-  padding: 2px; /* Distanza dal testo */
 }
 
 /* Sottotitolo su Index */
 #home .subtitle {
-  font-family: 'Montserrat', sans-serif; /* Font sans-serif per il sottotitolo */
-  font-size: 1.5rem;
-  color: #555; /* Un grigio scuro per il contrasto, che sta bene con il rosa */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  color: #666; /* Grigio scuro per contrasto */
   margin-top: 10px;
-  text-align: center; /* Centra il sottotitolo */
+  text-transform: uppercase; /* Maiuscolo come nel banner */
+  letter-spacing: 2px;
 }
 
 /* Pulsante su Index */
 #home .btn {
-  font-family: 'Poppins', sans-serif; /* Font sans-serif per il pulsante */
+  font-family: 'Poppins', sans-serif;
   display: inline-block;
-  margin-top: 1rem;
-  padding: 10px 20px;
-  background-color: #FF0000; /* Rosso di YouTube per il pulsante */
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #ff4b4b; /* Rosso YouTube */
   color: white;
   border-radius: 25px;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
   transition: all 0.3s ease;
 }
 
 #home .btn:hover {
   background-color: white;
-  color: #FF0000; /* Colore rosso di YouTube al passaggio del mouse */
-  border: 1px solid #FF0000;
+  color: #ff4b4b;
+  border: 1px solid #ff4b4b;
 }
+
 
 /* YouTube Section */
 .video-grid {
