@@ -37,7 +37,7 @@ nav {
 nav .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #333; /* Changed from white to dark gray */
+  color: #333;
   text-transform: uppercase;
 }
 
@@ -53,7 +53,7 @@ nav .nav-links li {
 }
 
 nav .nav-links a {
-  color: #333; /* Changed from white to dark gray */
+  color: #333;
   font-weight: 500;
   padding: 5px 15px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -97,16 +97,16 @@ section {
 h2 {
   font-size: 2rem;
   color: #666;
-  margin-bottom: 20px; /* Added margin to create spacing from text */
+  margin-bottom: 20px;
 }
 
 p {
   color: #555;
-  font-size: 1.1rem; /* Slightly larger text for better readability */
-  line-height: 1.6; /* Ensures line height is consistent and readable */
-  max-width: 800px; /* Sets a maximum width for the paragraphs to prevent them from stretching too wide */
-  margin: 0 auto 20px; /* Center the text and add space between paragraphs */
-  text-align: justify; /* Justify text for a cleaner look */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  text-align: justify;
 }
 
 /* Home Section */
@@ -117,69 +117,59 @@ p {
   justify-content: center;
   text-align: center;
   height: 100vh;
-  background: linear-gradient(to bottom, #fff0f6, #fde3ef); /* Sfondo sfumato rosa */
-  color: #333;
-  padding: 0 20px;
 }
 
-/* Contenitore per il titolo stratificato */
-#home .title-container {
-  position: relative;
-  display: inline-block;
-}
-
-/* Titolo principale (bianco) */
-#home .title-main {
-  position: relative;
-  font-family: 'Anton', sans-serif; /* Font tozzo per il testo bianco */
-  font-size: 4rem; /* Dimensione grande */
-  text-transform: uppercase; /* Tutte maiuscole */
-  color: #fff; /* Colore bianco */
+/* Titolo principale con animazione */
+#home .title {
+  font-family: 'Dancing Script', cursive; /* Font elegante */
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #fdcedf; /* Colore simile a quello del banner */
+  animation: fadeInUp 2s ease-out forwards; /* Animazione: fade in + movimento */
   margin: 0;
 }
 
-/* Titolo secondario (nero) con Dancing Script */
-#home .title-secondary {
-  position: absolute; /* Posizionamento esattamente sopra il bianco */
-  top: 0;
-  left: 0;
-  color: #333; /* Colore nero */
-  font-family: 'Dancing Script', cursive; /* Font elegante simile a Aston Script */
-  font-size: 4rem; /* Stessa dimensione del bianco */
-  letter-spacing: 2px; /* Aggiungi spaziatura tra le lettere */
-  z-index: -1; /* Sovrapponi correttamente (nero sotto) */
+/* Animazione del titolo */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+/* Sottotitolo su Index */
 #home .subtitle {
-  font-family: 'Montserrat', sans-serif; /* Font sans-serif elegante */
-  font-size: 1.2rem; /* Leggermente più piccolo */
-  color: #555; /* Grigio scuro */
-  margin-top: 20px; /* Spaziatura dal titolo */
-  text-align: center; /* Centra il testo */
-  max-width: 800px; /* Limita la larghezza per evitare che si allunghi troppo */
-  margin-left: auto; /* Centra orizzontalmente */
-  margin-right: auto; /* Centra orizzontalmente */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 10px;
+  text-align: center;
+  animation: fadeInUp 2s ease-out 1s forwards; /* Animazione con ritardo */
 }
 
 /* Pulsante su Index */
 #home .btn {
   font-family: 'Poppins', sans-serif;
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
-  background-color: #ff4b4b;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #FF0000; /* Rosso di YouTube per il pulsante */
   color: white;
   border-radius: 25px;
-  font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
 #home .btn:hover {
   background-color: white;
-  color: #ff4b4b;
-  border: 1px solid #ff4b4b;
+  color: #FF0000;
+  border: 1px solid #FF0000;
 }
+
 /* YouTube Section */
 .video-grid {
   display: flex;
