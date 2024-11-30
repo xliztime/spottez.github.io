@@ -145,7 +145,7 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   color: #555; /* Colore grigio scuro */
-  margin-top: 3.5px; /* Ridotto il margine per avvicinare il sottotitolo al titolo */
+  margin-top: 2px; /* Ridotto il margine per avvicinare il sottotitolo al titolo */
   text-align: center;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Ombra leggera per il sottotitolo */
 }
