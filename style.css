@@ -121,24 +121,34 @@ p {
 
 /* Titolo principale con animazione */
 #home .title {
-  font-family: 'Cinzel', serif; /* Elegante font Cinzel */
-  font-size: 5rem;
-  text-transform: uppercase;
-  color: #fdcedf;
-  animation: fadeInUp 2s ease-out forwards;
-  margin: 0;
+  font-family: 'Cinzel', serif; /* Font elegante */
+  font-size: 5rem; /* Puoi regolare la dimensione per la visibilità */
+  font-weight: 700;
+  text-align: center;
+  color: transparent; /* Rendi il testo trasparente per usare il gradiente */
+  background: linear-gradient(to left, #fdcedf, #ff6f91); /* Gradiente rosa */
+  -webkit-background-clip: text; /* Applica il gradiente solo al testo */
+  animation: typing 3s steps(30) 1s forwards, blinkCaret 0.75s step-end infinite, glow 1.5s ease-in-out infinite;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glow effetto */
+  width: 100%;
 }
 
-/* Animazione del titolo */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Animazione di Scrittura */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Animazione per il cursore lampeggiante */
+@keyframes blinkCaret {
+  50% { border-color: transparent; }
+}
+
+/* Effetto di Glow (bagliore) */
+@keyframes glow {
+  0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); }
+  50% { text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8); }
+  100% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); }
 }
 
 /* Sottotitolo su Index */
