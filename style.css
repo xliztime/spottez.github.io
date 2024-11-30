@@ -128,31 +128,34 @@ p {
   display: inline-block;
 }
 
-/* Stile per il titolo grande sopra */
+/* Stile per il titolo grande bianco sotto */
 #home .title-main {
   font-family: 'Montserrat', sans-serif; /* Font quadrato e tozzo */
   font-size: 5rem;
-  font-weight: 800; /* Grassetto più marcato */
+  font-weight: 800; /* Grassetto marcato */
   color: #ffffff; /* Colore bianco */
   text-transform: uppercase; /* Maiuscole */
   letter-spacing: 2px; /* Spaziatura tra le lettere */
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Ombra per farlo risaltare */
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Ombra per risalto */
   position: relative;
-  z-index: 2;
+  z-index: 1; /* Più in basso rispetto al titolo nero */
 }
 
-/* Stile per il titolo elegante sopra */
+/* Stile per il titolo elegante nero sopra */
 #home .title-secondary {
   font-family: 'Dancing Script', cursive; /* Font elegante e leggero */
-  font-size: 4rem;
+  font-size: 4.6rem; /* Più piccolo rispetto al titolo bianco */
   font-weight: 600; /* Grassetto leggero */
-  color: #333333; /* Colore nero/grigio scuro */
+  color: #333333; /* Nero/grigio scuro */
+  text-transform: none; /* Non in maiuscolo, per contrastare lo stile del bianco */
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -60%); /* Centra sopra il titolo principale */
-  z-index: 3; /* Si posiziona sopra il titolo principale */
+  transform: translate(-50%, -50%); /* Perfetto centramento sopra il bianco */
+  z-index: 2; /* Sopra il titolo bianco */
+  pointer-events: none; /* Impedisce interazioni */
 }
+
 /* Sottotitolo su Index */
 #home .subtitle {
   font-family: 'Montserrat', sans-serif; /* Font moderno */
