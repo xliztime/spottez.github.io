@@ -123,7 +123,7 @@ p {
 #home .title {
   font-size: 3.5rem;
   font-weight: 700;
-  color: #fdcedf; /* Colore del titolo */
+  color: #333; /* Colore del titolo */
   position: relative;
   display: inline-block;
   white-space: nowrap; /* Per evitare che vada a capo */
