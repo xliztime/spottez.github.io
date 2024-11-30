@@ -128,6 +128,12 @@ p {
   display: inline-block;
   white-space: nowrap; /* Per evitare che vada a capo */
   overflow: hidden; /* Nascondere eventuali lettere fuori dalla riga */
+  
+  /* Effetto glow (bagliore) */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.7), 0 0 50px rgba(255, 255, 255, 0.7);
+  
+  /* Ombra del testo */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombra nera con un effetto sfumato */
 }
 
 /* Sottotitolo */
@@ -137,15 +143,7 @@ p {
   color: #555;
   margin-top: 10px;
   text-align: center;
-}
-/* Sottotitolo su Index */
-#home .subtitle {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  color: #555;
-  margin-top: 10px;
-  text-align: center;
-  animation: fadeInUp 2s ease-out forwards; /* Animazione senza ritardo */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Aggiunge un'ombra leggera al sottotitolo */
 }
 
 /* Pulsante su Index */
