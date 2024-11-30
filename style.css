@@ -122,7 +122,7 @@ p {
 /* Titolo principale con animazione */
 #home .title {
   font-family: 'Cinzel', serif; /* Font elegante */
-  font-size: 5rem; /* Puoi regolare la dimensione per la visibilità */
+  font-size: 5rem; /* Puoi ridurre la dimensione se il testo è troppo largo */
   font-weight: 700;
   text-align: center;
   color: transparent; /* Rendi il testo trasparente per usare il gradiente */
@@ -131,6 +131,8 @@ p {
   animation: typing 3s steps(30) 1s forwards, blinkCaret 0.75s step-end infinite, glow 1.5s ease-in-out infinite;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glow effetto */
   width: 100%;
+  white-space: nowrap; /* Impedisce al testo di andare a capo */
+  overflow: hidden; /* Nasconde eventuali parti del testo fuori dallo schermo */
 }
 
 /* Animazione di Scrittura */
