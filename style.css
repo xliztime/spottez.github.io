@@ -122,7 +122,7 @@ p {
 /* Titolo principale con animazione */
 #home .title {
   font-family: 'Cinzel', serif;
-  font-size: 3.5rem; /* Ridotto il font-size */
+  font-size: 2rem; /* Ridotto il font-size */
   font-weight: 700;
   text-align: center;
   color: transparent;
