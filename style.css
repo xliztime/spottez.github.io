@@ -128,32 +128,27 @@ p {
   display: inline-block;
 }
 
-/* Stile per il titolo grande bianco sotto */
+/* Titolo principale (bianco) */
 #home .title-main {
-  font-family: 'Montserrat', sans-serif; /* Font quadrato e tozzo */
-  font-size: 5rem;
-  font-weight: 800; /* Grassetto marcato */
-  color: #ffffff; /* Colore bianco */
-  text-transform: uppercase; /* Maiuscole */
-  letter-spacing: 2px; /* Spaziatura tra le lettere */
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Ombra per risalto */
-  position: relative;
-  z-index: 1; /* Più in basso rispetto al titolo nero */
+  position: relative; /* Necessario per il posizionamento relativo */
+  font-family: 'Anton', sans-serif; /* Font tozzo per il testo bianco */
+  font-size: 4rem; /* Dimensione grande */
+  text-transform: uppercase; /* Tutte maiuscole */
+  color: #fff; /* Colore bianco */
+  margin: 0;
 }
 
-/* Stile per il titolo elegante nero sopra */
+/* Titolo secondario (nero) */
 #home .title-secondary {
-  font-family: 'Dancing Script', cursive; /* Font elegante e leggero */
-  font-size: 4.6rem; /* Più piccolo rispetto al titolo bianco */
-  font-weight: 600; /* Grassetto leggero */
-  color: #333333; /* Nero/grigio scuro */
-  text-transform: none; /* Non in maiuscolo, per contrastare lo stile del bianco */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Perfetto centramento sopra il bianco */
-  z-index: 2; /* Sopra il titolo bianco */
-  pointer-events: none; /* Impedisce interazioni */
+  content: "Lizbeth Life"; /* Ripeti il testo per il livello nero */
+  position: absolute; /* Posizionamento esattamente sopra il bianco */
+  top: 0;
+  left: 0;
+  color: #333; /* Colore nero */
+  font-family: 'Anton', sans-serif; /* Stesso font del bianco */
+  font-size: 4rem; /* Stessa dimensione del bianco */
+  letter-spacing: 2px; /* Aggiungi spaziatura tra le lettere */
+  z-index: -1; /* Sovrapponi correttamente (nero sotto) */
 }
 
 #home .subtitle {
