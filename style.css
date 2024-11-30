@@ -156,14 +156,15 @@ p {
   pointer-events: none; /* Impedisce interazioni */
 }
 
-/* Sottotitolo su Index */
 #home .subtitle {
-  font-family: 'Montserrat', sans-serif; /* Font moderno */
+  font-family: 'Montserrat', sans-serif; /* Font sans-serif elegante */
   font-size: 1.2rem; /* Leggermente più piccolo */
-  color: #666; /* Grigio scuro */
-  margin-top: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  color: #555; /* Grigio scuro */
+  margin-top: 20px; /* Spaziatura dal titolo */
+  text-align: center; /* Centra il testo */
+  max-width: 800px; /* Limita la larghezza per evitare che si allunghi troppo */
+  margin-left: auto; /* Centra orizzontalmente */
+  margin-right: auto; /* Centra orizzontalmente */
 }
 
 /* Pulsante su Index */
