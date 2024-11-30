@@ -119,28 +119,51 @@ p {
   height: 100vh;
   background: linear-gradient(to bottom, #fff0f6, #fde3ef); /* Sfondo sfumato rosa */
   color: #333;
-  padding: 0 20px; /* Margine per dispositivi piccoli */
+  padding: 0 20px;
 }
 
-/* Titolo di Index */
-#home .title {
-  font-family: 'Great Vibes', cursive; /* Font identico al banner */
-  font-size: 5.5rem; /* Titolo più grande per maggiore impatto */
-  font-weight: 400; /* Peso leggero per un effetto elegante */
-  color: #ffbfd4; /* Colore rosa chiaro armonioso */
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Ombra per contrasto */
-  margin: 0;
+/* Contenitore per il titolo stratificato */
+#home .title-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Testo bianco tozzo (sotto) */
+#home .title-base {
+  font-family: 'Poppins', sans-serif; /* Font moderno e bold */
+  font-size: 5.5rem; /* Dimensione grande */
+  font-weight: 800; /* Bold */
+  color: #ffffff; /* Bianco puro */
+  letter-spacing: 2px; /* Spaziatura tra le lettere */
+  text-transform: uppercase; /* Tutto maiuscolo */
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Ombra visibile */
+  position: absolute;
+  top: 0; /* Sovrapposizione esatta */
+  left: 50%;
+  transform: translateX(-50%); /* Centra orizzontalmente */
+  z-index: 1; /* Livello sotto il testo elegante */
+}
+
+/* Testo elegante nero (sopra) */
+#home .title-overlay {
+  font-family: 'Dancing Script', cursive; /* Font script elegante */
+  font-size: 4rem; /* Un po' più piccolo del testo bianco */
+  font-weight: 400; /* Normale per mantenere eleganza */
+  color: #333; /* Nero per contrasto */
+  z-index: 2; /* Livello sopra */
+  position: relative;
+  text-shadow: none; /* Nessuna ombra per il testo elegante */
+  margin-bottom: 20px; /* Spaziatura tra titolo e sottotitolo */
 }
 
 /* Sottotitolo su Index */
 #home .subtitle {
-  font-family: 'Montserrat', sans-serif; /* Font moderno e leggibile */
-  font-size: 1.2rem; /* Ridotto leggermente rispetto alla versione precedente */
-  color: #666; /* Grigio scuro per contrasto */
+  font-family: 'Montserrat', sans-serif; /* Font moderno */
+  font-size: 1.2rem; /* Leggermente più piccolo */
+  color: #666; /* Grigio scuro */
   margin-top: 10px;
-  text-transform: uppercase; /* Testo maiuscolo per un look professionale */
+  text-transform: uppercase;
   letter-spacing: 2px;
-  text-align: center;
 }
 
 /* Pulsante su Index */
@@ -149,7 +172,7 @@ p {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 25px;
-  background-color: #ff4b4b; /* Rosso YouTube */
+  background-color: #ff4b4b;
   color: white;
   border-radius: 25px;
   font-size: 1rem;
@@ -162,7 +185,6 @@ p {
   color: #ff4b4b;
   border: 1px solid #ff4b4b;
 }
-
 /* YouTube Section */
 .video-grid {
   display: flex;
