@@ -119,21 +119,25 @@ p {
   height: 100vh;
 }
 
-/* Titolo principale con animazione */
+/* Home Section */
 #home .title {
   font-size: 3.5rem;
   font-weight: 700;
-  color: #fdcedf;
+  color: #fdcedf; /* Colore del titolo */
   position: relative;
   display: inline-block;
   white-space: nowrap; /* Per evitare che vada a capo */
-  overflow: hidden; /* Nascondere eventuali lettere fuori dalla riga */
+  overflow: visible; /* Assicurati che il testo non venga tagliato */
   
-  /* Effetto glow (bagliore) */
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.7), 0 0 50px rgba(255, 255, 255, 0.7);
+  /* Effetto glow chiaro (bagliore bianco) */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 
+               0 0 20px rgba(255, 255, 255, 0.6), 
+               0 0 30px rgba(255, 255, 255, 0.5), 
+               0 0 40px rgba(255, 255, 255, 0.4), 
+               0 0 50px rgba(255, 255, 255, 0.3); /* Glow bianco più delicato */
   
-  /* Ombra del testo */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombra nera con un effetto sfumato */
+  /* Ombra del testo più morbida */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Ombra più morbida per una sfumatura delicata */
 }
 
 /* Sottotitolo */
@@ -143,9 +147,8 @@ p {
   color: #555;
   margin-top: 10px;
   text-align: center;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Aggiunge un'ombra leggera al sottotitolo */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Ombra leggera per il sottotitolo */
 }
-
 /* Pulsante su Index */
 #home .btn {
   font-family: 'Poppins', sans-serif;
