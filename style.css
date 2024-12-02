@@ -210,3 +210,79 @@ form button:hover {
   color: #fdcedf;
   border: 1px solid #fdcedf;
 }
+/* Media Queries per dispositivi mobili */
+@media (max-width: 768px) {
+  /* Navbar */
+  nav {
+    flex-direction: column; /* Stack verticalmente */
+    padding: 10px;
+  }
+
+  nav .logo {
+    margin-bottom: 10px;
+  }
+
+  nav .nav-links {
+    flex-direction: column; /* Allinea i link verticalmente */
+    align-items: center;
+  }
+
+  nav .nav-links li {
+    margin: 5px 0; /* Aggiungi spaziatura verticale */
+  }
+
+  /* Titolo nella sezione home */
+  #home .title {
+    font-size: 2rem; /* Riduci la dimensione del titolo */
+  }
+
+  #home .subtitle {
+    font-size: 1.2rem; /* Riduci il sottotitolo */
+  }
+
+  #home .btn {
+    padding: 8px 15px; /* Riduci le dimensioni del pulsante */
+    font-size: 0.9rem;
+  }
+
+  /* Video nella sezione YouTube */
+  .video-grid iframe {
+    width: 90%; /* Rendi i video adattabili */
+    height: auto; /* Mantieni le proporzioni */
+  }
+
+  /* Sezioni generali */
+  section {
+    padding: 30px 15px; /* Riduci i margini per adattarli a schermi piccoli */
+  }
+
+  /* Form nella pagina Contact */
+  form input, form textarea {
+    width: 90%; /* Rendi il form più adattabile */
+  }
+}
+
+/* Media Queries per dispositivi tablet */
+@media (max-width: 1024px) {
+  nav .nav-links {
+    flex-wrap: wrap; /* Permetti ai link di andare a capo */
+  }
+
+  #home .title {
+    font-size: 3rem; /* Adatta il titolo */
+  }
+
+  #home .subtitle {
+    font-size: 1.4rem; /* Adatta il sottotitolo */
+  }
+
+  #home .btn {
+    padding: 10px 18px;
+    font-size: 1rem;
+  }
+
+  .video-grid iframe {
+    width: 45%; /* Adatta la larghezza per due colonne */
+    height: auto; /* Mantieni le proporzioni */
+  }
+}
