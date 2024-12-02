@@ -32,3 +32,11 @@ function animate() {
   renderer.render(scene, camera);
 }
 animate();
+// Hamburger Menu Toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navLinks.classList.toggle('show');
+});
