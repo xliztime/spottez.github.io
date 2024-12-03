@@ -32,11 +32,12 @@ function animate() {
   renderer.render(scene, camera);
 }
 animate();
-// Hamburger Menu Toggle
+// Seleziona gli elementi
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
+// Aggiungi un event listener al pulsante hamburger
 hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  navLinks.classList.toggle('show');
+  // Alterna la classe 'active' sul menu di navigazione
+  navLinks.classList.toggle('active');
 });
