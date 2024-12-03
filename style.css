@@ -210,91 +210,74 @@ form button:hover {
   color: #fdcedf;
   border: 1px solid #fdcedf;
 }
-/* Media Queries per dispositivi mobili */
+/* Menu hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Menu attivo */
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links.active {
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* Altezza del navbar */
+  right: 0;
+  background-color: #fdcedf;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-links li {
+  margin: 10px 0;
+}
+
+.nav-links a {
+  padding: 10px;
+  text-align: center;
+  display: block;
+}
+
+/* Nascondere il menu su mobile */
 @media (max-width: 768px) {
-  nav {
-    position: relative;
-    padding: 10px 20px;
+  .hamburger {
+    display: flex;
   }
 
-  nav .nav-links {
-    display: none; /* Nasconde i link per impostazione predefinita */
+  .nav-links {
+    display: none;
     flex-direction: column;
+    background-color: #fdcedf;
     position: absolute;
-    top: 100%; /* Appare sotto la barra di navigazione */
-    left: 0;
+    top: 60px; /* Altezza del navbar */
+    right: 0;
     width: 100%;
-    background-color: #fdcedf; /* Colore di sfondo */
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Aggiunge una leggera ombra */
-    z-index: 10;
   }
 
-  nav .nav-links.show {
-    display: flex; /* Mostra il menu quando attivato */
-  }
-
-  nav .nav-links li {
-    margin: 10px 0; /* Spaziatura tra i link */
-    text-align: center;
-  }
-
-  nav .hamburger {
-    display: block; /* Mostra l'icona hamburger */
-    cursor: pointer;
-  }
-
-  nav .hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px 0;
-    transition: all 0.3s ease;
-  }
-
-  nav .hamburger.active div:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  nav .hamburger.active div:nth-child(2) {
-    opacity: 0;
-  }
-
-  nav .hamburger.active div:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+  .nav-links.active {
+    display: flex;
   }
 }
 
-  /* Titolo nella sezione home */
-  #home .title {
-    font-size: 2rem; /* Riduci la dimensione del titolo */
-  }
-
-  #home .subtitle {
-    font-size: 1.2rem; /* Riduci il sottotitolo */
-  }
-
-  #home .btn {
-    padding: 8px 15px; /* Riduci le dimensioni del pulsante */
-    font-size: 0.9rem;
-  }
-
-  /* Video nella sezione YouTube */
-  .video-grid iframe {
-    width: 90%; /* Rendi i video adattabili */
-    height: auto; /* Mantieni le proporzioni */
-  }
-
-  /* Sezioni generali */
-  section {
-    padding: 30px 15px; /* Riduci i margini per adattarli a schermi piccoli */
-  }
-
-  /* Form nella pagina Contact */
-  form input, form textarea {
-    width: 90%; /* Rendi il form più adattabile */
-  }
-}
 
 /* Media Queries per dispositivi tablet */
 @media (max-width: 1024px) {
