@@ -3,57 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Scopri di più su Lizbeth Life con link a YouTube, Discord ed Email.">
   <title>「 ✦ Lizbeth Life ✦ 」</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    /* CSS Variables for color and shadow definitions */
-    :root {
-      --bg-color: #F8F9FA;
-      --primary-color: #6C757D;
-      --primary-hover: #5A6268;
-      --text-color: #333;
-      --accent-color: #FFFFFF;
-      --shadow-light: rgba(0, 0, 0, 0.1);
-      --shadow-medium: rgba(0, 0, 0, 0.2);
-      --shadow-dark: rgba(0, 0, 0, 0.3);
-    }
-
-    /* Global Reset */
-    *, *::before, *::after {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
+      background-color: #F8F9FA; 
+      color: #333;
       font-family: 'Playfair Display', serif;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
       position: relative;
-      padding: 20px;
     }
 
-    main {
-      width: 100%;
-    }
-
-    /* Main container */
+    /* stile della pagina principale */
     .container {
       text-align: center;
-      background-color: var(--accent-color);
+      background-color: #FFFFFF;
       padding: 30px;
       border-radius: 20px;
-      box-shadow: 0 4px 20px var(--shadow-light);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
       transition: opacity 1s ease-in-out;
       z-index: 1;
-      max-width: 400px;
-      margin: 0 auto;
     }
+
     .container.hide {
       opacity: 0;
       pointer-events: none;
@@ -63,22 +39,21 @@
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      box-shadow: 0 4px 15px var(--shadow-medium);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
       object-fit: cover;
     }
 
     .nickname {
       font-size: 2rem;
       margin: 10px 0;
-      color: var(--primary-color);
+      color: #6C757D;
       font-weight: bold;
     }
 
-    /* Button styles */
-    .btn {
+    .open-btn, .back-btn, .info-btn {
       padding: 12px 24px;
-      background-color: var(--primary-color);
-      color: var(--accent-color);
+      background-color: #6C757D;
+      color: #FFFFFF;
       border: none;
       border-radius: 12px;
       cursor: pointer;
@@ -86,19 +61,19 @@
       transition: background-color 0.3s, transform 0.3s;
       margin: 5px;
     }
-    .btn:hover {
-      background-color: var(--primary-hover);
+
+    .open-btn:hover, .back-btn:hover, .info-btn:hover {
+      background-color: #5A6268;
       transform: scale(1.05);
     }
 
-    /* Wave menu styles */
     .wave {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: var(--bg-color);
+      background-color: #F8F9FA;
       clip-path: circle(0% at center);
       transition: clip-path 1s ease-in-out;
       display: flex;
@@ -108,32 +83,36 @@
       gap: 20px;
       z-index: 2;
     }
+
     .wave.show {
       clip-path: circle(150% at center);
     }
+
     .link-btn {
       width: 90px;
       height: 90px;
-      background-color: var(--primary-color);
+      background-color: #6C757D;
       border-radius: 50%;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: var(--accent-color);
+      color: #FFFFFF;
       text-decoration: none;
       font-size: 1.5rem;
       transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
-      box-shadow: 0 6px 12px var(--shadow-medium);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      flex-direction: column;
     }
+
     .link-btn span {
       font-size: 0.8rem;
       margin-top: 5px;
     }
+
     .link-btn:hover {
       transform: scale(1.1) rotate(5deg);
-      background-color: var(--primary-hover);
-      box-shadow: 0 8px 16px var(--shadow-dark);
+      background-color: #5A6268;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     }
 
     @keyframes fadeIn {
@@ -146,113 +125,106 @@
         transform: translateY(0);
       }
     }
+
     .wave.show .link-btn {
       animation: fadeIn 0.8s ease forwards;
     }
 
-    /* Info page styles */
+    /* sezione info */
     .info-page {
       display: none;
       position: fixed;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: var(--accent-color);
+      background-color: #FFFFFF;
       padding: 30px;
       border-radius: 20px;
-      box-shadow: 0 4px 20px var(--shadow-light);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
       text-align: center;
       max-width: 400px;
       z-index: 3;
     }
+
     .info-page.show {
       display: block;
     }
+
     .info-title {
       font-size: 1.5rem;
       font-weight: bold;
-      color: var(--primary-color);
+      color: #6C757D;
       margin-bottom: 15px;
       border-bottom: 1px solid #ccc;
       padding-bottom: 5px;
     }
-
+/* Footer */
     footer {
-      margin-top: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
       text-align: center;
-      font-size: 0.9rem;
-      color: var(--primary-color);
+      background-color: #F8F9FA;
+      padding: 10px 0;
+      font-family: 'Playfair Display', serif;
+      color: #333;
+      z-index: 4;
     }
   </style>
 </head>
 <body>
-  <!-- Main Content -->
-  <main>
-    <section class="container" id="container">
-      <img src="https://i.pinimg.com/736x/c0/8f/40/c08f40919ed705e48b7a9b13f8fe4523.jpg" alt="Foto di Lizbeth" class="profile-pic">
-      <div class="nickname">「 ✦ Lizbeth Life ✦ 」</div>
-      <button class="btn" id="openBtn">Scopri di più</button>
-    </section>
-  </main>
+  <!-- pagina principale -->
+  <div class="container" id="container">
+    <img src="https://i.pinimg.com/736x/c0/8f/40/c08f40919ed705e48b7a9b13f8fe4523.jpg" alt="Foto di Lizbeth" class="profile-pic">
+    <div class="nickname">「 ✦ Lizbeth Life ✦ 」</div>
+    <button class="open-btn" onclick="toggleWave()">Scopri di più</button>
+  </div>
 
-  <!-- Wave Menu -->
-  <nav class="wave" id="wave" aria-label="Menu">
-    <a href="https://www.youtube.com/@xliztime" target="_blank" class="link-btn" aria-label="YouTube">
+  <!-- menu con link -->
+  <div class="wave" id="wave">
+    <a href="https://www.youtube.com/@xliztime" target="_blank" class="link-btn">
       🌷<span>YouTube</span>
     </a>
-    <a href="https://discord.gg/WtgrtYYrRU" target="_blank" class="link-btn" aria-label="Discord">
+    <a href="https://discord.gg/WtgrtYYrRU" target="_blank" class="link-btn">
       🐚<span>Discord</span>
     </a>
-    <a href="mailto:elisagiocaagenshin@gmail.com" class="link-btn" aria-label="Email">
+    <a href="mailto:elisagiocaagenshin@gmail.com" class="link-btn">
       ✉️<span>Email</span>
     </a>
-    <button class="btn" id="infoBtn">Info</button>
-    <button class="btn" id="backBtn">꩜ back</button>
-  </nav>
+    <!-- bottone Info rettangolare -->
+    <button class="info-btn" onclick="showInfo()">Info</button>
+    <button class="back-btn" onclick="toggleWave()">꩜ back</button>
+  </div>
 
-  <!-- Info Section -->
-  <section class="info-page" id="infoPage" aria-modal="true" role="dialog">
+  <!-- sezione info -->
+  <div class="info-page" id="infoPage">
     <div class="info-title">✮⋆˙ About me ✮⋆˙</div>
     <p>⌗ Clicca sui link precedenti per sapere di più</p>
     <p>⌗ Il sito è in continuo aggiornamento</p>
     <p>⌗ Mi trovi qui: <a href="https://discord.gg/WtgrtYYrRU" target="_blank">Unisciti al server.ᐟ</a></p>
-    <button class="btn" id="infoBackBtn">꩜ back</button>
-  </section>
-
+    <button class="back-btn" onclick="showMain()">꩜ back</button>
+  </div>
+ <!-- Footer -->
   <footer>
     <p>&copy; 2024 Lizbeth Life. All Rights Reserved.</p>
   </footer>
-
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
+    function toggleWave() {
       const wave = document.getElementById('wave');
       const container = document.getElementById('container');
-      const openBtn = document.getElementById('openBtn');
-      const infoBtn = document.getElementById('infoBtn');
-      const backBtn = document.getElementById('backBtn');
-      const infoPage = document.getElementById('infoPage');
-      const infoBackBtn = document.getElementById('infoBackBtn');
+      wave.classList.toggle('show');
+      container.classList.toggle('hide');
+    }
 
-      const toggleWave = () => {
-        wave.classList.toggle('show');
-        container.classList.toggle('hide');
-      };
+    function showInfo() {
+      document.getElementById('wave').classList.remove('show');
+      document.getElementById('infoPage').classList.add('show');
+    }
 
-      const showInfo = () => {
-        wave.classList.remove('show');
-        infoPage.classList.add('show');
-      };
-
-      const showMain = () => {
-        infoPage.classList.remove('show');
-        wave.classList.add('show');
-      };
-
-      openBtn.addEventListener('click', toggleWave);
-      backBtn.addEventListener('click', toggleWave);
-      infoBtn.addEventListener('click', showInfo);
-      infoBackBtn.addEventListener('click', showMain);
-    });
+    function showMain() {
+      document.getElementById('infoPage').classList.remove('show');
+      document.getElementById('wave').classList.add('show');
+    }
   </script>
 </body>
 </html>
