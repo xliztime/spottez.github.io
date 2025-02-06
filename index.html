@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lizbeth Life</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-color: #FCE4EC;
-      color: #000000;
-      font-family: 'Poppins', sans-serif;
+      background-color: #F8F9FA; /* Bianco caldo */
+      color: #333;
+      font-family: 'Playfair Display', serif;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      overflow: hidden;
+      min-height: 100vh;
+      position: relative;
     }
 
+    /* Stile della pagina principale */
     .container {
       text-align: center;
-      position: relative;
-      z-index: 1;
       background-color: #FFFFFF;
       padding: 30px;
       border-radius: 20px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
       transition: opacity 1s ease-in-out;
+      z-index: 1;
     }
 
     .container.hide {
@@ -38,50 +39,52 @@
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      border: 4px solid #FFB6C1;
+      /* Rimosso il bordo per un look più pulito */
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      object-fit: cover;
     }
 
     .nickname {
       font-size: 2rem;
       margin: 10px 0;
-      color: #D81B60;
+      color: #6C757D; /* Tonalità più professionale */
       font-weight: bold;
     }
 
-    .open-btn, .back-btn {
+    .open-btn, .back-btn, .info-btn {
       padding: 12px 24px;
-      background-color: #F48FB1;
-      color: #000000;
+      background-color: #6C757D; /* Colore neutro e sofisticato */
+      color: #FFFFFF;
       border: none;
       border-radius: 12px;
       cursor: pointer;
       font-size: 1rem;
       transition: background-color 0.3s, transform 0.3s;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       margin: 5px;
     }
 
-    .open-btn:hover, .back-btn:hover {
-      background-color: #EC407A;
+    .open-btn:hover, .back-btn:hover, .info-btn:hover {
+      background-color: #5A6268;
       transform: scale(1.05);
     }
 
+    /* Sezione "wave" con i pulsanti link */
     .wave {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: #F8BBD0;
+      /* Tocco di rosa soft */
+      background-color: #FADCD9;
       clip-path: circle(0% at center);
       transition: clip-path 1s ease-in-out;
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       gap: 20px;
-      z-index: 0;
+      z-index: 2;
     }
 
     .wave.show {
@@ -91,7 +94,7 @@
     .link-btn {
       width: 90px;
       height: 90px;
-      background-color: #FF80AB;
+      background-color: #6C757D;
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -110,8 +113,8 @@
     }
 
     .link-btn:hover {
-      transform: scale(1.1) rotate(10deg);
-      background-color: #D81B60;
+      transform: scale(1.1) rotate(5deg);
+      background-color: #5A6268;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     }
 
@@ -130,40 +133,67 @@
       animation: fadeIn 0.8s ease forwards;
     }
 
+    /* Sezione info in modalità "modal" */
     .info-page {
       display: none;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #FFFFFF;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+      z-index: 3;
     }
 
     .info-page.show {
-      display: flex;
+      display: block;
+    }
+
+    .info-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #6C757D;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
     }
   </style>
 </head>
 <body>
+  <!-- Pagina principale -->
   <div class="container" id="container">
     <img src="https://i.pinimg.com/736x/c0/8f/40/c08f40919ed705e48b7a9b13f8fe4523.jpg" alt="Foto di Lizbeth" class="profile-pic">
     <div class="nickname">Lizbeth Life</div>
     <button class="open-btn" onclick="toggleWave()">Scopri di più</button>
   </div>
 
+  <!-- Menu Wave con link -->
   <div class="wave" id="wave">
-    <a href="https://www.youtube.com/@xliztime" target="_blank" class="link-btn">🎥<span>YouTube</span></a>
-    <a href="https://discord.gg/WtgrtYYrRU" target="_blank" class="link-btn">💬<span>Discord</span></a>
-    <a href="mailto:elisagiocaagenshin@gmail.com" class="link-btn">📧<span>Email</span></a>
-    <button class="link-btn" onclick="showInfo()">ℹ️<span>Info</span></button>
-    <button class="back-btn" onclick="toggleWave()">🔙 Torna indietro</button>
+    <a href="https://www.youtube.com/@xliztime" target="_blank" class="link-btn">
+      🎥<span>YouTube</span>
+    </a>
+    <a href="https://discord.gg/WtgrtYYrRU" target="_blank" class="link-btn">
+      💬<span>Discord</span>
+    </a>
+    <a href="mailto:elisagiocaagenshin@gmail.com" class="link-btn">
+      📧<span>Email</span>
+    </a>
+    <!-- Bottone Info rettangolare, senza bordo circolare -->
+    <button class="info-btn" onclick="showInfo()">Info</button>
+    <button class="back-btn" onclick="toggleWave()">Torna Indietro</button>
   </div>
 
+  <!-- Sezione Info (modal) -->
   <div class="info-page" id="infoPage">
-    <h2>Info Personali</h2>
+    <div class="info-title">Informazioni</div>
     <p>Nickname Discord: alco.liz.zata</p>
     <p>Email: elisagiocaagenshin@gmail.com</p>
     <p>Server Discord: <a href="https://discord.gg/WtgrtYYrRU" target="_blank">Unisciti al server</a></p>
-    <button class="back-btn" onclick="showMain()">🔙 Torna ai link</button>
+    <button class="back-btn" onclick="showMain()">Torna ai link</button>
   </div>
 
   <script>
@@ -175,11 +205,13 @@
     }
 
     function showInfo() {
+      // Chiudiamo il menu a onde e mostriamo la sezione info
       document.getElementById('wave').classList.remove('show');
       document.getElementById('infoPage').classList.add('show');
     }
 
     function showMain() {
+      // Nascondiamo la sezione info e riportiamo il menu a onde
       document.getElementById('infoPage').classList.remove('show');
       document.getElementById('wave').classList.add('show');
     }
