@@ -26,6 +26,9 @@
       color: var(--text-color);
       font-family: var(--font-primary);
       line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     header {
@@ -40,10 +43,16 @@
       font-size: 3rem;
     }
 
+    p.subtitle {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
     .section {
       padding: 3rem 1rem;
       max-width: 1000px;
       margin: 0 auto;
+      flex: 1;
     }
 
     .section h2 {
@@ -51,6 +60,14 @@
       color: var(--accent-color);
       font-size: 2rem;
       margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
     }
 
     .links a {
@@ -72,18 +89,50 @@
       box-shadow: 0 0 15px var(--accent-color);
     }
 
+    .password-section {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .password-section input[type="password"] {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 20px;
+      width: 250px;
+      font-size: 1rem;
+      text-align: center;
+      outline: none;
+    }
+
+    .password-section button {
+      margin-left: 1rem;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 30px;
+      background-color: var(--accent-color);
+      color: var(--bg-color);
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .password-section button:hover {
+      box-shadow: 0 0 10px var(--accent-color);
+    }
+
     footer {
       text-align: center;
       padding: 2rem 1rem;
       font-size: 0.9rem;
       color: #888;
+      background-color: #0a0a0a;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Spottez</h1>
-    <p>Innovazione, stile e connessione – Scopri chi siamo</p>
+    <p class="subtitle">Innovazione, stile e connessione – Scopri chi siamo</p>
   </header>
 
   <section class="section">
@@ -94,10 +143,25 @@
       <a href="https://chat.whatsapp.com/F3aR3aUPMi87HS8You0RJs" target="_blank">WhatsApp</a>
       <a href="https://discord.com/invite/ZGjqubrgdn" target="_blank">Discord</a>
     </div>
+    <div class="password-section">
+      <input type="password" id="passwordInput" placeholder="Inserisci la password...">
+      <button onclick="checkPassword()">Accedi</button>
+    </div>
   </section>
 
   <footer>
     <p>© 2025 Spottez. Made with 💚 from Roma.</p>
   </footer>
+
+  <script>
+    function checkPassword() {
+      const password = document.getElementById('passwordInput').value;
+      if (password === 'spottez2025') {
+        window.location.href = 'eventi.html';
+      } else {
+        alert('Password errata. Riprova.');
+      }
+    }
+  </script>
 </body>
 </html>
