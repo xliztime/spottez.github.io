@@ -52,6 +52,25 @@
       font-style: italic;
       color: #ccc;
     }
+
+    .home-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .home-button a {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .home-button a:hover {
+      text-shadow: 0 0 10px var(--accent-color);
+    }
   </style>
 </head>
 <body>
@@ -71,5 +90,8 @@
     <p class="description">Un pomeriggio rilassante tra amici, musica soft e natura.</p>
   </div>
 
+  <div class="home-button">
+    <a href="index.html" title="Torna alla home">🏠 Home</a>
+  </div>
 </body>
 </html>
